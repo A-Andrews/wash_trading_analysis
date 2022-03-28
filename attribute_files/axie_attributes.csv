@@ -1,1 +1,11 @@
 id,class,genes,breedCount,level,hp,speed,skill,morale,eyes,ears,back,mouth,horn,tail,ability1,ability2,ability3,ability4
+1000,Beast,0x4000011864421021088200450942106018c4102019460022188608631946,0,1,34,49,31,50,Aquatic,Aquatic,Beast,Beast,Aquatic,Bird,Single Combat,Piercing Sound,Shell Jab,Risky Feather
+1001,Aquatic,0x46004000051444340444094410230802104111461061088408630846142418c2,0,1,46,52,35,31,Bug,Aquatic,Bird,Aquatic,Aquatic,Reptile,Ill-omened,Angry Lam,Clam Slash,Critical Escape
+1002,Plant,0x3000400001105421104110420c451044084018c40c2311420c2319420c400802,0,1,56,37,31,40,Aquatic,Bird,Plant,Plant,Plant,Plant,Turnip Rocket,Drain Bite,Bamboo Clan,Cattail Slap
+1003,Beast,0x40000d304214004208841422080214401144102108840044180404631802,0,1,39,42,31,52,Beast,Reptile,Beast,Reptile,Aquatic,Bug,Heroic Reward,Sneaky Raid,Shell Jab,Anesthetic Bait
+1004,Plant,0x30004000050cd2330c4010440c4008c40c4110c60c650846104310820c2118c4,2,1,59,34,31,40,Plant,Plant,Aquatic,Plant,Plant,Plant,Scale Dart,Drain Bite,Healing Aroma,Carrot Hammer
+1005,Aquatic,0x40004000071873220c201104004108c41420080210420944104210c208650942,7,1,47,50,35,32,Plant,Reptile,Aquatic,Beast,Aquatic,Bird,Scale Dart,Piercing Sound,Deep Sea Gore,Risky Feather
+1006,Beast,0x40000b0c7433002210c41422088400440944c42210060044194614420902,0,1,38,40,31,55,Beast,Beast,Beast,Reptile,Bug,Reptile,Heroic Reward,Sneaky Raid,Mystic Rush,Scale Dart
+1007,Reptile,0x500040000c14a2241445088408420844144208860c221086146310c414640804,2,1,54,42,31,37,Reptile,Reptile,Reptile,Bird,Plant,Reptile,Vine Dagger,Peace Treaty,Bamboo Clan,Tiny Swing
+1008,Beast,0x400007344441c02310040440094400230906004118460460080600241142,0,1,33,39,31,61,Beast,Beast,Bug,Bug,Beast,Beast,Bug Noise,Sunder Claw,Ivory Stab,Luna Absorb
+1009,Plant,0x300040000314a322144410840c2208840045110414240942002418820c641084,2,1,55,35,31,43,Reptile,Beast,Beast,Plant,Reptile,Plant,Single Combat,Vegetal Bite,Poo Fling,Leek Leak
