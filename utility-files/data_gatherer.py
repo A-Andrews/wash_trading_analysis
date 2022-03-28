@@ -46,7 +46,7 @@ def write_axie_to_row(axie):
     return [ax_id,ax_class,genes,breedCount,level,hp,speed,skill,morale,eyes,ears,back,mouth,horn,tail,ability1,ability2,ability3,ability4]
 
 
-def get_csv_axie():
+def get_csv_axie(start: int, end: int):
 
     f = open('attribute_files/axie_attributes.csv', 'w')
 
@@ -54,7 +54,7 @@ def get_csv_axie():
 
     writer.writerow(["id","class","genes","breedCount","level","hp","speed","skill","morale","eyes","ears","back","mouth","horn","tail","ability1","ability2","ability3","ability4"])
 
-    for i in range(1000, 11000):
+    for i in range(start, end):
         data = get_axie_attributes(i)
         row = write_axie_to_row(data)
         writer.writerow(row)
@@ -62,4 +62,4 @@ def get_csv_axie():
     f.close()
         
 
-get_csv_axie()
+get_csv_axie(1000, 11000)
