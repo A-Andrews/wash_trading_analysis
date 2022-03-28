@@ -3200,3 +3200,803 @@ id,class,genes,breedCount,level,hp,speed,skill,morale,eyes,ears,back,mouth,horn,
 4197,Bird,0x20000000022820240c450844042010420822084408631904086211440c641146,1,1,34,52,35,43,Plant,Bird,Bird,Bug,Bird,Plant,Ill-omened,Blood Taste,Air Force One,Leek Leak
 4198,Plant,0x30004000010c22320c2208840c40088410430884082019441444110214610842,2,1,56,39,31,38,Plant,Aquatic,Reptile,Plant,Bird,Reptile,Spike Throw,Drain Bite,Eggbomb,Tiny Swing
 4199,Aquatic,0x40000000091cb2220845090410441142102419040c41110210201904146110c6,6,1,48,52,35,29,Bird,Aquatic,Aquatic,Aquatic,Plant,Reptile,Shelter,Swallow,Wooden Stab,Tiny Swing
+4200,Bird,0x20000000053032100822080200450802046219460c6411420822188608201904,6,1,31,53,35,45,Bird,Bug,Bird,Beast,Plant,Bird,Balloon Pop,Piercing Sound,Healing Aroma,Early Bird
+4201,Plant,0x30000000030c1432084211020c40088408241904002108020460090608631846,1,1,47,41,31,45,Bird,Bird,Bug,Plant,Beast,Bird,Bug Noise,Drain Bite,Branch Charge,Risky Feather
+4202,Beast,0x40000218d4431420104400251142144010440c4211021442094600240902,7,1,43,40,31,50,Reptile,Reptile,Reptile,Beast,Plant,Beast,Spike Throw,Nut Crack,Wooden Stab,Luna Absorb
+4203,Beast,0xc000053444420ca028c8008320ca1084284c008120cc10a320080ca230cc,0,1,39,43,31,51,Plant,Aquatic,Aquatic,Beast,Beast,Plant,Aqua Vitality,Death Mark,Sugar Rush,Aqua Deflect
+4204,Aquatic,0x4000c000041c22201084284a1085208a0c8328cc108421080883308c008528c8,0,1,45,52,35,32,Aquatic,Plant,Bird,Aquatic,Aquatic,Beast,Blackmail,Fish Hook,Aquaponics,Hare Dagger
+4205,Plant,0x3000c000060c422208a0208a10a0280a1484308c14a020ca108031480883288c,0,1,51,45,31,37,Bird,Reptile,Aquatic,Aquatic,Reptile,Bird,Shipwreck,Crimson Water,Disarm,Puffy Smack
+4206,Plant,0x3000c0000830433110a1214810a4290a1084210a0ca0308c10a4304a10a4280c,0,1,51,46,31,36,Aquatic,Aquatic,Aquatic,Aquatic,Plant,Aquatic,Aqua Vitality,Crimson Water,Prickly Trap,Flanking Smack
+4207,Beast,0xc00004107341108120ca14a328c80c85210a10a3280a0480294810a4314a,1,1,41,45,31,47,Aquatic,Plant,Bug,Reptile,Aquatic,Aquatic,Bug Splat,Chomp,Hero's Bane,Flanking Smack
+4208,Aquatic,0x4000c0000124b343008429480c84294800a0284814a1300a04a220080c8230c8,0,1,49,42,35,38,Beast,Beast,Bug,Plant,Reptile,Plant,Scarab Curse,Vegan Diet,Disarm,Gas Unleash
+4209,Plant,0x3000c0000610b2320083288a00a42888008030c80ca0290c00a1300c0ca0300a,1,1,49,35,31,49,Beast,Beast,Beast,Beast,Plant,Plant,Woodman Power,Self Rally,Prickly Trap,Aqua Deflect
+4210,Beast,0xc000031044420c8520c80ca128ca1483284a0c8028c800a42108008330c8,7,1,43,38,31,52,Plant,Reptile,Beast,Plant,Plant,Beast,Woodman Power,Forest Spirit,Sweet Party,Hare Dagger
+4211,Beast,0xc000081864310c8329481084214a10a2284800a2200c108020880482290a,0,1,38,45,31,50,Plant,Aquatic,Aquatic,Aquatic,Beast,Bug,Shipwreck,Fish Hook,Sinister Strike,Numbing Lecretion
+4212,Bird,0x2000c0000630224214a32108048120ca0483300c00a5288a0ca328cc10a3290c,1,1,36,48,35,45,Reptile,Bug,Plant,Bug,Beast,Aquatic,Refresh,Terror Chomp,Sinister Strike,Flanking Smack
+4213,Aquatic,0x4000c0000d089233148029480c80204a00a420cc14a4208c14a1214c0083308a,0,1,51,44,35,34,Reptile,Beast,Reptile,Plant,Reptile,Beast,Slippery Shield,Vegan Diet,Disarm,Hare Dagger
+4214,Beast,0xc0000b24824214a020880c8420881084310c0ca0200a04a1290c04a020c8,1,1,43,39,31,51,Reptile,Aquatic,Bug,Plant,Plant,Bug,Scarab Curse,Vegan Diet,Prickly Trap,Grub Explode
+4215,Beast,0x428a343004508040c21084400230804006411461462110600221042,5,1,37,40,31,56,Beast,Beast,Reptile,Plant,Beast,Beast,Vine Dagger,Vegetal Bite,Merry Legion,Luna Absorb
+4216,Beast,0xc000042443431080290810a020c80c83290a088030ca00a4300a08842848,0,1,36,48,31,49,Aquatic,Plant,Beast,Aquatic,Bird,Bird,Woodman Power,Crimson Water,Headshot,Puffy Smack
+4217,Bug,0x100000000604c4420c201144084408820c6411060c4110420c43100604651046,4,1,48,34,35,47,Plant,Plant,Plant,Bird,Plant,Bug,Shroom's Grace,Peace Treaty,Wooden Stab,Anesthetic Bait
+4218,Bug,0x10004000020c6422c023094404420804044511420c6418c208210946086418c4,1,1,40,38,35,51,Beast,Bug,Bird,Bug,Plant,Bird,Balloon Pop,Sunder Claw,Healing Aroma,Risky Feather
+4219,Aquatic,0x4000c0000934823204a120c814a4208808a4300814a420880ca328ca0c8130c8,1,1,52,44,35,33,Bug,Bird,Plant,Reptile,Reptile,Plant,Refresh,Chomp,Disarm,Gas Unleash
+4220,Plant,0x3000c0000434722210a0210a0082290810a0210c008128080ca4280c00a5310c,1,1,48,40,31,45,Aquatic,Aquatic,Plant,Beast,Beast,Beast,Refresh,Death Mark,Sugar Rush,Nut Throw
+4221,Aquatic,0x4000c0000d20232404a520c810a1290a10a2210814a230ca10a3210c00802008,5,1,46,50,35,33,Bug,Aquatic,Aquatic,Aquatic,Reptile,Beast,Aqua Vitality,Crimson Water,Disarm,Hare Dagger
+4222,Aquatic,0x4000c000091c24240c83280a00a0280a0085204c0ca520881080210c0ca3214a,4,1,49,44,35,36,Plant,Beast,Aquatic,Beast,Plant,Plant,Shipwreck,Self Rally,Prickly Trap,Aqua Deflect
+4223,Aquatic,0x4000c0000a08b42200a120c804a5288a14a5200c14a020c810a530c80c85200a,1,1,50,45,35,34,Beast,Reptile,Aquatic,Bug,Reptile,Plant,Aqua Vitality,Mite Bite,Disarm,Gas Unleash
+4224,Beast,0xc000083021220ca428ca048220080c82308a1483314c1484280a1084300c,5,1,45,40,31,48,Plant,Plant,Reptile,Bug,Reptile,Aquatic,Bulkwark,Terror Chomp,Tiny Catapult,Water Sphere
+4225,Plant,0x3000c000021c82420ca0204a00a021081483294c1083210c0085288810a22008,1,1,51,40,31,42,Plant,Reptile,Beast,Beast,Aquatic,Aquatic,Revenge Arrow,Self Rally,Aquaponics,Flanking Smack
+4226,Plant,0x3000c0000218733310a328080085210a0c83310c1484300a1482284a0ca3210a,5,1,56,37,31,40,Aquatic,Plant,Reptile,Beast,Reptile,Plant,Bulkwark,Death Mark,Tiny Catapult,Aqua Deflect
+4227,Beast,0xc000093073340ca2290a14a128080085304c108029480080314804a4314c,1,1,39,41,31,53,Plant,Beast,Beast,Reptile,Aquatic,Bug,Revenge Arrow,Chomp,Aquaponics,Grub Explode
+4228,Aquatic,0x4000c0000b30144410a521081485208810a0294a048020c8008030cc00a1284a,1,1,45,48,35,36,Aquatic,Aquatic,Beast,Reptile,Bug,Beast,Revenge Arrow,Why So Serious,Dull Grip,Nut Throw
+4229,Beast,0xc0000104942108a52908008428ca10a2200c088430881081304a0483200c,4,1,34,48,31,51,Bird,Aquatic,Aquatic,Beast,Bird,Bug,Shipwreck,Death Mark,Headshot,Numbing Lecretion
+4230,Beast,0xc0000c24644400a1204a148428c810a1304c0c83210c0c84284a0485300c,1,1,42,40,31,51,Beast,Aquatic,Plant,Reptile,Plant,Bug,Aqua Stock,Why So Serious,Sweet Party,Numbing Lecretion
+4231,Beast,0xb0000000a0c643200220944142210040c2419060c6118440c25084600621904,1,1,43,38,31,52,Beast,Plant,Plant,Reptile,Plant,Beast,Turnip Rocket,Sneaky Raid,Healing Aroma,Rampant Howl
+4232,Plant,0x300000000b28534208251004102208c4142319460c6008460863104208651802,4,1,50,44,31,39,Bird,Reptile,Bird,Aquatic,Plant,Bird,Ill-omened,Angry Lam,Healing Aroma,Risky Feather
+4233,Aquatic,0x4000c0000d10c23410a0290814a0290a08a331481084280a00a028ca148320cc,5,1,47,51,35,31,Aquatic,Bird,Beast,Reptile,Aquatic,Reptile,Woodman Power,Chomp,Aquaponics,Jar Barrage
+4234,Plant,0x3000c0000a1ca33308852008088328c814a3294a1484310c0c8331080082294a,1,1,52,40,31,41,Bird,Reptile,Plant,Bird,Reptile,Beast,Aqua Stock,Insectivore,Tiny Catapult,Hare Dagger
+4235,Beast,0xc000020c4232008428ca04a3290a1083310a08a4294808a2200814a5210c,1,1,36,46,31,51,Beast,Aquatic,Bird,Bug,Bird,Reptile,Patient Hunter,Mite Bite,Smart Shot,Neuro Toxin
+4236,Beast,0x4208233002009040841084408631882146511440c64088200240942,2,1,37,44,31,52,Beast,Bird,Plant,Bird,Reptile,Beast,Cleanse Scent,Peace Treaty,Surprise Invasion,Luna Absorb
+4237,Plant,0x3000c0000508b2200ca0204814a320c810a4284a08a220080083308c00a4288a,2,1,50,40,31,43,Plant,Aquatic,Beast,Reptile,Bird,Beast,Revenge Arrow,Chomp,Smart Shot,Nut Throw
+4238,Aquatic,0x4000c0000a18934210802088088421080880288808a1314c0ca328c808a330cc,1,1,43,54,35,32,Aquatic,Bird,Plant,Bird,Bird,Bird,Refresh,Insectivore,Smart Shot,Cool Breeze
+4239,Aquatic,0x4000c0000408333310a0200a04a0200a0ca1308c1480310c10a030c8008428cc,1,1,48,47,35,34,Aquatic,Plant,Aquatic,Bug,Reptile,Beast,Aqua Vitality,Mite Bite,Tiny Catapult,Hare Dagger
+4240,Aquatic,0x4000c0000b04b4441481284804a220ca10a330ca0ca3308a10a320c80ca12008,3,1,51,46,35,32,Reptile,Aquatic,Aquatic,Bug,Plant,Plant,Aqua Vitality,Mite Bite,Prickly Trap,Aqua Deflect
+4241,Aquatic,0x4000c000060464410c8520ca048320080482214a008330c814a3280a1080280a,2,1,48,44,35,37,Plant,Bug,Reptile,Bug,Beast,Aquatic,Slippery Shield,Terror Chomp,Sugar Rush,Water Sphere
+4242,Aquatic,0x4400c000041c14030481290800a428480ca3208c048430cc008428c814a52908,0,1,47,42,35,40,Bug,Plant,Beast,Beast,Bug,Reptile,Revenge Arrow,Self Rally,Dull Grip,Neuro Toxin
+4243,Aquatic,0x4000c0000434914400a228ca10a328480c81310c0c8430880081314c00822048,5,1,46,45,35,38,Beast,Plant,Beast,Aquatic,Plant,Beast,Revenge Arrow,Crimson Water,Sweet Party,Hare Dagger
+4244,Reptile,0x5000c0000524822300a0204a00a2280810a4294c10a331481083304a1483210a,1,1,45,47,31,41,Beast,Aquatic,Aquatic,Beast,Aquatic,Reptile,Shipwreck,Self Rally,Hero's Bane,Jar Barrage
+4245,Beast,0xc00001204333148420c80884210800a5280a10a420ca04a028880482214a,0,1,37,43,31,53,Reptile,Beast,Bug,Bird,Aquatic,Bug,Scarab Curse,Insectivore,Hero's Bane,Numbing Lecretion
+4246,Aquatic,0x4000c0000918734310a5200a1484210804a4204c0c84200c1083314c0c83290a,1,1,51,46,35,32,Aquatic,Bug,Aquatic,Reptile,Plant,Plant,Shipwreck,Why So Serious,Sweet Party,Gas Unleash
+4247,Plant,0x3000c0000434934010a52108048228ca08a330080ca2290a10a4214a0c8530cc,7,1,52,40,31,41,Aquatic,Bird,Aquatic,Bug,Plant,Plant,Aqua Vitality,Terror Chomp,Prickly Trap,Gas Unleash
+4248,Plant,0x3000c0000214d4221083290808a3288a0c82308c0084310a0081290c08842848,0,1,47,42,31,44,Aquatic,Plant,Beast,Bird,Beast,Bird,Revenge Arrow,Dark Swoop,Sugar Rush,Puffy Smack
+4249,Beast,0xc000073092341082208a1083280810a4284c0c82310a04a4200a0483214c,7,1,39,44,31,50,Aquatic,Aquatic,Bug,Aquatic,Plant,Bug,Scarab Curse,Fish Hook,Sweet Party,Numbing Lecretion
+4250,Bug,0x1000c000032892320085214a00a021480880300c108330ca14a0304a088330ca,0,1,39,43,35,47,Beast,Bird,Reptile,Beast,Aquatic,Bird,Slippery Shield,Self Rally,Aquaponics,Puffy Smack
+4251,Plant,0x3000c0000c10b4220882284a08a521480ca0204a1084304a0c84208a04832008,1,1,51,40,31,42,Bird,Plant,Plant,Bird,Aquatic,Bug,Aqua Stock,Dark Swoop,Aquaponics,Numbing Lecretion
+4252,Aquatic,0x4000c000050c74220485210a14a3210a10a330ca1483200c0ca2308a08a43088,3,1,50,47,35,32,Bug,Aquatic,Plant,Reptile,Reptile,Bird,Refresh,Chomp,Tiny Catapult,Cool Breeze
+4253,Plant,0x3400c0000c3414240c8528c800a020c810a3280a0ca3304a08a1308c0ca5290a,1,1,53,38,31,42,Plant,Aquatic,Bird,Beast,Plant,Plant,Patient Hunter,Self Rally,Prickly Trap,Aqua Deflect
+4254,Aquatic,0x4e00c000082470320883280a00a1210a0885208c10a3208a1083204c1484284c,1,1,44,53,35,32,Bird,Bird,Aquatic,Beast,Aquatic,Reptile,Shipwreck,Self Rally,Hero's Bane,Jar Barrage
+4255,Bug,0x1200c0000510233404a4208a0c84288a0ca428080ca2208c1080280808a4288a,1,1,46,37,35,46,Bug,Plant,Aquatic,Plant,Plant,Bird,Shipwreck,Vegan Diet,Prickly Trap,Cool Breeze
+4256,Aquatic,0x4f00c0000a04123310a228c814a5210814a021080c80214c0c81300c1082300a,1,1,53,47,35,29,Aquatic,Reptile,Plant,Reptile,Plant,Aquatic,Aqua Stock,Chomp,Sweet Party,Water Sphere
+4257,Beast,0xc0000a18504210a3288a14a520c80c81208a0883208a0ca0290c14a13008,1,1,44,43,31,46,Aquatic,Plant,Plant,Reptile,Bird,Reptile,Refresh,Chomp,Headshot,Neuro Toxin
+4258,Beast,0x500c0000518a22310a3288a10a528480c83280a1081280a1084310804a3210c,3,1,39,47,31,47,Aquatic,Plant,Aquatic,Aquatic,Aquatic,Bug,Shipwreck,Crimson Water,Aquaponics,Grub Explode
+4259,Plant,0x3400c0000c0c743304a020c80ca4288804a3310804a330cc1480200a08833088,0,1,52,35,31,46,Bug,Bug,Reptile,Plant,Bug,Bird,Bulkwark,Forest Spirit,Third Glance,Puffy Smack
+4260,Plant,0x3c00c000043412420ca4284a0ca4280a00a4280a04a330ca00a5200a08a0290c,0,1,50,36,31,47,Plant,Beast,Beast,Plant,Bug,Bird,Woodman Power,Forest Spirit,Third Glance,Cool Breeze
+4261,Beast,0x300c0000b1872430ca329480ca52008008029480c81300a008421080085210c,0,1,40,38,31,55,Plant,Beast,Beast,Plant,Plant,Beast,Revenge Arrow,Forest Spirit,Sweet Party,Hare Dagger
+4262,Aquatic,0x4000c0000724642400a4290a0c82284a088028080ca3284c04a430cc04813048,5,1,47,43,35,39,Beast,Bird,Bug,Plant,Plant,Bug,Scarab Curse,Vegan Diet,Prickly Trap,Numbing Lecretion
+4263,Beast,0xc0000b2864430ca4280a10a0208808a3210a1080288a0885300c00802948,7,1,36,48,31,49,Plant,Bird,Bird,Aquatic,Aquatic,Beast,Blackmail,Crimson Water,Aquaponics,Hare Dagger
+4264,Beast,0xc000052c534310a4204a0c80200a0882300c108128cc008030ca1083210c,1,1,37,48,31,48,Aquatic,Bird,Beast,Plant,Aquatic,Aquatic,Revenge Arrow,Vegan Diet,Aquaponics,Water Sphere
+4265,Aquatic,0x4000c00005249223088528080880214a0885310a14a2300a0c8528cc0882300a,1,1,45,52,35,32,Bird,Bird,Plant,Bird,Reptile,Bird,Aqua Stock,Insectivore,Disarm,Puffy Smack
+4266,Plant,0x3000c000080c94320ca3284a148521080080300c1084284808a0290810a2290c,1,1,51,42,31,40,Plant,Beast,Bird,Reptile,Aquatic,Aquatic,Patient Hunter,Why So Serious,Aquaponics,Flanking Smack
+4267,Aquatic,0x4000c0000a0814130ca5288a0ca0280808842808108020480481290a00a42948,6,1,47,46,35,36,Plant,Bird,Bug,Plant,Aquatic,Beast,Bug Splat,Forest Spirit,Aquaponics,Nut Throw
+4268,Aquatic,0x4000c000040c2440108428c800a029080ca0310a008230081084210a00842048,7,1,44,48,35,37,Aquatic,Plant,Aquatic,Beast,Beast,Beast,Shipwreck,Self Rally,Sugar Rush,Hare Dagger
+4269,Plant,0x30080000070422430444080200241142002510840840090408431902044010c6,4,1,45,39,31,49,Bug,Beast,Bird,Beast,Bird,Bug,Heart Break,Nut Crack,Cockadoodledoo,Twin Needle
+4270,Plant,0x3000c000051414230482280a04a529480ca4308814a4288804a0300c0ca32948,1,1,55,32,31,46,Bug,Plant,Bug,Bug,Reptile,Plant,Scarab Curse,Mite Bite,Disarm,Aqua Deflect
+4271,Beast,0x80c341410441142042508c20823094200231806004118c200241882,7,1,33,44,31,56,Aquatic,Bird,Beast,Bug,Beast,Beast,Heroic Reward,Blood Taste,Branch Charge,Luna Absorb
+4272,Beast,0xc0000824333208a0280a108320ca04a5300a10a0280a08a3288808a428ca,5,1,34,50,31,49,Bird,Bug,Bird,Aquatic,Aquatic,Bird,Patient Hunter,Fish Hook,Hero's Bane,Cool Breeze
+4273,Aquatic,0x4000c0000d0423220084280a0c81204a0480210c008028cc04a031080ca4314a,1,1,47,41,35,41,Beast,Bug,Bug,Plant,Beast,Plant,Scarab Curse,Vegan Diet,Sugar Rush,Aqua Deflect
+4274,Aquatic,0x4000c000052034430c8128c80c84210a04a4310810a020c80ca5200a0c8230cc,0,1,53,42,35,34,Plant,Bug,Plant,Plant,Aquatic,Plant,Refresh,Vegan Diet,Hero's Bane,Gas Unleash
+4275,Aquatic,0x4000c0000b34823208a4288804a128ca148229480ca3280a008131080882284a,0,1,46,47,35,36,Bird,Reptile,Beast,Bug,Plant,Bird,Revenge Arrow,Mite Bite,Prickly Trap,Puffy Smack
+4276,Beast,0xc0000a0c443314a2204810a5290a00a0204810a1300814a128ca10a0280a,1,1,40,47,31,46,Reptile,Beast,Reptile,Aquatic,Aquatic,Aquatic,Slippery Shield,Crimson Water,Hero's Bane,Flanking Smack
+4277,Plant,0x3900c00008206314008228c810a321080ca0204804a4300c08a3290c0080208c,7,1,48,39,31,46,Beast,Plant,Bird,Aquatic,Bug,Beast,Patient Hunter,Crimson Water,Third Glance,Hare Dagger
+4278,Beast,0xc0000118d430048128ca08a120080ca430481483300c0084290a0c832108,1,1,41,40,31,52,Bug,Plant,Beast,Bird,Reptile,Plant,Revenge Arrow,Dark Swoop,Tiny Catapult,Gas Unleash
+4279,Plant,0x3000c0000a28c3330084210a10a228080080280a0c8030ca14a0314c10a32848,4,1,51,40,31,42,Beast,Beast,Reptile,Aquatic,Plant,Aquatic,Slippery Shield,Crimson Water,Sweet Party,Flanking Smack
+4280,Beast,0xc0000a0ca4230ca2210a00a228ca0ca030ca14a4310810a229081083214a,0,1,42,43,31,48,Plant,Plant,Aquatic,Beast,Reptile,Aquatic,Aqua Vitality,Self Rally,Disarm,Water Sphere
+4281,Aquatic,0x4000c000061084420c82210a0c8221481480308c0ca3300c0c8030ca04a330ca,7,1,55,40,35,34,Plant,Reptile,Plant,Plant,Plant,Bug,Aqua Stock,Vegan Diet,Prickly Trap,Grub Explode
+4282,Bug,0x1000c0000c20843208a3280a00a4288810a030c800823108088420cc08a430cc,4,1,36,45,35,48,Bird,Aquatic,Bird,Beast,Beast,Bird,Blackmail,Self Rally,Sugar Rush,Cool Breeze
+4283,Aquatic,0x4000c0000d2ca3340485214814a0284a0ca2290804a5300a0c83214a088330c8,3,1,50,43,35,36,Bug,Plant,Plant,Reptile,Bug,Bird,Aqua Stock,Chomp,Third Glance,Puffy Smack
+4284,Beast,0xc0000c3084340c80200a0ca421080ca430c8048320ca008020cc10a530cc,0,1,42,39,31,52,Plant,Plant,Beast,Plant,Bug,Aquatic,Revenge Arrow,Forest Spirit,Dull Grip,Flanking Smack
+4285,Bug,0x1000c000083414440c8228c8108320080c82314808a131481082210a04a5200c,2,1,44,40,35,45,Plant,Plant,Aquatic,Aquatic,Bird,Bug,Shipwreck,Fish Hook,Smart Shot,Grub Explode
+4286,Plant,0x3300c0000b2860340480204800a2280a08a3288c08a3210c1083210a04a1210a,1,1,46,41,31,46,Bug,Bird,Aquatic,Beast,Bird,Bug,Shipwreck,Self Rally,Smart Shot,Grub Explode
+4287,Plant,0x3000c0000910142210a028480084284a04a1314808a430c800a0214800a42008,0,1,45,40,31,48,Aquatic,Bug,Beast,Beast,Bird,Beast,Woodman Power,Death Mark,Smart Shot,Nut Throw
+4288,Aquatic,0x4000c000091cb12208a120ca10a029080082300810a428ca0ca3210a0ca4210c,5,1,47,49,35,33,Bird,Beast,Plant,Aquatic,Aquatic,Plant,Refresh,Crimson Water,Hero's Bane,Aqua Deflect
+4289,Plant,0x3000c0000b3013140ca229080ca320c80c81308804802008008428c80c83284c,7,1,56,32,31,45,Plant,Plant,Beast,Plant,Bug,Plant,Revenge Arrow,Forest Spirit,Dull Grip,Gas Unleash
+4290,Beast,0xc0000d1410010084284814a329080c853108048330cc108328880082314c,0,1,39,41,31,53,Beast,Plant,Aquatic,Reptile,Bug,Beast,Shipwreck,Chomp,Dull Grip,Hare Dagger
+4291,Beast,0xc0000224b34304a028880ca02108108428481080210c00a2290c10a0284a,0,1,38,45,31,50,Bug,Aquatic,Beast,Plant,Aquatic,Aquatic,Woodman Power,Forest Spirit,Aquaponics,Flanking Smack
+4292,Aquatic,0x4000c0000c34522300a3210a14a1294a108131080c832948008028c80083280c,0,1,46,46,35,37,Beast,Aquatic,Beast,Reptile,Plant,Beast,Revenge Arrow,Chomp,Sweet Party,Hare Dagger
+4293,Aquatic,0x4000c0000818232214812808108128ca00a4280c04a420480084214c00a1300a,0,1,44,46,35,39,Reptile,Beast,Beast,Aquatic,Bug,Beast,Revenge Arrow,Fish Hook,Third Glance,Nut Throw
+4294,Beast,0xc000091c42441485204a0ca428480ca3300c0080304a08a020c8108220cc,0,1,41,43,31,49,Reptile,Plant,Bird,Plant,Beast,Aquatic,Patient Hunter,Forest Spirit,Sugar Rush,Water Sphere
+4295,Plant,0x300000000b107213102108c2042410c41440180600240886042419460c641846,4,1,52,36,31,45,Aquatic,Reptile,Bug,Bug,Beast,Plant,Sticky Goo,Blood Taste,Branch Charge,Leek Leak
+4296,Plant,0x3000c000081c44400ca0280a10a320ca1082214804a4288c08a528cc00a3290c,1,1,49,41,31,43,Plant,Aquatic,Bird,Aquatic,Bug,Beast,Patient Hunter,Crimson Water,Third Glance,Nut Throw
+4297,Aquatic,0x4000c0000b2832220c83288804a2200800a2294a04a330c8048528cc04a3290a,4,1,46,40,35,43,Plant,Beast,Bug,Bug,Bug,Bug,Bug Splat,Mite Bite,Third Glance,Grub Explode
+4298,Aquatic,0x4000c0000b2824440483204a14a420ca108020c800a4308a0c83294c148320ca,2,1,50,45,35,34,Bug,Aquatic,Plant,Reptile,Beast,Reptile,Aqua Stock,Chomp,Sinister Strike,Jar Barrage
+4299,Plant,0x3000c000072c83340c85200a08a420480ca4280c0ca4314c10a1300c008028ca,7,1,53,38,31,42,Plant,Plant,Aquatic,Bird,Plant,Beast,Aqua Vitality,Dark Swoop,Prickly Trap,Hare Dagger
+4300,Plant,0x3000c000071c83331083200a04a0210a10a4290a0c83204a0c81200c0084300a,6,1,52,38,31,43,Aquatic,Aquatic,Plant,Bug,Plant,Beast,Aqua Stock,Mite Bite,Sweet Party,Hare Dagger
+4301,Beast,0x700c000030c632310a2200a008028ca0ca03088008229080c80290a1081204a,7,1,39,43,31,51,Aquatic,Plant,Plant,Beast,Beast,Aquatic,Aqua Stock,Death Mark,Sugar Rush,Water Sphere
+4302,Aquatic,0x4000c0000b20334200a1284a0c83280800a4210c08a420cc048028ca00832108,1,1,43,45,35,41,Beast,Beast,Bug,Plant,Bird,Beast,Bug Splat,Vegan Diet,Smart Shot,Hare Dagger
+4303,Plant,0x3000c000040c132314822108008521081084288a088028ca14a020cc10a3294c,1,1,51,43,31,39,Reptile,Aquatic,Reptile,Beast,Bird,Aquatic,Slippery Shield,Death Mark,Headshot,Flanking Smack
+4304,Aquatic,0x4000c000061874220c8020c8108028880ca531081082200a0ca1200c00802108,0,1,50,46,35,33,Plant,Plant,Plant,Aquatic,Aquatic,Beast,Refresh,Fish Hook,Aquaponics,Hare Dagger
+4305,Bug,0x1000c000021444240c82204a048420ca10a0290a10a320cc14a2210a10a0310c,0,1,45,41,35,43,Plant,Aquatic,Reptile,Bug,Aquatic,Aquatic,Slippery Shield,Terror Chomp,Hero's Bane,Flanking Smack
+4306,Plant,0x3000c00002203023148420ca108320c80ca0214c0083288a00a528cc10a52888,1,1,51,40,31,42,Reptile,Plant,Beast,Aquatic,Beast,Aquatic,Woodman Power,Fish Hook,Sugar Rush,Flanking Smack
+4307,Aquatic,0x4000c00008049312048028ca008328c80885204800a3314c10a3290a08852808,7,1,41,50,35,38,Bug,Bird,Aquatic,Beast,Beast,Bird,Aqua Vitality,Death Mark,Sinister Strike,Puffy Smack
+4308,Plant,0x3c0000000c2cd44204420802082208c20c200882142109441440100410600886,1,1,54,39,31,40,Bug,Plant,Reptile,Bird,Reptile,Aquatic,Spike Throw,Soothing Song,Poo Fling,Black Bubble
+4309,Plant,0x3000c0000d30242304a329080c83200a108330c8148531480083294c0ca128c8,6,1,54,36,31,43,Bug,Aquatic,Beast,Plant,Reptile,Plant,Revenge Arrow,Vegan Diet,Tiny Catapult,Aqua Deflect
+4310,Bird,0x200000000720c422082310041424090208441904002110821061104400231086,7,1,31,55,35,43,Bird,Bird,Aquatic,Reptile,Beast,Beast,Swift Escape,Sneaky Raid,Branch Charge,Luna Absorb
+4311,Aquatic,0x4000c0000604c24210a4200a00a020ca10a320480883208810a3284c0c80310c,5,1,45,52,35,32,Aquatic,Aquatic,Aquatic,Beast,Bird,Plant,Aqua Vitality,Self Rally,Headshot,Gas Unleash
+4312,Plant,0x3000c000020c33130c8528c810a528ca0ca230081483284c008430c80ca0280a,2,1,56,36,31,41,Plant,Plant,Beast,Aquatic,Reptile,Plant,Revenge Arrow,Crimson Water,Tiny Catapult,Aqua Deflect
+4313,Beast,0xc0000410821310a4284a0ca229080c80210c0ca1284800a5310a08a3204c,7,1,41,42,31,50,Aquatic,Plant,Beast,Plant,Plant,Bird,Woodman Power,Forest Spirit,Prickly Trap,Cool Breeze
+4314,Plant,0x3000c000070cd13114a3200a088520c810a228ca0c85288a04a0284a0885310a,3,1,51,41,31,41,Reptile,Aquatic,Bug,Bird,Plant,Bird,Scarab Curse,Insectivore,Sweet Party,Puffy Smack
+4315,Beast,0xc0000b24122414a220c8108020880ca028cc0c8428cc08a430cc00a43148,5,1,41,43,31,49,Reptile,Plant,Bird,Aquatic,Plant,Beast,Patient Hunter,Fish Hook,Sweet Party,Nut Throw
+4316,Aquatic,0x4000c000031032430ca42108088420ca08a0314800a4284c0ca0300c108228ca,1,1,46,49,35,34,Plant,Bird,Plant,Bird,Beast,Aquatic,Refresh,Insectivore,Sinister Strike,Water Sphere
+4317,Aquatic,0x4000c0000610433204a320ca14a2208a0c82308800a2288a088428c80c832808,0,1,49,44,35,36,Bug,Plant,Bird,Reptile,Beast,Plant,Blackmail,Chomp,Sinister Strike,Gas Unleash
+4318,Plant,0x3000c0000c20a320048529080ca428880c8428cc08a428480c8028ca00a1304c,1,1,53,35,31,45,Bug,Plant,Plant,Plant,Bird,Beast,Aqua Stock,Forest Spirit,Smart Shot,Nut Throw
+4319,Aquatic,0x4000c0000d3044220ca420ca0ca221480c83210c00a530c80081280810842008,5,1,49,44,35,36,Plant,Plant,Beast,Plant,Beast,Aquatic,Revenge Arrow,Forest Spirit,Sinister Strike,Water Sphere
+4320,Beast,0xc0000504924400a4200808a2288a10a030cc0c81200c00a430ca14a128ca,4,1,38,44,31,51,Beast,Aquatic,Beast,Bird,Plant,Reptile,Woodman Power,Dark Swoop,Sweet Party,Neuro Toxin
+4321,Bird,0x2000c00006283224088120ca0ca0210a0ca4200c04a3314a1483310c10a430ca,4,1,38,50,35,41,Bird,Plant,Reptile,Plant,Bug,Aquatic,Bulkwark,Forest Spirit,Third Glance,Flanking Smack
+4322,Bug,0x1000c000072083330485294a1083290a0083284a08a33048008328ca1483310a,3,1,40,40,35,49,Bug,Beast,Beast,Aquatic,Bird,Reptile,Revenge Arrow,Fish Hook,Smart Shot,Jar Barrage
+4323,Aquatic,0x4000c0000b10503204a2204a008528080ca128cc00a0214a0ca1210c08a030c8,0,1,46,44,35,39,Bug,Plant,Plant,Beast,Beast,Bird,Refresh,Death Mark,Sinister Strike,Cool Breeze
+4324,Aquatic,0x4000c0000434331100812848108421080082210804822048108030080c80208c,0,1,45,47,35,37,Beast,Beast,Aquatic,Aquatic,Bug,Plant,Shipwreck,Fish Hook,Dull Grip,Gas Unleash
+4325,Bug,0x1000c000013444320ca328ca0084204808a4314c1084290a0ca420ca0c80200a,0,1,45,38,35,46,Plant,Bird,Plant,Beast,Aquatic,Plant,Refresh,Death Mark,Aquaponics,Gas Unleash
+4326,Plant,0x3000c000082821340ca0284a088121480084210a0882284c0483294c008030c8,0,1,47,39,31,47,Plant,Beast,Bug,Bird,Bird,Beast,Bug Splat,Insectivore,Headshot,Hare Dagger
+4327,Plant,0x3000c0000c10a33314a32048048329081480294a00a520ca0881210a0482290a,0,1,51,37,31,45,Reptile,Reptile,Bird,Bug,Beast,Bug,Blackmail,Terror Chomp,Sinister Strike,Numbing Lecretion
+4328,Beast,0xc000082022221080210a1085204a04a12088048420cc10a428880885304c,1,1,36,47,31,50,Aquatic,Bug,Aquatic,Aquatic,Bug,Bird,Aqua Vitality,Fish Hook,Dull Grip,Puffy Smack
+4329,Aquatic,0x4000c0000210922308a320ca0084290810a428cc14a0200a0c8220ca108420ca,2,1,47,50,35,32,Bird,Aquatic,Plant,Beast,Reptile,Aquatic,Aqua Stock,Death Mark,Disarm,Water Sphere
+4330,Aquatic,0x4000c0000810543200a3294a1083290a148030ca10a3310c0084280c1483204a,5,1,47,49,35,33,Beast,Reptile,Beast,Aquatic,Aquatic,Reptile,Revenge Arrow,Fish Hook,Hero's Bane,Jar Barrage
+4331,Beast,0xc0000824b44400a4204a0ca028080080290a0084204c14812888088430ca,7,1,37,42,31,54,Beast,Beast,Reptile,Plant,Beast,Bird,Bulkwark,Forest Spirit,Sugar Rush,Puffy Smack
+4332,Beast,0xc0000430724214a2280a0c8121080480290a00a0208a0c80214c14803008,5,1,44,38,31,51,Reptile,Bug,Plant,Plant,Beast,Reptile,Aqua Stock,Vegan Diet,Sinister Strike,Jar Barrage
+4333,Plant,0x3000c000081462420c8429080ca428080c84280a0083280a10a031080080204a,5,1,53,36,31,44,Plant,Plant,Aquatic,Plant,Beast,Beast,Aqua Vitality,Forest Spirit,Sugar Rush,Hare Dagger
+4334,Reptile,0x500000000b189343082109441040104208450882104110420863104404201806,1,1,42,50,31,41,Bird,Bird,Bird,Aquatic,Aquatic,Bug,Ill-omened,Swallow,Deep Sea Gore,Chemical Warfare
+4335,Plant,0x3000c0000534a2321480284814a42948008020cc10a2214800a3314800a53108,2,1,50,39,31,44,Reptile,Beast,Beast,Reptile,Aquatic,Beast,Woodman Power,Chomp,Hero's Bane,Nut Throw
+4336,Plant,0x3000c0000b182333108028ca00a5210a148221480ca2214810a4304a0480310c,1,1,52,39,31,42,Aquatic,Reptile,Aquatic,Beast,Plant,Bug,Aqua Vitality,Self Rally,Prickly Trap,Numbing Lecretion
+4337,Plant,0x3000c0000a0cc4241081290804a228ca10a5300a0c84214c08a3310a08a430c8,1,1,49,43,31,41,Aquatic,Aquatic,Bird,Bug,Plant,Bird,Patient Hunter,Mite Bite,Sweet Party,Cool Breeze
+4338,Plant,0x3000c0000110a2320482290a1084200a1483290c00a0280a10a2300c08a22008,1,1,49,42,31,42,Bug,Reptile,Aquatic,Aquatic,Beast,Bird,Aqua Vitality,Fish Hook,Sinister Strike,Cool Breeze
+4339,Aquatic,0x4000c0000108c33408a4290814a02108008230c81080200a0ca0310a10a0310a,2,1,47,50,35,32,Bird,Beast,Plant,Reptile,Aquatic,Aquatic,Refresh,Chomp,Aquaponics,Flanking Smack
+4340,Aquatic,0x4000c00003082222088420c8108028880ca42048008028480880308c0c8130ca,2,1,46,49,35,34,Bird,Plant,Bird,Aquatic,Beast,Plant,Blackmail,Fish Hook,Sugar Rush,Gas Unleash
+4341,Aquatic,0x4000c0000528a4130ca3290810a0290a04a428080083208c10a330cc14a23008,5,1,48,47,35,34,Plant,Bug,Aquatic,Aquatic,Beast,Reptile,Aqua Vitality,Crimson Water,Sugar Rush,Neuro Toxin
+4342,Plant,0x3000c0000c0c942310a0290a10812008008128c8088030cc0ca521080ca02008,1,1,51,41,31,41,Aquatic,Beast,Plant,Aquatic,Bird,Plant,Refresh,Fish Hook,Headshot,Aqua Deflect
+4343,Beast,0xc000061cd323008129080c8328480480310c10a430c800a529080c83288c,1,1,39,40,31,54,Beast,Bug,Beast,Plant,Aquatic,Plant,Woodman Power,Vegan Diet,Hero's Bane,Gas Unleash
+4344,Beast,0xc0000a04c430008428881080208a008520cc0482210c0080290c08803048,1,1,33,44,31,56,Beast,Beast,Beast,Aquatic,Bug,Bird,Revenge Arrow,Fish Hook,Dull Grip,Puffy Smack
+4345,Plant,0x3000c0000208933308a320ca00852948008029480ca12008148428cc008428ca,4,1,49,38,31,46,Bird,Beast,Reptile,Beast,Plant,Beast,Bulkwark,Death Mark,Prickly Trap,Hare Dagger
+4346,Beast,0xc0000d2ca3240482290a08a0290800a5304c1082308c0482200808a52908,1,1,34,45,31,54,Bug,Beast,Bug,Bird,Aquatic,Bird,Bug Splat,Dark Swoop,Aquaponics,Cool Breeze
+4347,Aquatic,0x4000c000022044440885280810a2294a14a230cc108230ca008020c80ca5214c,1,1,47,50,35,32,Bird,Reptile,Beast,Aquatic,Aquatic,Plant,Revenge Arrow,Crimson Water,Aquaponics,Aqua Deflect
+4348,Plant,0x3000c0000a18334204a3204a14a229081080210a0ca1304804a0280c0083294c,1,1,52,36,31,45,Bug,Aquatic,Bug,Reptile,Plant,Beast,Scarab Curse,Chomp,Prickly Trap,Hare Dagger
+4349,Aquatic,0x4000c0000730a234088020c8008320080c8428c8008520cc0084210c0c842808,1,1,45,45,35,39,Bird,Plant,Beast,Beast,Beast,Plant,Revenge Arrow,Death Mark,Sugar Rush,Gas Unleash
+4350,Plant,0x3000c0000420b234148220081082214a0081208810a0280c0ca128080081294c,0,1,51,40,31,42,Reptile,Beast,Plant,Aquatic,Aquatic,Beast,Refresh,Fish Hook,Hero's Bane,Hare Dagger
+4351,Aquatic,0x4000c0000134443200a3200800a428c808a4308804a5308a10a228cc14a4280a,0,1,44,48,35,37,Beast,Bird,Aquatic,Beast,Bug,Reptile,Aqua Vitality,Self Rally,Third Glance,Neuro Toxin
+4352,Aquatic,0x4000c0000c0c823300a5208a008328c810832048108530ca04a431081080294a,5,1,43,50,35,36,Beast,Aquatic,Bug,Beast,Aquatic,Aquatic,Scarab Curse,Death Mark,Aquaponics,Water Sphere
+4353,Beast,0xc0000a2c33440c8128ca048529081480210c00a4280c0481290c10a0310c,1,1,40,40,31,53,Plant,Reptile,Bug,Bug,Beast,Aquatic,Bug Splat,Terror Chomp,Sinister Strike,Flanking Smack
+4354,Aquatic,0x4000c0000b1083421484214800a0210810a3280a10a4210c108420080080314a,4,1,45,51,35,33,Reptile,Aquatic,Aquatic,Beast,Aquatic,Beast,Shipwreck,Self Rally,Hero's Bane,Hare Dagger
+4355,Beast,0xc0000314c43400a328ca08a328ca10a320c814a3304814a5290800822008,1,1,38,45,31,50,Beast,Aquatic,Reptile,Bird,Reptile,Beast,Slippery Shield,Dark Swoop,Disarm,Hare Dagger
+4356,Beast,0xc000091ca12408802008008220081084310a0084308c14a1210a04a0280c,1,1,36,44,31,53,Bird,Aquatic,Reptile,Beast,Beast,Bug,Slippery Shield,Death Mark,Sugar Rush,Grub Explode
+4357,Aquatic,0x4000c00004082303148020480ca320ca0c84304a10a3210c14a128ca08843148,3,1,52,47,35,30,Reptile,Plant,Reptile,Plant,Aquatic,Bird,Slippery Shield,Forest Spirit,Hero's Bane,Puffy Smack
+4358,Plant,0x3300c0000c10214300a2200814a0280810a1280c04a4290a04a1214a0884200a,7,1,49,39,31,45,Beast,Aquatic,Bug,Reptile,Bug,Bird,Scarab Curse,Chomp,Third Glance,Puffy Smack
+4359,Aquatic,0x4000c000071c84240ca128080ca0280a04a3208a148430c808a2208c00802848,4,1,49,44,35,36,Plant,Bug,Bird,Plant,Reptile,Beast,Patient Hunter,Forest Spirit,Tiny Catapult,Hare Dagger
+4360,Beast,0xc0000604a412088028c81080208a0c84300a108528080c85308a04a5208a,0,1,40,44,31,49,Bird,Plant,Plant,Aquatic,Aquatic,Bug,Aqua Stock,Fish Hook,Aquaponics,Grub Explode
+4361,Plant,0x3000c0000724c3320c80200a0883200a0ca0210a0c8128c80ca2314c10a5280c,0,1,56,37,31,40,Plant,Plant,Plant,Bird,Plant,Aquatic,Refresh,Insectivore,Sweet Party,Flanking Smack
+4362,Plant,0x3000c0000c2c424200a3214814a328c80881210a0084294c1482314c08a428cc,1,1,49,41,31,43,Beast,Bird,Reptile,Reptile,Beast,Bird,Bulkwark,Chomp,Sugar Rush,Cool Breeze
+4363,Aquatic,0x4300c000082882430ca1290800822808088431080c84304c0481200a1083210a,0,1,47,46,35,36,Plant,Bird,Bug,Beast,Plant,Aquatic,Bug Splat,Death Mark,Sweet Party,Water Sphere
+4364,Beast,0xc0000328d2421080280a08a220ca0084288a14a221080883280a00a330cc,1,1,35,47,31,51,Aquatic,Beast,Bird,Bird,Reptile,Beast,Blackmail,Dark Swoop,Disarm,Nut Throw
+4365,Beast,0xc0000c2043430884208a008428ca04a2204c10a528c81083294a0ca3284c,0,1,37,45,31,51,Bird,Bug,Aquatic,Beast,Aquatic,Plant,Shipwreck,Death Mark,Hero's Bane,Aqua Deflect
+4366,Plant,0x3000c0000b30c2320c85204808822808008120ca10802808008020cc00a5294a,2,1,47,40,31,46,Plant,Beast,Beast,Bird,Aquatic,Beast,Revenge Arrow,Insectivore,Aquaponics,Nut Throw
+4367,Plant,0x3000c0000414532204a228c804a02808008320080885210c04a4300c1481290a,1,1,49,36,31,48,Bug,Beast,Bug,Bug,Bird,Reptile,Scarab Curse,Mite Bite,Headshot,Jar Barrage
+4368,Beast,0xc000031c33040482214a0ca0290a148430ca108528cc10a4200c14843148,3,1,43,43,31,47,Bug,Reptile,Aquatic,Plant,Aquatic,Reptile,Aqua Vitality,Forest Spirit,Aquaponics,Jar Barrage
+4369,Plant,0x3000c0000b3043240ca5200a0c8520c80c8021080084290804a028ca04a4310a,1,1,54,32,31,47,Plant,Plant,Bug,Plant,Beast,Bug,Scarab Curse,Vegan Diet,Sugar Rush,Grub Explode
+4370,Aquatic,0x4000c0000d30143214a5280a1480280a00a4294c0085210c14a2214a00a5210c,3,1,48,45,35,36,Reptile,Beast,Reptile,Reptile,Beast,Beast,Slippery Shield,Why So Serious,Sugar Rush,Nut Throw
+4371,Plant,0x30000000090c22120422094408421044104419440c4008840821190214401884,1,1,51,41,31,41,Bug,Aquatic,Bird,Bird,Plant,Reptile,Balloon Pop,Peace Treaty,Wooden Stab,Scale Dart
+4372,Aquatic,0x400000000b3431400c220844102510440c431882146019441063100208200804,1,1,50,49,35,30,Plant,Plant,Aquatic,Aquatic,Reptile,Bird,Swift Escape,Angry Lam,Surprise Invasion,Early Bird
+4373,Plant,0x3000c000011c223310832908148428ca108228881083284c0884290c08a330c8,2,1,49,47,31,37,Aquatic,Aquatic,Bird,Reptile,Aquatic,Bird,Blackmail,Why So Serious,Aquaponics,Cool Breeze
+4374,Aquatic,0x4000c000020c144014a521081081204a0ca131080ca0210a00a328480482310a,2,1,50,44,35,35,Reptile,Plant,Beast,Aquatic,Plant,Bug,Woodman Power,Fish Hook,Prickly Trap,Numbing Lecretion
+4375,Beast,0x700c000082472330ca3284808a320080c8130080c83200c0c84214800a130ca,0,1,43,39,31,51,Plant,Plant,Plant,Bird,Plant,Beast,Aqua Stock,Dark Swoop,Sweet Party,Nut Throw
+4376,Beast,0xc0000614a24408a520480c802888148528ca00a42948048520cc14a1308a,1,1,41,41,31,51,Bird,Reptile,Bug,Plant,Beast,Reptile,Bug Splat,Vegan Diet,Sinister Strike,Neuro Toxin
+4377,Aquatic,0x4000c0000710c440108228c81480210a0ca4294c1084214c04a3288a10a2280a,5,1,49,49,35,31,Aquatic,Plant,Bug,Reptile,Aquatic,Aquatic,Scarab Curse,Why So Serious,Aquaponics,Flanking Smack
+4378,Aquatic,0x4000c0000c24b2220ca228080ca5280a14a420ca008329080081308c0c80310c,4,1,51,42,35,36,Plant,Reptile,Beast,Plant,Beast,Plant,Revenge Arrow,Forest Spirit,Sugar Rush,Gas Unleash
+4379,Plant,0x3000400001149034104010040c2208c20c62110404211904002019420c241004,7,1,54,35,31,44,Aquatic,Plant,Beast,Plant,Bug,Plant,Single Combat,Vegetal Bite,Mystic Rush,Carrot Hammer
+4380,Bug,0x10004000083073320441094204211142c823090204201102046410c40c401842,5,1,42,34,35,53,Bug,Bird,Bug,Bug,Bug,Plant,Bug Noise,Blood Taste,Mystic Rush,Cattail Slap
+4381,Plant,0x300040000b0cb414044008c20c210942142208420c20080210410902cc221082,0,1,57,35,31,41,Bug,Reptile,Aquatic,Plant,Plant,Plant,Scale Dart,Vegetal Bite,Bamboo Clan,Carrot Hammer
+4382,Bird,0x200040000518242410410842004010840864090408211844046119440c441946,4,1,32,53,35,44,Aquatic,Bird,Bug,Beast,Bird,Plant,Bug Noise,Piercing Sound,Eggbomb,Cattail Slap
+4383,Aquatic,0x400000000424c1200840108410450882104410c400440882046108c414410942,0,1,45,50,35,34,Bird,Aquatic,Bug,Aquatic,Beast,Reptile,Bug Noise,Swallow,Ivory Stab,Scale Dart
+4384,Plant,0x3000c0000a2c52331482214a10a328ca08a0310c0ca4288c1084294c08a2310a,0,1,51,44,31,38,Reptile,Bird,Aquatic,Aquatic,Plant,Bird,Shipwreck,Crimson Water,Prickly Trap,Cool Breeze
+4385,Aquatic,0x4000c000080422420c83280a0ca4290a0482214810a4310810a0294a108028ca,4,1,49,48,35,32,Plant,Bug,Aquatic,Plant,Aquatic,Aquatic,Aqua Vitality,Forest Spirit,Hero's Bane,Water Sphere
+4386,Beast,0xc0000d28c4240c832888048221480c84280800a0210c1084294c00842848,0,1,39,40,31,54,Plant,Plant,Aquatic,Bug,Beast,Beast,Shipwreck,Terror Chomp,Sinister Strike,Hare Dagger
+4387,Beast,0xc0000304a2430c8120ca0884204a04a520080ca1210a0ca02108008330ca,0,1,41,39,31,53,Plant,Bug,Plant,Bird,Plant,Beast,Refresh,Insectivore,Prickly Trap,Hare Dagger
+4388,Beast,0xc0000d10c2320482210a0481280a0483204c0c85310c0ca5210c14a22108,7,1,43,36,31,54,Bug,Bug,Plant,Bug,Plant,Reptile,Refresh,Terror Chomp,Sweet Party,Neuro Toxin
+4389,Aquatic,0x4000c0000104421300a328880c82288a08a0314c10a0280c14a0210c1080300a,0,1,47,50,35,32,Beast,Bird,Reptile,Plant,Aquatic,Aquatic,Slippery Shield,Vegan Diet,Hero's Bane,Water Sphere
+4390,Beast,0xc0000b18d3440ca021480080200a0881280a04a4284a1083290c0c81310a,1,1,39,42,31,52,Plant,Bird,Aquatic,Beast,Bug,Plant,Shipwreck,Death Mark,Third Glance,Gas Unleash
+4391,Beast,0xc0000434234100a0208800a0214a10a2204c0084310c10a430080ca328cc,1,1,36,44,31,53,Beast,Aquatic,Aquatic,Beast,Beast,Plant,Aqua Vitality,Self Rally,Sugar Rush,Aqua Deflect
+4392,Beast,0x600c0000234324314a4288a0c83288a008430c810a3304c00a330cc00a0288c,0,1,38,42,31,53,Reptile,Beast,Beast,Plant,Aquatic,Beast,Woodman Power,Vegan Diet,Hero's Bane,Nut Throw
+4393,Beast,0x904c322004208041423104200600904146408840861188400641002,0,1,37,43,31,53,Beast,Beast,Bird,Reptile,Reptile,Beast,Ill-omened,Sneaky Raid,Surprise Invasion,Rampant Howl
+4394,Plant,0x300000000824c34308421044044010440c4518440c431884102510c40c6218c6,2,1,54,37,31,42,Bird,Plant,Aquatic,Bug,Plant,Plant,Shelter,Sunder Claw,Wooden Stab,Leek Leak
+4395,Aquatic,0x4000c00009147033108428880ca120ca00a330ca0ca220cc00a1290804a3310c,0,1,47,44,35,38,Aquatic,Beast,Beast,Plant,Plant,Bug,Woodman Power,Forest Spirit,Prickly Trap,Grub Explode
+4396,Reptile,0x5000c0000110b2420080210a10a328880ca0310a10a320c80482214a0ca02948,1,1,48,42,31,43,Beast,Plant,Bug,Aquatic,Aquatic,Plant,Bug Splat,Crimson Water,Hero's Bane,Aqua Deflect
+4397,Aquatic,0x4000c0000828824110852908088320ca0c83214c0ca4288a1485210a08a12808,0,1,49,49,35,31,Aquatic,Plant,Reptile,Bird,Plant,Bird,Bulkwark,Insectivore,Prickly Trap,Cool Breeze
+4398,Aquatic,0x400000000a2c421200200882102310840c651102104118c20440100200631042,0,1,45,47,35,37,Beast,Plant,Bug,Aquatic,Aquatic,Beast,Barb Strike,Angry Lam,Deep Sea Gore,Rampant Howl
+4399,Bug,0x100000000504b443042208040c23080200231002144318c20460104604420944,6,1,44,33,35,52,Bug,Beast,Bug,Plant,Reptile,Bug,Bug Noise,Vegetal Bite,Scaly Lunge,Twin Needle
+4400,Aquatic,0x4000c0000510303300a5280a14a320880ca0210a14a430c80c8228cc10a020ca,1,1,52,45,35,32,Beast,Plant,Plant,Reptile,Reptile,Aquatic,Aqua Stock,Chomp,Disarm,Flanking Smack
+4401,Plant,0x3000c0000208b233108029080ca228c81484200a148228c800a428cc1483290a,5,1,56,38,31,39,Aquatic,Reptile,Beast,Plant,Reptile,Reptile,Woodman Power,Forest Spirit,Tiny Catapult,Jar Barrage
+4402,Beast,0xc000071c731214a3200800a02908148428cc10a528480ca3210c0ca1284c,1,1,44,41,31,48,Reptile,Reptile,Plant,Beast,Aquatic,Plant,Refresh,Self Rally,Hero's Bane,Aqua Deflect
+4403,Aquatic,0x4000c0000b1453330c8120c81080200a0883290c1085200800a1308c00a22108,0,1,44,50,35,35,Plant,Bird,Beast,Aquatic,Aquatic,Beast,Woodman Power,Fish Hook,Aquaponics,Nut Throw
+4404,Aquatic,0x4000c000052c404410a1210a1080290a10a3208c0080284a0c82208a0ca328cc,0,1,48,49,35,32,Aquatic,Aquatic,Plant,Aquatic,Beast,Plant,Aqua Stock,Fish Hook,Sugar Rush,Aqua Deflect
+4405,Aquatic,0x4000c000071084110ca0294a0c80290814a3200a0c8030c80c8330cc0ca0300c,7,1,57,40,35,32,Plant,Reptile,Plant,Plant,Plant,Plant,Aqua Stock,Vegan Diet,Sweet Party,Aqua Deflect
+4406,Aquatic,0x4000c000012c12411083214a08a320ca04a5314a00a4308c1480200a14a5280a,0,1,47,48,35,34,Aquatic,Bug,Reptile,Bird,Beast,Reptile,Bulkwark,Dark Swoop,Sinister Strike,Neuro Toxin
+4407,Plant,0x3000c00006202243148321480883214a04a428cc008230ca00a0280c1083300c,1,1,48,40,31,45,Reptile,Bug,Beast,Bird,Beast,Aquatic,Woodman Power,Insectivore,Sugar Rush,Water Sphere
+4408,Beast,0xc000061c92230ca1290a0ca5294808a3280c0ca0310a0ca4294c00a42048,1,1,43,39,31,51,Plant,Bird,Plant,Plant,Plant,Beast,Refresh,Forest Spirit,Prickly Trap,Nut Throw
+4409,Beast,0xc0000904a30308a2210808a2208a0483310a14a528c804a4308a0ca3208c,1,1,39,42,31,52,Bird,Bug,Bug,Bird,Reptile,Plant,Scarab Curse,Dark Swoop,Disarm,Aqua Deflect
+4410,Plant,0x3700c000021c24221085210800a520880c82280a0c8528c8108331480881214a,1,1,51,41,31,41,Aquatic,Plant,Aquatic,Beast,Plant,Bird,Shipwreck,Self Rally,Sweet Party,Puffy Smack
+4411,Beast,0xc0000c0422340482214a0ca3294804a4300a08a020cc00a020c808803048,3,1,36,42,31,55,Bug,Bug,Beast,Plant,Bird,Bird,Woodman Power,Forest Spirit,Smart Shot,Puffy Smack
+4412,Beast,0xc0000d10324100a228080c83290a08a228cc1481204a048229480881314c,0,1,38,43,31,52,Beast,Bird,Bug,Plant,Reptile,Bird,Bug Splat,Vegan Diet,Tiny Catapult,Puffy Smack
+4413,Plant,0x3000c0000b184443108020ca0482280a0482210a0083208c0ca320ca04803088,0,1,50,35,31,48,Aquatic,Bug,Plant,Bug,Beast,Bug,Refresh,Terror Chomp,Sugar Rush,Numbing Lecretion
+4414,Aquatic,0x4000c0000828c24400a1200a0082208a0ca3308c1081288800833088088030ca,7,1,43,48,35,38,Beast,Plant,Beast,Beast,Aquatic,Bird,Revenge Arrow,Death Mark,Aquaponics,Puffy Smack
+4415,Aquatic,0x4000c000083032240883284a1081294808a0290c10a020880081280c0481210c,6,1,42,52,35,35,Bird,Bird,Beast,Aquatic,Aquatic,Bug,Revenge Arrow,Fish Hook,Hero's Bane,Numbing Lecretion
+4416,Aquatic,0x4000c0000c18a3431082288a0c84210a0484288c0881314c108228c8088120cc,0,1,45,51,35,33,Aquatic,Bug,Aquatic,Plant,Bird,Bird,Shipwreck,Vegan Diet,Headshot,Puffy Smack
+4417,Aquatic,0x4000c000042c73410885204a108128ca00a331081084300c04a2304814a32808,2,1,45,50,35,34,Bird,Beast,Bug,Aquatic,Aquatic,Reptile,Scarab Curse,Fish Hook,Aquaponics,Neuro Toxin
+4418,Aquatic,0x4208000008204444042008040c2008440c401102104018420c24108600230906,0,1,50,43,35,36,Bug,Plant,Plant,Plant,Aquatic,Beast,Turnip Rocket,Vegetal Bite,Deep Sea Gore,Luna Absorb
+4419,Aquatic,0x4600c0000410132210a220480c8220080c8320cc08802088048528c804a3300a,1,1,48,45,35,36,Aquatic,Plant,Bug,Plant,Bird,Bug,Bug Splat,Vegan Diet,Headshot,Grub Explode
+4420,Aquatic,0x4000c0000524344210a0204a0ca1280a08a0214a10a3204c1484204a00a0210a,4,1,47,50,35,32,Aquatic,Bird,Reptile,Plant,Aquatic,Beast,Bulkwark,Forest Spirit,Hero's Bane,Nut Throw
+4421,Aquatic,0x450800000914812404a0280200a5108410a2194c10a41148042330020040190a,1,1,43,47,35,39,Bug,Aquatic,Bug,Beast,Aquatic,Beast,Sticky Goo,Self Rally,Hero's Bane,Night Steal
+4422,Plant,0x3000c000052883420ca42948048528880081300c00a3300c088430cc1483280a,5,1,50,37,31,46,Plant,Beast,Bird,Bug,Beast,Reptile,Blackmail,Terror Chomp,Sinister Strike,Jar Barrage
+4423,Aquatic,0x4000c0000324d43008a4210a108020080ca230ca0885310c0c82288a10a32008,5,1,47,51,35,31,Bird,Plant,Plant,Aquatic,Bird,Aquatic,Aqua Stock,Fish Hook,Headshot,Flanking Smack
+4424,Beast,0xc0000d1c24330ca4288814a5294a1082200800a3214a0ca2208c08a4310a,7,1,41,43,31,49,Plant,Aquatic,Plant,Reptile,Beast,Bird,Refresh,Chomp,Sinister Strike,Cool Breeze
+4425,Aquatic,0x4000000009349430048520c808a120ca08a4300814a420880ca4214a0c81314c,2,1,49,46,35,34,Bug,Bird,Plant,Bird,Reptile,Plant,Refresh,Dark Swoop,Disarm,Gas Unleash
+4426,Plant,0x3000c0000408c42314a42808048520c80ca028cc1084314a1084290800a530cc,1,1,52,39,31,42,Reptile,Plant,Aquatic,Bug,Aquatic,Beast,Shipwreck,Terror Chomp,Aquaponics,Nut Throw
+4427,Aquatic,0x400000000c18943008410904148410c4106428c40c8430c8106119060c41214c,1,1,50,49,35,30,Bird,Aquatic,Aquatic,Reptile,Plant,Plant,Swift Escape,Why So Serious,Sweet Party,Cattail Slap
+4428,Aquatic,0x4000c000073472331082290800a5214808a330ca0480284c00a2294a148420ca,0,1,44,48,35,37,Aquatic,Bird,Beast,Beast,Bug,Reptile,Woodman Power,Self Rally,Dull Grip,Jar Barrage
+4429,Beast,0xc0000204d032108220880ca421080085294c1082210a10a030c80c802048,2,1,40,45,31,48,Aquatic,Beast,Aquatic,Plant,Aquatic,Plant,Aqua Vitality,Forest Spirit,Aquaponics,Gas Unleash
+4430,Bird,0x2000c000080c4343048428c814a3214a00a2200c10a2294c1080310a10a130cc,4,1,34,54,35,41,Bug,Beast,Aquatic,Reptile,Aquatic,Aquatic,Shipwreck,Chomp,Hero's Bane,Flanking Smack
+4431,Aquatic,0x4000c0000330c4420c85200a0ca2284800a0204a10a1200c008520c810a0208a,2,1,47,47,35,35,Plant,Beast,Beast,Plant,Aquatic,Aquatic,Revenge Arrow,Forest Spirit,Hero's Bane,Flanking Smack
+4432,Plant,0x3000c000030cc23410a328c80ca0290a0ca3210c1481304814a1314c0083290c,3,1,56,37,31,40,Aquatic,Plant,Reptile,Plant,Reptile,Beast,Slippery Shield,Forest Spirit,Tiny Catapult,Hare Dagger
+4433,Aquatic,0x4000c0000114433210832108108129480080284c008430cc00a2300810a4284a,6,1,42,51,35,36,Aquatic,Beast,Beast,Aquatic,Beast,Aquatic,Woodman Power,Fish Hook,Sugar Rush,Flanking Smack
+4434,Reptile,0x5000000006082043082208020c2508c2144418860c2519061025100608641806,5,1,49,45,31,39,Bird,Reptile,Aquatic,Plant,Plant,Bird,Shelter,Vegetal Bite,Bamboo Clan,Risky Feather
+4435,Bird,0x2000000002143230082109020845088404631102042319040c42088604441006,7,1,33,49,35,47,Bird,Bug,Plant,Bird,Bug,Bug,Shroom's Grace,Peace Treaty,Mystic Rush,Twin Needle
+4436,Aquatic,0x4d0000000924c4240844108a1040204a0c241106108029420080190604a530c2,1,1,45,49,35,35,Bird,Plant,Beast,Aquatic,Aquatic,Bug,Revenge Arrow,Swallow,Aquaponics,Grub Explode
+4437,Bird,0x2000c0000c1cb2420482214a0084200a04a5208c04a2310c0ca0300c1084300a,1,1,34,47,35,48,Bug,Bug,Plant,Beast,Bug,Aquatic,Refresh,Death Mark,Third Glance,Water Sphere
+4438,Beast,0xa00c0000620744200a52848108220ca108130cc0082290800a328cc0ca0314c,2,1,36,44,31,53,Beast,Aquatic,Beast,Aquatic,Beast,Plant,Woodman Power,Fish Hook,Sugar Rush,Aqua Deflect
+4439,Plant,0x3000c0000710d2331084214a0c8320c804a3290a0ca4280c04a430ca0c802908,5,1,55,34,31,44,Aquatic,Bug,Bug,Plant,Plant,Plant,Scarab Curse,Vegan Diet,Prickly Trap,Gas Unleash
+4440,Beast,0xc0000114b4230ca4280a008029080082310a048120ca0084200810813148,4,1,36,41,31,56,Plant,Beast,Beast,Beast,Bug,Aquatic,Revenge Arrow,Death Mark,Dull Grip,Water Sphere
+4441,Plant,0x3000c0000324420308a52848148120c80ca030080ca528081081310a0883290a,5,1,53,41,31,39,Bird,Plant,Aquatic,Reptile,Plant,Bird,Shipwreck,Why So Serious,Prickly Trap,Puffy Smack
+4442,Aquatic,0x4000c000062493320c83210a0082284a1084290c0c8320ca108130880ca3214c,5,1,50,46,35,33,Plant,Aquatic,Aquatic,Beast,Plant,Plant,Shipwreck,Death Mark,Sweet Party,Aqua Deflect
+4443,Aquatic,0x4000c0000418b32210a328080885294a04a0284a0884310a0ca528ca08a22108,1,1,44,51,35,34,Aquatic,Bug,Plant,Bird,Bird,Bird,Refresh,Insectivore,Headshot,Cool Breeze
+4444,Plant,0x3000c0000120423310a32088088028ca14a5300804a0314a1084210a0c84280c,7,1,52,41,31,40,Aquatic,Reptile,Aquatic,Bird,Bug,Plant,Shipwreck,Insectivore,Third Glance,Gas Unleash
+4445,Aquatic,0x4000c0000910432214a3294810a0290800a5304a1484200a00a2284a08a4300c,2,1,46,49,35,34,Reptile,Beast,Beast,Aquatic,Reptile,Bird,Woodman Power,Crimson Water,Tiny Catapult,Cool Breeze
+4446,Aquatic,0x4000c0000414a2340483210814a3200810a3204c10a1308a08a3290c0ca4304c,5,1,48,49,35,32,Bug,Aquatic,Bird,Reptile,Aquatic,Plant,Patient Hunter,Chomp,Hero's Bane,Aqua Deflect
+4447,Aquatic,0x4000c000061414230885290a14a4288a0ca330ca0ca428c80ca4314c0ca4210a,7,1,54,43,35,32,Bird,Plant,Plant,Reptile,Plant,Plant,Refresh,Chomp,Prickly Trap,Aqua Deflect
+4448,Aquatic,0x4000c000032022340081208a0c81288a00a3214810a420ca0ca430c80883300c,2,1,46,47,35,36,Beast,Beast,Plant,Plant,Aquatic,Bird,Refresh,Vegan Diet,Hero's Bane,Puffy Smack
+4449,Aquatic,0x4000c0000528544300a4210a10a520081082214a0ca3280a0080294c10842108,3,1,45,50,35,34,Beast,Aquatic,Beast,Aquatic,Plant,Aquatic,Revenge Arrow,Crimson Water,Prickly Trap,Water Sphere
+4450,Aquatic,0x4000c0000d2841430483214a1083290a0c80210808a1304810a2280a14a0284a,0,1,48,49,35,32,Bug,Plant,Aquatic,Aquatic,Bird,Reptile,Aqua Vitality,Fish Hook,Smart Shot,Neuro Toxin
+4451,Beast,0xc00005184443088428c800a5280a0080284a10a3210c1480288800802948,3,1,35,45,31,53,Bird,Beast,Reptile,Beast,Aquatic,Beast,Bulkwark,Self Rally,Hero's Bane,Hare Dagger
+4452,Aquatic,0x4000c000061cb34414a3200a10a220ca14a128880885310c0c84280810a42008,1,1,50,50,35,29,Reptile,Reptile,Plant,Aquatic,Bird,Aquatic,Aqua Stock,Crimson Water,Headshot,Flanking Smack
+4453,Plant,0x3000c000032893330c84288a108420ca14a0290a0880304c10a1200c0c84204c,2,1,54,41,31,38,Plant,Reptile,Aquatic,Aquatic,Bird,Plant,Aqua Vitality,Fish Hook,Headshot,Gas Unleash
+4454,Reptile,0x5000c0000b28a2420483208804842108008228ca0c8430cc10a4200a0083208a,1,1,45,40,31,48,Bug,Beast,Aquatic,Bug,Plant,Beast,Aqua Vitality,Terror Chomp,Sweet Party,Hare Dagger
+4455,Aquatic,0x4f00c000011054130ca0294a0ca428c80ca0210a0083288a0c82308c00a1290c,1,1,51,41,35,37,Plant,Plant,Plant,Plant,Beast,Beast,Aqua Stock,Forest Spirit,Sugar Rush,Nut Throw
+4456,Plant,0x30080000090c34320c4008420024080204611106102209020c43190610241886,1,1,52,38,31,43,Plant,Bug,Plant,Beast,Aquatic,Aquatic,Shroom's Grace,Nut Crack,Shell Jab,Upstream Swim
+4457,Beast,0xd080000082063430420108200242104144120081420310c08a318ca008020c4,1,1,38,42,31,53,Bug,Reptile,Bird,Beast,Reptile,Beast,Patient Hunter,Nut Crack,Poo Fling,Hare Dagger
+4458,Aquatic,0x4200c0000104244204a4214a00a328080082204a0084310a0c80284a14852148,1,1,46,43,35,40,Bug,Beast,Plant,Beast,Beast,Reptile,Aqua Stock,Self Rally,Sugar Rush,Jar Barrage
+4459,Plant,0x3000c00007041423008020c814a0208a10a029480ca5204804a3300810a3314c,5,1,52,39,31,42,Beast,Aquatic,Bug,Reptile,Plant,Aquatic,Scarab Curse,Chomp,Prickly Trap,Flanking Smack
+4460,Beast,0xc0000918720414a1290a108420080c84284814a328ca108121480ca4200c,1,1,45,43,31,45,Reptile,Plant,Aquatic,Aquatic,Reptile,Plant,Shipwreck,Fish Hook,Disarm,Aqua Deflect
+4461,Plant,0x3400c000012c534300a1204a0884210a00a0210a008330ca0885300a0ca0208c,0,1,46,40,31,47,Beast,Beast,Bird,Bird,Beast,Plant,Blackmail,Insectivore,Sugar Rush,Aqua Deflect
+4462,Bird,0x2000c0000508d33200a320081085290a14a520cc08a1310c0084294810852908,1,1,32,55,35,42,Beast,Reptile,Beast,Aquatic,Bird,Aquatic,Revenge Arrow,Fish Hook,Smart Shot,Water Sphere
+4463,Plant,0x3000c0000730544314a3280810a428ca1082310808a1208a10a4208a0882314a,1,1,49,47,31,37,Reptile,Aquatic,Aquatic,Aquatic,Bird,Bird,Aqua Vitality,Crimson Water,Smart Shot,Puffy Smack
+4464,Plant,0x3000c000051c83140881290a048128080ca528cc00a3200c08a320880c85314a,1,1,50,38,31,45,Bird,Plant,Bird,Bug,Beast,Plant,Patient Hunter,Terror Chomp,Sinister Strike,Gas Unleash
+4465,Aquatic,0x4400c000061c42440c84208a1084208a08a520cc04a0308a00a028881085288a,0,1,45,49,35,35,Plant,Bird,Beast,Aquatic,Bug,Aquatic,Woodman Power,Fish Hook,Third Glance,Water Sphere
+4466,Aquatic,0x4000c00002143342048520ca14a228c80ca33108008420c808a0210c10a5280c,0,1,47,47,35,35,Bug,Plant,Bird,Reptile,Beast,Aquatic,Patient Hunter,Chomp,Sugar Rush,Flanking Smack
+4467,Aquatic,0x4000c000021883130c82210a1084284814a4204804a028cc0881200800852108,7,1,47,47,35,35,Plant,Reptile,Bird,Aquatic,Bug,Beast,Blackmail,Fish Hook,Third Glance,Hare Dagger
+4468,Aquatic,0x4000c000051c122200a0200800a220880484290c088120480480280a10a2310a,0,1,42,47,35,40,Beast,Bug,Bug,Beast,Bird,Aquatic,Bug Splat,Self Rally,Headshot,Flanking Smack
+4469,Aquatic,0x400000000c14704210441144102511440043094210610946042418860c640904,1,1,46,49,35,34,Aquatic,Beast,Bug,Aquatic,Aquatic,Plant,Sticky Goo,Angry Lam,Clam Slash,Leek Leak
+4470,Aquatic,0x4000c0000308c4301080204a04a4208a00a3314c108231080482308c10a22048,2,1,44,49,35,36,Aquatic,Beast,Bug,Bug,Aquatic,Aquatic,Bug Splat,Mite Bite,Aquaponics,Flanking Smack
+4471,Plant,0x3000c0000608a2330ca2208a14a0200800a420c81080208800852048048030c8,4,1,51,37,31,45,Plant,Beast,Beast,Reptile,Aquatic,Bug,Revenge Arrow,Chomp,Aquaponics,Numbing Lecretion
+4472,Aquatic,0x4000c0000330b3430ca221480c80288a10a3200c008328cc088331081480314a,1,1,49,47,35,33,Plant,Aquatic,Bird,Plant,Beast,Reptile,Blackmail,Vegan Diet,Sugar Rush,Jar Barrage
+4473,Plant,0x3000c0000404822108852008108228481483300c00a5210c14a4310c08a0300c,2,1,50,43,31,40,Bird,Reptile,Reptile,Aquatic,Beast,Bird,Slippery Shield,Fish Hook,Sinister Strike,Cool Breeze
+4474,Beast,0xc0000c3450240085200a00a5290a0ca128c80c8030cc0c83294800a0200c,7,1,40,38,31,55,Beast,Plant,Plant,Beast,Plant,Beast,Aqua Stock,Self Rally,Sweet Party,Nut Throw
+4475,Beast,0xc0000c0444330884284810a028880c8020cc10a0204a0c83290c00a3200a,1,1,39,45,31,49,Bird,Plant,Plant,Aquatic,Aquatic,Beast,Aqua Stock,Crimson Water,Hero's Bane,Nut Throw
+4476,Reptile,0x500000000b183343082308c410451042146508c6104110c60865104400610806,6,1,44,49,31,40,Bird,Reptile,Bird,Aquatic,Aquatic,Beast,Ill-omened,Swallow,Deep Sea Gore,Rampant Howl
+4477,Bird,0x28000000081cc222082311021024108208441944046111020444180200431086,5,1,30,53,35,46,Bird,Bird,Bug,Aquatic,Bug,Beast,Barb Strike,Angry Lam,Grub Surprise,Night Steal
+4478,Plant,0x300000000b04504214450802142210c4004318c2146018440060104414601942,5,1,55,37,31,41,Reptile,Beast,Beast,Reptile,Reptile,Reptile,Nitro Leap,Sneaky Raid,Surprise Invasion,Tiny Swing
+4479,Beast,0xc000061c64420480280a0ca3208a10a030cc00a520ca1480310808a3294c,3,1,39,43,31,51,Bug,Aquatic,Reptile,Plant,Beast,Bird,Bulkwark,Forest Spirit,Sinister Strike,Cool Breeze
+4480,Aquatic,0x400000000424a44210a420c8008029081084290c0080208c14a4210a0080300a,1,1,44,49,35,36,Aquatic,Aquatic,Reptile,Beast,Beast,Beast,Slippery Shield,Death Mark,Sugar Rush,Hare Dagger
+4481,Aquatic,0x48000000040823120ca12048008328c8148220480cc3210c0ca4290a14a22148,1,1,54,42,35,33,Plant,Reptile,Plant,Beast,Plant,Reptile,Refresh,Death Mark,Seed Bullet,Neuro Toxin
+4482,Aquatic,0x400000000b0c634210a1284a0c8028ca00a0308808a4210800a4280a0084204a,7,1,43,48,35,38,Aquatic,Beast,Beast,Plant,Bird,Beast,Woodman Power,Vegan Diet,Smart Shot,Hare Dagger
+4483,Aquatic,0x40000000062073341042090414400944086408c410431106142108c208651846,5,1,47,53,35,29,Aquatic,Bird,Reptile,Reptile,Aquatic,Bird,Ivory Chop,Kotaro bite,Deep Sea Gore,Risky Feather
+4484,Beast,0x2144224142110c40c2209020c251044006211040421114214200902,7,1,44,38,31,51,Reptile,Plant,Bug,Plant,Beast,Reptile,Sticky Goo,Vegetal Bite,Merry Legion,Critical Escape
+4485,Plant,0x300000000b1c14210c2510421443094408621046004008c208621002044318c6,7,1,50,39,31,44,Plant,Bird,Bird,Reptile,Beast,Bug,Ill-omened,Kotaro bite,Ivory Stab,Twin Needle
+4486,Plant,0x3000c0000a0493231084200a08842908008220481084300c148228c808a03048,1,1,48,45,31,40,Aquatic,Beast,Reptile,Bird,Aquatic,Bird,Bulkwark,Insectivore,Aquaponics,Cool Breeze
+4487,Aquatic,0x480800000b1083440c21080200a009420023288200642104108021021020314a,1,1,44,48,35,37,Plant,Beast,Aquatic,Beast,Beast,Aquatic,Shipwreck,Self Rally,Merry Legion,Upstream Swim
+4488,Bird,0x2000c0000828b13200a221080ca0210a0c8520cc0484308a10a3204800a3210c,4,1,35,48,35,46,Beast,Plant,Aquatic,Plant,Bug,Beast,Aqua Vitality,Forest Spirit,Dull Grip,Nut Throw
+4489,Plant,0x3000c000023440321480280800a0200a0480214a148228080082214c0883310a,5,1,50,38,31,45,Reptile,Bug,Beast,Beast,Reptile,Bird,Revenge Arrow,Self Rally,Tiny Catapult,Puffy Smack
+4490,Plant,0x3000c0000704544404a020c8148520ca0481290c088228cc048421080ca1200c,2,1,52,35,31,46,Bug,Bug,Bug,Reptile,Bird,Plant,Bug Splat,Why So Serious,Headshot,Aqua Deflect
+4491,Plant,0x3000c0000134d0300c82214a0080214a0483300a00a4280a0c84300c10a5200a,0,1,51,36,31,46,Plant,Bug,Plant,Beast,Beast,Aquatic,Aqua Stock,Death Mark,Sinister Strike,Flanking Smack
+4492,Beast,0xc000061482330081210a14a4284a0885210a10a0288a00a028c81083288c,7,1,36,47,31,50,Beast,Bird,Beast,Reptile,Aquatic,Aquatic,Woodman Power,Chomp,Hero's Bane,Water Sphere
+4493,Aquatic,0x4000c0000a34532208a028ca108520c80ca1310a0ca5310a0881300c0c80214c,7,1,49,48,35,32,Bird,Plant,Bird,Aquatic,Plant,Plant,Blackmail,Fish Hook,Prickly Trap,Gas Unleash
+4494,Beast,0x6047421108420ca008028ca10a1214810a32888048329480c84290c,3,1,38,45,31,50,Aquatic,Aquatic,Bug,Beast,Aquatic,Plant,Bug Splat,Death Mark,Hero's Bane,Gas Unleash
+4495,Plant,0x3000c0000834834200a029080ca0284a0c82294c04a1208c14a4200c0ca228ca,5,1,56,33,31,44,Beast,Plant,Reptile,Plant,Bug,Plant,Slippery Shield,Forest Spirit,Third Glance,Aqua Deflect
+4496,Plant,0x3000c000072cc3341482200804a4294808a1280800a0290c0c8330c81080280c,4,1,51,39,31,43,Reptile,Bird,Plant,Bug,Beast,Aquatic,Aqua Stock,Mite Bite,Sinister Strike,Water Sphere
+4497,Bug,0x1000c000071c84201085294a0483280a04a0310800a1284c00a4290800a2304a,1,1,38,37,35,54,Aquatic,Bug,Beast,Bug,Beast,Beast,Woodman Power,Terror Chomp,Sinister Strike,Nut Throw
+4498,Beast,0xc000030832220ca2284a0082204808a2300804a029480c84208a1085304c,2,1,39,42,31,52,Plant,Bird,Plant,Beast,Bug,Aquatic,Aqua Stock,Death Mark,Third Glance,Water Sphere
+4499,Plant,0x3000000002284312004310040c2410c408451942004418840841084200210882,4,1,46,40,31,47,Beast,Bird,Bird,Plant,Beast,Beast,Heart Break,Vegetal Bite,Ivory Stab,Luna Absorb
+4500,Plant,0x30000000081444430c4008840c450842042218820c2218020c4508460c6108c2,6,1,59,31,31,43,Plant,Bug,Plant,Plant,Plant,Plant,Shroom's Grace,Drain Bite,Bamboo Clan,Leek Leak
+4501,Beast,0xc000042062340c8028c80c8428ca1084300a00a020cc14a221480ca43108,0,1,44,40,31,49,Plant,Aquatic,Reptile,Plant,Beast,Plant,Slippery Shield,Vegan Diet,Sinister Strike,Aqua Deflect
+4502,Aquatic,0x4000c000081882440c83280800a229481483280a0482200800a328cc10852808,1,1,47,45,35,37,Plant,Reptile,Beast,Beast,Bug,Aquatic,Woodman Power,Self Rally,Dull Grip,Water Sphere
+4503,Beast,0xc000042824320c8320481485204810a4310800a1288a0ca4210a0ca030c8,2,1,44,40,31,49,Plant,Aquatic,Plant,Reptile,Beast,Plant,Refresh,Why So Serious,Sinister Strike,Aqua Deflect
+4504,Plant,0x3000c0000d10a0240880210a0483200a0483214a08a4290a0c80280c0ca0314c,0,1,51,37,31,45,Bird,Bug,Plant,Bug,Bird,Plant,Aqua Stock,Terror Chomp,Smart Shot,Aqua Deflect
+4505,Aquatic,0x4000c00007246214008320ca0c81208a0480308804a320c81481294a14823108,5,1,50,42,35,37,Beast,Bug,Reptile,Plant,Bug,Reptile,Bulkwark,Vegan Diet,Third Glance,Jar Barrage
+4506,Beast,0xc0000604433210a0200a0ca321480080288804a330c80880300c14842008,0,1,39,43,31,51,Aquatic,Beast,Bird,Plant,Bug,Reptile,Blackmail,Forest Spirit,Third Glance,Jar Barrage
+4507,Plant,0x3000c0000a20732210a5284814a1284800a1314c1084294a08a430080ca12908,1,1,51,42,31,40,Aquatic,Beast,Bird,Reptile,Aquatic,Plant,Patient Hunter,Chomp,Aquaponics,Aqua Deflect
+4508,Aquatic,0x4000c0000b243223008320080081200a0885290a008020ca08a020080ca02908,5,1,42,48,35,39,Beast,Bird,Bird,Beast,Beast,Plant,Patient Hunter,Death Mark,Sugar Rush,Aqua Deflect
+4509,Aquatic,0x4000c0000110a4111084208a1482210810a0214a14a3288a14a328cc0ca0290c,7,1,53,48,35,28,Aquatic,Aquatic,Reptile,Reptile,Reptile,Plant,Slippery Shield,Why So Serious,Disarm,Aqua Deflect
+4510,Beast,0xc0000310234204a0280a0481208804a4210c1085300a0c85200800a12108,1,1,38,39,31,56,Bug,Bug,Plant,Bug,Aquatic,Beast,Aqua Stock,Terror Chomp,Aquaponics,Nut Throw
+4511,Plant,0x3000c00009184233048028480c8428ca008320cc00a030c8088221080c85304c,1,1,50,36,31,47,Bug,Beast,Bird,Plant,Beast,Plant,Blackmail,Vegan Diet,Sinister Strike,Gas Unleash
+4512,Beast,0xc000022874420c8529080ca428480485294c04a430ca0ca0294c0ca020cc,2,1,45,35,31,53,Plant,Bug,Plant,Plant,Bug,Plant,Refresh,Forest Spirit,Third Glance,Aqua Deflect
+4513,Plant,0x3000c000061c2334048320ca0c84200810a4300c0ca1214c0083310c0c8320ca,0,1,54,35,31,44,Bug,Aquatic,Beast,Plant,Plant,Plant,Revenge Arrow,Vegan Diet,Prickly Trap,Gas Unleash
+4514,Beast,0xc000042c44230080210a008128c800a0310a1083294a08a4310a04a1294a,7,1,33,44,31,56,Beast,Beast,Bird,Beast,Aquatic,Bug,Patient Hunter,Death Mark,Aquaponics,Grub Explode
+4515,Plant,0x3000c0000134432308a3284a04832088148430cc0c823088108230ca08a5210c,0,1,51,41,31,41,Bird,Reptile,Aquatic,Bug,Plant,Bird,Shipwreck,Terror Chomp,Sweet Party,Cool Breeze
+4516,Beast,0xc0000c04734114a5214800a0288808a3310c108228ca0484210a088428ca,2,1,36,46,31,51,Reptile,Bird,Bug,Beast,Aquatic,Bird,Bug Splat,Self Rally,Aquaponics,Puffy Smack
+4517,Plant,0x3000c0000834434300a020ca08a528c80ca130081084308c08a0314c0ca5200a,0,1,50,41,31,42,Beast,Plant,Bird,Bird,Aquatic,Plant,Patient Hunter,Dark Swoop,Aquaponics,Aqua Deflect
+4518,Aquatic,0x4800c0000c247232108028080ca220881485280c00a2214c10a328480082288a,1,1,47,48,35,34,Aquatic,Reptile,Aquatic,Plant,Beast,Beast,Aqua Vitality,Forest Spirit,Sinister Strike,Hare Dagger
+4519,Beast,0xc0000a04b2420c84290a00a521081085200814a4204804a0290a00a52008,0,1,39,41,31,53,Plant,Aquatic,Bug,Beast,Reptile,Beast,Scarab Curse,Self Rally,Disarm,Nut Throw
+4520,Reptile,0x5000c000063463421085204a14a428080c80300a04a4300a10a130c80485308c,4,1,49,42,31,42,Aquatic,Plant,Aquatic,Reptile,Bug,Bug,Aqua Vitality,Chomp,Third Glance,Numbing Lecretion
+4521,Beast,0xc0000534422410a0284a04a428c80082210a1084200c108521481084290c,4,1,36,48,31,49,Aquatic,Beast,Aquatic,Bug,Aquatic,Aquatic,Shipwreck,Mite Bite,Aquaponics,Water Sphere
+4522,Plant,0x3000c0000818b43310a0200800a0208810a0290c10a328c800a4214a0080208a,1,1,46,43,31,44,Aquatic,Aquatic,Beast,Beast,Aquatic,Beast,Woodman Power,Self Rally,Hero's Bane,Hare Dagger
+4523,Plant,0x3000c000072863240c802848108020080c85204c14a2208a0ca2294c10a5288c,0,1,57,38,31,38,Plant,Plant,Plant,Aquatic,Reptile,Aquatic,Refresh,Fish Hook,Disarm,Flanking Smack
+4524,Plant,0x3000c0000a2423301082200810a420ca1485214808a3210810a3300814843048,0,1,52,45,31,36,Aquatic,Reptile,Aquatic,Aquatic,Bird,Reptile,Aqua Vitality,Crimson Water,Smart Shot,Jar Barrage
+4525,Aquatic,0x40000000022cd313104410821025108210401084006111021064090408640902,5,1,43,55,35,31,Aquatic,Aquatic,Aquatic,Aquatic,Beast,Bird,Swift Escape,Angry Lam,Merry Legion,Risky Feather
+4526,Beast,0x808b43400a208420c232082002318820021080408c5094c08250944,0,1,34,44,31,55,Beast,Beast,Bird,Plant,Beast,Bird,Triple Threat,Vegetal Bite,Branch Charge,Early Bird
+4527,Aquatic,0x400800000804242300a520ca14a3284a0ca2290804a4300a0c8428c80883280a,0,1,49,44,35,36,Beast,Plant,Plant,Reptile,Bug,Bird,Aqua Stock,Chomp,Third Glance,Puffy Smack
+4528,Aquatic,0x4000c0000b0853430885290a04a2290a08a3200a00a3310a08a420480083300a,7,1,40,50,35,39,Bird,Bird,Bird,Bug,Beast,Beast,Patient Hunter,Mite Bite,Sinister Strike,Hare Dagger
+4529,Beast,0xc0000104d03200a328480485214a1484214a108030c80c8328c80ca13148,4,1,42,40,31,51,Beast,Reptile,Plant,Bug,Aquatic,Plant,Aqua Stock,Terror Chomp,Aquaponics,Aqua Deflect
+4530,Beast,0xc000032824331080214a00a4200a0c80208a1485290c0481200a08a42008,1,1,39,43,31,51,Aquatic,Plant,Bug,Beast,Reptile,Bird,Bug Splat,Self Rally,Tiny Catapult,Cool Breeze
+4531,Plant,0x3000c0000a2c71330ca3210a0c8020080080214a0c84314804a528c81083308a,4,1,54,35,31,44,Plant,Beast,Bug,Plant,Plant,Aquatic,Scarab Curse,Vegan Diet,Sweet Party,Water Sphere
+4532,Beast,0xc0000118624410a0284a048028480481294c008420ca1480304a00a3200c,1,1,37,41,31,55,Aquatic,Bug,Reptile,Bug,Beast,Beast,Bulkwark,Terror Chomp,Sugar Rush,Nut Throw
+4533,Beast,0xc0000318944310a1290a1484204a00a4210c0ca2204c08a130cc00803108,1,1,38,44,31,51,Aquatic,Beast,Bird,Reptile,Plant,Beast,Patient Hunter,Why So Serious,Prickly Trap,Hare Dagger
+4534,Aquatic,0x4000c0000c04902300812888048228481485310a10a531481080290a0880280c,1,1,45,50,35,34,Beast,Reptile,Aquatic,Bug,Aquatic,Bird,Shipwreck,Terror Chomp,Hero's Bane,Puffy Smack
+4535,Bug,0x1000c0000210432300a0210a0c83294a08a428ca0ca0284a0ca3310814a53008,5,1,47,36,35,46,Beast,Bird,Plant,Plant,Plant,Reptile,Refresh,Vegan Diet,Prickly Trap,Neuro Toxin
+4536,Aquatic,0x4000c0000110342408a42088008120ca0085294c1080214c0482280c048020c8,7,1,42,47,35,40,Bird,Beast,Bug,Beast,Aquatic,Bug,Bug Splat,Death Mark,Aquaponics,Numbing Lecretion
+4537,Aquatic,0x4000c0000704b3220ca128ca0c8128081083290c04a529480ca3280c0484200c,1,1,51,42,35,36,Plant,Aquatic,Plant,Plant,Bug,Bug,Refresh,Vegan Diet,Third Glance,Numbing Lecretion
+4538,Bug,0x1000c0000614924410a4288a0085280a0085280800a3204c008331080484308c,4,1,37,38,35,54,Aquatic,Beast,Beast,Beast,Beast,Bug,Revenge Arrow,Death Mark,Sinister Strike,Numbing Lecretion
+4539,Beast,0xc0000318422310a3208a00a4204a088320cc1084304c00a3214a0085204a,2,1,33,47,31,53,Aquatic,Bird,Beast,Beast,Aquatic,Beast,Woodman Power,Self Rally,Aquaponics,Hare Dagger
+4540,Bug,0x100000000528b243082328880c230888002008c404a308c6048010cc04a3290a,7,1,41,35,35,53,Bird,Beast,Bug,Plant,Bug,Bug,Bug Splat,Vegetal Bite,Third Glance,Grub Explode
+4541,Plant,0x3800c0000a20242214842148108520ca1084290808a1290a008020cc08852888,1,1,48,45,31,40,Reptile,Aquatic,Beast,Aquatic,Bird,Bird,Revenge Arrow,Fish Hook,Smart Shot,Puffy Smack
+4542,Beast,0xc0000c3482220ca228c81084214a1481300810a5300c008530c80c82294c,0,1,42,43,31,48,Plant,Reptile,Beast,Aquatic,Aquatic,Plant,Revenge Arrow,Fish Hook,Hero's Bane,Gas Unleash
+4543,Plant,0x3000c000062c633210a328080c8420ca14a028ca0c80210a0884294a0883300a,0,1,53,41,31,39,Aquatic,Reptile,Bird,Plant,Plant,Bird,Blackmail,Vegan Diet,Sweet Party,Puffy Smack
+4544,Aquatic,0x4000c0000630b3430880210a08a1200a0c82200a08a5300a0ca430080c80208a,0,1,48,48,35,33,Bird,Plant,Plant,Bird,Bird,Plant,Refresh,Dark Swoop,Smart Shot,Gas Unleash
+4545,Reptile,0x5000c000022c202200a3290a108428c800a0308c00a2200a08a42888088130ca,0,1,40,47,31,46,Beast,Beast,Bird,Aquatic,Beast,Bird,Patient Hunter,Fish Hook,Sinister Strike,Puffy Smack
+4546,Plant,0x3000c0000914b43304802108108520ca008331481083310a00a028480ca02848,0,1,49,39,31,45,Bug,Beast,Beast,Aquatic,Aquatic,Plant,Woodman Power,Fish Hook,Aquaponics,Aqua Deflect
+4547,Plant,0x30004000071414320822110210441082044209040c231082084119440c451902,6,1,51,40,31,42,Bird,Bug,Bird,Aquatic,Plant,Plant,Heart Break,Swallow,Bamboo Clan,Cattail Slap
+4548,Beast,0xc0000c04a3431081288a00a4200a1483300c08a2300c0ca4280c10a320c8,0,1,39,46,31,48,Aquatic,Reptile,Plant,Beast,Bird,Aquatic,Refresh,Self Rally,Smart Shot,Flanking Smack
+4549,Aquatic,0x4000c000061043421083210a108320080c82288c14a2204c1085308c00a32848,0,1,48,50,35,31,Aquatic,Plant,Aquatic,Aquatic,Reptile,Beast,Shipwreck,Fish Hook,Disarm,Nut Throw
+4550,Plant,0x3000c000091c53320c8120ca08a1280a108320cc10a230c80080280a008520cc,0,1,48,42,31,43,Plant,Aquatic,Beast,Bird,Aquatic,Beast,Revenge Arrow,Dark Swoop,Hero's Bane,Hare Dagger
+4551,Beast,0xc000010834411084280a10a4280808a0210a0884300c0085300a04a0290a,1,1,34,48,31,51,Aquatic,Bird,Beast,Aquatic,Bird,Bug,Revenge Arrow,Crimson Water,Headshot,Grub Explode
+4552,Plant,0x3100c0000a04533200a2214804a3290a0c8029080881300c00a3280a00a3310a,1,1,47,37,31,49,Beast,Plant,Beast,Bug,Bird,Beast,Woodman Power,Mite Bite,Headshot,Nut Throw
+4553,Plant,0x3000c000061c84230480204a0483290a008421481484290a14a5280800a528ca,0,1,51,35,31,47,Bug,Beast,Reptile,Bug,Reptile,Beast,Slippery Shield,Terror Chomp,Tiny Catapult,Nut Throw
+4554,Plant,0x370000000c2cc23410a32808048520c80ca028cc0084314a00a128ca10c530cc,3,1,49,39,31,45,Aquatic,Plant,Beast,Bug,Beast,Aquatic,Woodman Power,Terror Chomp,Sugar Rush,Chitin Jump
+4555,Aquatic,0x400800000924723208a520c810a3290808a0208c108528ca0ca428c80ca1314c,4,1,47,51,35,31,Bird,Bird,Plant,Aquatic,Aquatic,Plant,Refresh,Crimson Water,Aquaponics,Aqua Deflect
+4556,Beast,0xf00000004103322104411420c8221420c8308cc00231806004528c8002028cc,1,1,38,41,31,54,Aquatic,Plant,Beast,Plant,Beast,Beast,Heroic Reward,Vegan Diet,Branch Charge,Luna Absorb
+4557,Plant,0x300000000108233408a3290800832908108230c81083280a0884290a10a030c8,2,1,46,47,31,40,Bird,Aquatic,Bird,Beast,Aquatic,Aquatic,Blackmail,Death Mark,Aquaponics,Flanking Smack
+4558,Reptile,0x500000000904c334142110820024108214611106102018c60465184404251844,1,1,48,41,31,44,Reptile,Reptile,Bug,Beast,Aquatic,Bug,Bug Noise,Nut Crack,Shell Jab,Chemical Warfare
+4559,Aquatic,0x400000000d0c90401081110a042209020ca118420c25310c10222884084020c8,5,1,48,48,35,33,Aquatic,Plant,Aquatic,Bug,Plant,Bird,Shelter,Blood Taste,Bamboo Clan,Sunder Armor
+4560,Aquatic,0x400000000820543200a1294a0ca428ca148030ca0084204c1484280c1483204a,7,1,51,44,35,34,Beast,Reptile,Reptile,Plant,Beast,Reptile,Bulkwark,Forest Spirit,Sugar Rush,Jar Barrage
+4561,Aquatic,0x400000000914342310a0204a0c83200a108020c80c84284c0ca129080ca3204a,7,1,53,45,35,31,Aquatic,Aquatic,Plant,Plant,Plant,Plant,Refresh,Vegan Diet,Sweet Party,Aqua Deflect
+4562,Beast,0xc0000d1844220c8320ca10a4294a108328c804a3284a0ca220c80c85300a,1,1,43,41,31,49,Plant,Aquatic,Plant,Aquatic,Bug,Plant,Refresh,Crimson Water,Third Glance,Gas Unleash
+4563,Beast,0x41cc24210a2288814a528481082210a00a0214a0ca5300800c43008,6,1,39,44,31,50,Aquatic,Aquatic,Plant,Reptile,Beast,Beast,Refresh,Chomp,Sinister Strike,Gerbil Jump
+4564,Reptile,0x5000c000041060421083294808a028080c82280c04a220880c84200c00a43148,3,1,47,42,31,44,Aquatic,Plant,Plant,Bird,Bug,Beast,Aqua Stock,Dark Swoop,Third Glance,Nut Throw
+4565,Aquatic,0x4400c00005202042048520c80080284a0083304a008120c804a4280800a2280a,5,1,41,43,35,45,Bug,Beast,Bug,Beast,Beast,Beast,Scarab Curse,Death Mark,Sugar Rush,Nut Throw
+4566,Beast,0xc0000734722208a429480885214a0480204c0ca3308c148020ca00a0290a,4,1,38,43,31,52,Bird,Bug,Reptile,Bird,Plant,Beast,Bulkwark,Insectivore,Prickly Trap,Nut Throw
+4567,Beast,0xc000032c503008a128880882294a148428cc10a5310808a0210c108228c8,6,1,36,51,31,46,Bird,Reptile,Bird,Bird,Aquatic,Aquatic,Patient Hunter,Insectivore,Hero's Bane,Water Sphere
+4568,Beast,0xc000011c933210a220c80ca4200a0482300800a3288a14a330cc0083210a,1,1,39,41,31,53,Aquatic,Bug,Reptile,Plant,Beast,Beast,Slippery Shield,Forest Spirit,Sinister Strike,Hare Dagger
+4569,Aquatic,0x4000c000071844430c82208a0484208804a328cc00822088148420c808a22108,7,1,47,44,35,38,Plant,Bug,Reptile,Bug,Beast,Bird,Bulkwark,Terror Chomp,Sugar Rush,Cool Breeze
+4570,Aquatic,0x4000c000023474430c84200a0c80290a00a3284c0ca5210c0085284a00a0294c,1,1,48,42,35,39,Plant,Beast,Beast,Plant,Plant,Beast,Revenge Arrow,Vegan Diet,Prickly Trap,Nut Throw
+4571,Bird,0x2000c0000910b3430082280814a3200a0880204c10a2310a1084214a1085300a,3,1,33,57,35,39,Beast,Bird,Aquatic,Reptile,Aquatic,Aquatic,Shipwreck,Chomp,Hero's Bane,Water Sphere
+4572,Beast,0xc0000a1081400c81200800a428ca10a0200800a530080084210a04a23008,0,1,36,41,31,56,Plant,Aquatic,Beast,Beast,Beast,Bug,Revenge Arrow,Self Rally,Sinister Strike,Grub Explode
+4573,Aquatic,0x4000c000011c34120c84214a00a3210a10a4210a00a3310808a0290a00a4200c,3,1,43,48,35,38,Plant,Aquatic,Bird,Beast,Beast,Beast,Patient Hunter,Self Rally,Sinister Strike,Nut Throw
+4574,Aquatic,0x4000c0000724923414a3200a048020ca14a32148108428880484280a0ca4314a,1,1,51,44,35,34,Reptile,Reptile,Bug,Bug,Aquatic,Plant,Bug Splat,Terror Chomp,Aquaponics,Aqua Deflect
+4575,Aquatic,0x4000000001041342104308440044284a10a2210614a309420864190c00801086,2,1,44,51,35,34,Aquatic,Aquatic,Bird,Beast,Reptile,Beast,Ill-omened,Piercing Sound,Disarm,Hare Dagger
+4576,Plant,0x3000c0000104b3420c84280a00a4284810a321080483200a0881294c00a42148,2,1,48,39,31,46,Plant,Aquatic,Bird,Beast,Bug,Beast,Blackmail,Self Rally,Dull Grip,Nut Throw
+4577,Beast,0xf00c0000408324404a028ca1483288a048230080c8020ca0c8428ca08803108,0,1,42,39,31,52,Bug,Bug,Plant,Reptile,Plant,Bird,Aqua Stock,Why So Serious,Sweet Party,Puffy Smack
+4578,Reptile,0x500040000a203224142108c41445088214231082146318821423094214201004,5,1,57,41,31,35,Reptile,Reptile,Reptile,Reptile,Reptile,Reptile,Ivory Chop,Kotaro bite,Surprise Invasion,Critical Escape
+4578,Reptile,0x500040000a203224142108c41445088214231082146318821423094214201004,5,1,57,41,31,35,Reptile,Reptile,Reptile,Reptile,Reptile,Reptile,Ivory Chop,Kotaro bite,Surprise Invasion,Critical Escape
+4578,Reptile,0x500040000a203224142108c41445088214231082146318821423094214201004,5,1,57,41,31,35,Reptile,Reptile,Reptile,Reptile,Reptile,Reptile,Ivory Chop,Kotaro bite,Surprise Invasion,Critical Escape
+4578,Reptile,0x500040000a203224142108c41445088214231082146318821423094214201004,5,1,57,41,31,35,Reptile,Reptile,Reptile,Reptile,Reptile,Reptile,Ivory Chop,Kotaro bite,Surprise Invasion,Critical Escape
+4582,Beast,0x72043341082208a1082200810a4284c00c4288c1080290a0c83214c,1,1,38,48,31,47,Aquatic,Aquatic,Aquatic,Aquatic,Beast,Plant,Shipwreck,Fish Hook,Acrobatic,Gas Unleash
+4583,Beast,0xc000060c224310a02848148329080482208a14a2200a108231080ca3200a,7,1,43,43,31,47,Aquatic,Bug,Aquatic,Reptile,Reptile,Plant,Shipwreck,Why So Serious,Disarm,Aqua Deflect
+4584,Plant,0x3000c0000628a2410c8321480482200808a0200a088128080880280808a3310a,5,1,47,43,31,43,Plant,Bird,Bird,Bug,Bird,Bird,Blackmail,Terror Chomp,Headshot,Cool Breeze
+4585,Aquatic,0x4000c0000520d24214a128ca1483290a008430c810a2284c14a0208a088020cc,2,1,49,49,35,31,Reptile,Beast,Reptile,Reptile,Aquatic,Bird,Slippery Shield,Why So Serious,Hero's Bane,Puffy Smack
+4586,Reptile,0x5000c0000208c3020ca028c80c83288a00a32808108228ca0ca021080ca320ca,1,1,52,39,31,42,Plant,Beast,Plant,Plant,Aquatic,Plant,Refresh,Vegan Diet,Aquaponics,Aqua Deflect
+4587,Reptile,0x560040000a08a234142510c21044100414651802c42318041465084614211906,0,1,53,42,31,38,Reptile,Reptile,Reptile,Aquatic,Bug,Reptile,Vine Dagger,Swallow,Mystic Rush,Critical Escape
+4587,Reptile,0x560040000a08a234142510c21044100414651802c42318041465084614211906,0,1,53,42,31,38,Reptile,Reptile,Reptile,Aquatic,Bug,Reptile,Vine Dagger,Swallow,Mystic Rush,Critical Escape
+4587,Reptile,0x560040000a08a234142510c21044100414651802c42318041465084614211906,0,1,53,42,31,38,Reptile,Reptile,Reptile,Aquatic,Bug,Reptile,Vine Dagger,Swallow,Mystic Rush,Critical Escape
+4590,Aquatic,0x460000000c0cc031142408440ca2284804610808042011020c2210c800801946,1,1,50,41,35,38,Reptile,Bug,Plant,Plant,Bug,Beast,Turnip Rocket,Forest Spirit,Mystic Rush,Hare Dagger
+4591,Aquatic,0x400000000328c44410a3204a14a329080ca3210c1484308a0c85304c0083290c,1,1,52,45,35,32,Aquatic,Plant,Plant,Reptile,Reptile,Beast,Aqua Stock,Chomp,Tiny Catapult,Hare Dagger
+4592,Aquatic,0x400000000104631404410844108110c20c2420cc1084300c04a230c614a31842,5,1,49,46,35,34,Bug,Plant,Bug,Aquatic,Aquatic,Reptile,Scarab Curse,Fish Hook,Aquaponics,Neuro Toxin
+4593,Beast,0xc0000d2074440ca0294804a4200a00a430481083308c10a0290c00a3280a,0,1,37,43,31,53,Plant,Beast,Aquatic,Bug,Aquatic,Beast,Aqua Vitality,Mite Bite,Aquaponics,Nut Throw
+4594,Beast,0xb34234100a020880080214a10a130880084310c10a4300810a3204c,1,1,34,47,31,52,Beast,Aquatic,Aquatic,Beast,Beast,Aquatic,Aqua Vitality,Death Mark,Sugar Rush,Flanking Smack
+4595,Beast,0x800000620422414a3284800a220ca008030cc0080290800a3304c00c3280c,4,1,34,41,31,58,Reptile,Beast,Beast,Beast,Beast,Beast,Woodman Power,Self Rally,Sugar Rush,Gerbil Jump
+4596,Plant,0x360000000d042301108220880c4329081022114c1082210a10a4100c0c610848,7,1,53,43,31,37,Aquatic,Aquatic,Aquatic,Plant,Aquatic,Plant,Aqua Vitality,Drain Bite,Aquaponics,Leek Leak
+4597,Plant,0x3000c000062cd42314a5284a0c8020ca08a330480082208800a230080ca3308a,2,1,52,37,31,44,Reptile,Bird,Beast,Plant,Beast,Plant,Woodman Power,Vegan Diet,Sugar Rush,Aqua Deflect
+4598,Plant,0x3000000001149423104010040c22088414441084086108420025108608251104,7,1,50,42,31,41,Aquatic,Reptile,Beast,Plant,Bird,Bird,Single Combat,Vegetal Bite,Air Force One,Early Bird
+4599,Aquatic,0x4000c000040c12440083210a0880210a14a0210a0880208a00a130081480294c,7,1,45,49,35,35,Beast,Reptile,Beast,Bird,Bird,Reptile,Woodman Power,Insectivore,Headshot,Jar Barrage
+4600,Beast,0x8189223042328020ca008840ca228420ca4090a10a3114c00251848,1,1,42,39,31,52,Bug,Plant,Aquatic,Plant,Plant,Beast,Aqua Vitality,Forest Spirit,Prickly Trap,Luna Absorb
+4601,Plant,0x3000c0000a08c3431480200a10802008008121080c80280800a3300a14822008,5,1,53,38,31,42,Reptile,Beast,Beast,Aquatic,Plant,Reptile,Woodman Power,Fish Hook,Sweet Party,Jar Barrage
+4602,Beast,0x600c0000a2812430ca0290a1085280a00a3208a0ca1314a1484290a048430ca,1,1,42,40,31,51,Plant,Beast,Reptile,Aquatic,Plant,Bug,Bulkwark,Fish Hook,Prickly Trap,Numbing Lecretion
+4603,Beast,0xc0000d20734300a3280a0ca520c80ca0290c00a5204c00a3290a10a128ca,1,1,38,41,31,54,Beast,Plant,Beast,Plant,Beast,Aquatic,Woodman Power,Forest Spirit,Sinister Strike,Flanking Smack
+4604,Plant,0x300000000630331100411044142208440c210904106118861421110604631802,7,1,54,37,31,42,Beast,Plant,Reptile,Reptile,Aquatic,Bug,Ivory Chop,Sneaky Raid,Clam Slash,Anesthetic Bait
+4605,Aquatic,0x4000c0000c2424220c8528880483290a0483300800a3308a08a2290a00a4300a,1,1,44,44,35,41,Plant,Bug,Bird,Bug,Beast,Beast,Patient Hunter,Terror Chomp,Sinister Strike,Nut Throw
+4606,Aquatic,0x4000c000063074340081284a0c81294804a2200c08a530ca04a1294a14812908,2,1,47,44,35,38,Beast,Bug,Bug,Plant,Bird,Reptile,Scarab Curse,Vegan Diet,Smart Shot,Jar Barrage
+4607,Aquatic,0x4000c000061c83330484204810a4280a1480294a048128ca0080288a08a13148,2,1,45,47,35,37,Bug,Reptile,Beast,Aquatic,Bug,Bird,Revenge Arrow,Crimson Water,Dull Grip,Cool Breeze
+4608,Aquatic,0x4f0000000404534100a3294a0ca428c80ca2210a0083288a0c82300a1481290c,0,1,51,42,35,36,Beast,Plant,Plant,Plant,Beast,Reptile,Aqua Stock,Forest Spirit,Sugar Rush,Jar Barrage
+4609,Bug,0x160800000510703404a4200a10a028480ca0210a0ca230880c84200808a4288a,1,1,46,37,35,46,Bug,Plant,Plant,Aquatic,Plant,Bird,Aqua Stock,Crimson Water,Prickly Trap,Cool Breeze
+4610,Aquatic,0x460800000a3413230c8228c814a02808008529080ca0204a04c2304c14a3290a,0,1,52,42,35,35,Plant,Beast,Bug,Reptile,Plant,Reptile,Buzzing Wind,Chomp,Prickly Trap,Neuro Toxin
+4611,Bug,0x1000c000051414220ca428c80c8321080c84310c0c84210a04a228ca0ca23008,5,1,51,31,35,47,Plant,Plant,Bug,Plant,Plant,Plant,Scarab Curse,Vegan Diet,Sweet Party,Aqua Deflect
+4612,Plant,0x3c00c000012ca2041084204a10a0284a0ca0308c0880308a00a5294c00a028ca,0,1,48,42,31,43,Aquatic,Plant,Beast,Aquatic,Bird,Beast,Woodman Power,Crimson Water,Headshot,Nut Throw
+4613,Beast,0xc000073443330c83210a0ca3290a0c81208a10a1294c10a4204c00a528c8,1,1,42,42,31,49,Plant,Plant,Aquatic,Plant,Aquatic,Beast,Aqua Vitality,Forest Spirit,Hero's Bane,Nut Throw
+4614,Aquatic,0x4000c000093483311481290800a4208a04a4210c0c82304a04a5288804a420cc,4,1,48,41,35,40,Reptile,Bug,Bug,Beast,Plant,Bug,Scarab Curse,Self Rally,Sweet Party,Grub Explode
+4615,Plant,0x3000c0000b3434420483214a0c8328081480294c0c8128cc0ca4200c14a53108,1,1,59,33,31,41,Bug,Reptile,Plant,Plant,Plant,Reptile,Refresh,Vegan Diet,Sweet Party,Neuro Toxin
+4616,Beast,0xc0000c14222400a3290800a0204a08a3210a10a130cc048330ca14a2210a,1,1,36,44,31,53,Beast,Bird,Bug,Beast,Aquatic,Reptile,Bug Splat,Self Rally,Hero's Bane,Neuro Toxin
+4617,Aquatic,0x4000c0000d28634200a32848088520480484290a008328080883300800a0210c,1,1,40,48,35,41,Beast,Bug,Bird,Bird,Beast,Beast,Blackmail,Insectivore,Sugar Rush,Nut Throw
+4618,Beast,0xc0000718834410802908008220880c85280810a328cc00a528ca08a3214a,0,1,36,46,31,51,Aquatic,Plant,Beast,Beast,Aquatic,Bird,Woodman Power,Death Mark,Hero's Bane,Cool Breeze
+4619,Reptile,0x5000c0000b04b322048221480c84208800a0210c08a4290814a3280a0085308a,1,1,46,41,31,46,Bug,Beast,Reptile,Plant,Bird,Beast,Slippery Shield,Vegan Diet,Smart Shot,Hare Dagger
+4620,Bug,0x1000c0000d2c243300a328880884290a1083294a0ca4294c00a0290a0084300a,1,1,39,40,35,50,Beast,Aquatic,Beast,Bird,Plant,Beast,Woodman Power,Insectivore,Prickly Trap,Hare Dagger
+4621,Beast,0xc0000220531308a2208a08a328480c83300c0882284c14a3294a0884310c,1,1,37,48,31,48,Bird,Plant,Reptile,Bird,Bird,Bird,Slippery Shield,Dark Swoop,Headshot,Puffy Smack
+4622,Beast,0xc0000520a24308a120ca14842008008020c80880304a0081308c00a2310c,1,1,34,45,31,54,Bird,Beast,Beast,Reptile,Bird,Beast,Revenge Arrow,Why So Serious,Headshot,Nut Throw
+4623,Aquatic,0x4000c0000210a420008121480085208a08a2204a0483200a008421080c85314a,0,1,43,45,35,41,Beast,Bird,Beast,Beast,Bug,Plant,Revenge Arrow,Death Mark,Dull Grip,Gas Unleash
+4624,Plant,0x3000c000020c24330c83280810a0200814822888008229080c81290a14833008,1,1,56,37,31,40,Plant,Reptile,Plant,Aquatic,Beast,Reptile,Aqua Stock,Crimson Water,Sugar Rush,Jar Barrage
+4625,Aquatic,0x40004000081c9442cc22094410411044084410c614411886004108c410601086,0,1,47,50,35,32,Plant,Bird,Beast,Aquatic,Reptile,Aquatic,Heroic Reward,Swallow,Scaly Lunge,Black Bubble
+4626,Plant,0x3000000005345321002010c40821088208610906082309421041094208251146,7,1,44,47,31,42,Beast,Bird,Aquatic,Bird,Bird,Bird,Scale Dart,Soothing Song,Eggbomb,Early Bird
+4627,Beast,0xc0000a30b22208a320ca00a4294a00a4300c0884280c0c8328480485214c,4,1,35,43,31,55,Bird,Beast,Plant,Beast,Bird,Bug,Aqua Stock,Self Rally,Headshot,Numbing Lecretion
+4628,Plant,0x3000c0000734a31314a22008108520880882284c10a130ca08832948108520cc,1,1,49,47,31,37,Reptile,Bird,Bird,Aquatic,Aquatic,Aquatic,Blackmail,Fish Hook,Hero's Bane,Water Sphere
+4629,Plant,0x3000c000010844400484294a08a4280808a0204810a5300a08a020c80484214a,1,1,46,43,31,44,Bug,Bird,Bird,Bird,Aquatic,Bug,Patient Hunter,Dark Swoop,Hero's Bane,Numbing Lecretion
+4630,Aquatic,0x4000c000042cd42408a0284a088020ca1483200c108220cc14a0294a00a02088,2,1,46,51,35,32,Bird,Reptile,Reptile,Bird,Aquatic,Beast,Slippery Shield,Insectivore,Aquaponics,Nut Throw
+4631,Aquatic,0x4000c000020cc032008228080c8020081085288800a031080485208a0ca4280a,5,1,47,44,35,38,Beast,Aquatic,Bug,Plant,Beast,Plant,Bug Splat,Vegan Diet,Sinister Strike,Aqua Deflect
+4632,Beast,0xc0000428824414a32148148329480c8020cc0483208a1080208c0c8428ca,2,1,45,40,31,48,Reptile,Plant,Aquatic,Reptile,Bug,Plant,Shipwreck,Why So Serious,Dull Grip,Gas Unleash
+4633,Bug,0x1000400007187022144511420c42100410421046042118c20c65088404401002,5,1,47,35,35,47,Reptile,Aquatic,Plant,Plant,Bug,Bug,Cleanse Scent,Drain Bite,Mystic Rush,Twin Needle
+4634,Plant,0x3000c0000714632300a3284a0084204a148429081083210800a5308c10a3280c,1,1,48,41,31,44,Beast,Reptile,Beast,Beast,Aquatic,Aquatic,Woodman Power,Death Mark,Aquaponics,Flanking Smack
+4635,Beast,0xc000061c82320c81200808832008108430ca0ca130ca0ca020c804a430ca,4,1,42,41,31,50,Plant,Aquatic,Plant,Bird,Plant,Bug,Refresh,Insectivore,Prickly Trap,Grub Explode
+4636,Plant,0x3000c00005189223088028080ca0294800a5200a0082214a0880280a14802908,1,1,49,40,31,44,Bird,Beast,Bird,Plant,Beast,Reptile,Blackmail,Forest Spirit,Sugar Rush,Jar Barrage
+4637,Plant,0x300000000c08943310a028ca0084214a04a029480cc120080ca428cc0083290a,1,1,51,36,31,46,Aquatic,Bug,Plant,Beast,Plant,Beast,Refresh,Death Mark,Seed Bullet,Hare Dagger
+4638,Beast,0xc000022cc2120082210a1083290a088020cc108328ca10a3294814a328c8,7,1,37,49,31,47,Beast,Bird,Aquatic,Aquatic,Aquatic,Reptile,Aqua Vitality,Fish Hook,Aquaponics,Neuro Toxin
+4639,Beast,0xc0000914a221148128080c8520ca14a020cc108228080ca420880c85204a,6,1,47,40,31,46,Reptile,Reptile,Plant,Plant,Aquatic,Plant,Refresh,Vegan Diet,Aquaponics,Gas Unleash
+4640,Aquatic,0x4b00c000032c82331082204a088020c80083308a10a120c814a230c800a12048,1,1,44,51,35,34,Aquatic,Beast,Reptile,Bird,Aquatic,Beast,Slippery Shield,Insectivore,Hero's Bane,Nut Throw
+4641,Aquatic,0x4000c000010473441080280a108420c804a4310800a3304a0885200810842888,7,1,43,52,35,34,Aquatic,Bug,Bird,Aquatic,Beast,Aquatic,Blackmail,Fish Hook,Sinister Strike,Water Sphere
+4642,Plant,0x3000c0000b3032430ca429480ca5284a0082208a00832088108028cc1081208c,1,1,51,39,31,43,Plant,Beast,Aquatic,Plant,Beast,Aquatic,Shipwreck,Forest Spirit,Sugar Rush,Water Sphere
+4643,Beast,0x800000a142243048220420421114204a5090c0084080400a308080c640848,1,1,37,37,31,59,Bug,Bug,Beast,Bug,Beast,Plant,Woodman Power,Blood Taste,Sugar Rush,Leek Leak
+4644,Reptile,0x50000000061020030820288200a0214214a418860c2228081440208808633006,4,1,48,44,31,41,Bird,Reptile,Reptile,Beast,Plant,Bird,Spike Throw,Self Rally,Bamboo Clan,Risky Feather
+4645,Plant,0x3000c0000734d23210a5214808a1280a04a428c80ca4290a108520080c82314c,0,1,52,40,31,41,Aquatic,Bug,Aquatic,Bird,Plant,Plant,Shipwreck,Dark Swoop,Prickly Trap,Gas Unleash
+4646,Plant,0x3000c0000d109242008320080c8528ca108020c804a33048088530ca00a0314a,0,1,48,39,31,46,Beast,Aquatic,Bird,Plant,Bug,Beast,Blackmail,Vegan Diet,Third Glance,Nut Throw
+4647,Aquatic,0x4000c0000118c22314a5294a04a3210a00a5284c14a429480ca2310c10852808,0,1,50,45,35,34,Reptile,Beast,Plant,Bug,Reptile,Aquatic,Refresh,Mite Bite,Disarm,Water Sphere
+4648,Plant,0x3000c0000418942410a0284a04a1284800a020ca1480284a00a3290c10a0300c,0,1,49,40,31,44,Aquatic,Beast,Beast,Bug,Reptile,Aquatic,Woodman Power,Mite Bite,Tiny Catapult,Flanking Smack
+4649,Plant,0x3c00c00005046203048429481484284804a428ca08a3300a0c80280a10842088,1,1,52,38,31,43,Bug,Bug,Plant,Reptile,Bird,Aquatic,Aqua Stock,Why So Serious,Smart Shot,Water Sphere
+4650,Bug,0x1000c000031013341085208804a221080c8420cc10a4210a00a5208a0ca3300c,1,1,44,38,35,47,Aquatic,Plant,Beast,Bug,Aquatic,Plant,Woodman Power,Mite Bite,Hero's Bane,Aqua Deflect
+4651,Plant,0x300000000404834108852042108510820cc5188600a520c2084318020044100c,1,1,47,42,31,44,Bird,Plant,Bird,Aquatic,Beast,Beast,Heart Break,Fish Hook,Sinister Strike,Night Steal
+4652,Beast,0xf00c0000534544204a029080ca320c80085294c10a220c80880314c148120cc,0,1,39,43,31,51,Bug,Beast,Bird,Plant,Aquatic,Reptile,Blackmail,Forest Spirit,Hero's Bane,Jar Barrage
+4653,Beast,0xc0000d28523210a0280a0ca328481083280a108028ca10a528cc048130cc,1,1,39,47,31,47,Aquatic,Aquatic,Aquatic,Plant,Aquatic,Bug,Aqua Vitality,Forest Spirit,Aquaponics,Numbing Lecretion
+4654,Beast,0xf00c000061013230080284a0880280a0c8428cc0ca220cc04a3294c04a22808,0,1,39,39,31,55,Beast,Plant,Bug,Bird,Plant,Bug,Scarab Curse,Insectivore,Prickly Trap,Grub Explode
+4655,Plant,0x3000c000062034320ca3288a108128ca00a3288a0c82200a1082304c1483290c,7,1,54,39,31,40,Plant,Beast,Aquatic,Aquatic,Plant,Reptile,Shipwreck,Fish Hook,Sweet Party,Jar Barrage
+4656,Aquatic,0x4500c0000708b43310a0294a04a3284810a3290c0080300c008030881084304a,0,1,43,50,35,36,Aquatic,Aquatic,Beast,Bug,Beast,Aquatic,Revenge Arrow,Mite Bite,Sugar Rush,Water Sphere
+4657,Aquatic,0x4000c0000610c434148421480883210a108021481083210c00a3210a10a4204a,7,1,45,53,35,31,Reptile,Aquatic,Beast,Bird,Aquatic,Aquatic,Woodman Power,Insectivore,Aquaponics,Flanking Smack
+4658,Beast,0xc00008182330108329080ca52008108431080485200a10a021080c802008,2,1,41,44,31,48,Aquatic,Aquatic,Aquatic,Plant,Bug,Plant,Aqua Vitality,Forest Spirit,Dull Grip,Gas Unleash
+4659,Aquatic,0x400000000920524204a028041045108410a1194c102428460023304604201006,4,1,44,49,35,36,Bug,Aquatic,Beast,Aquatic,Aquatic,Bug,Single Combat,Swallow,Shell Jab,Chemical Warfare
+4660,Aquatic,0x40000000071444321083200a0c81288a008028cc008029481480308c10a4284a,2,1,47,48,35,34,Aquatic,Beast,Reptile,Plant,Beast,Aquatic,Bulkwark,Vegan Diet,Sugar Rush,Flanking Smack
+4661,Plant,0x3000c0000a28330400a428ca0ca0290a04a3200c008028480085210800a4214a,7,1,47,35,31,51,Beast,Bug,Beast,Plant,Beast,Beast,Revenge Arrow,Forest Spirit,Sugar Rush,Nut Throw
+4662,Aquatic,0x4000c00008107243108028c814a521080884200a108520c80ca4314c14a420c8,4,1,50,50,35,29,Aquatic,Bird,Plant,Reptile,Aquatic,Reptile,Refresh,Chomp,Aquaponics,Neuro Toxin
+4663,Plant,0x3000c000052c52330080204800a229480083310c04a0210c008228480ca5210c,4,1,47,35,31,51,Beast,Beast,Beast,Beast,Bug,Plant,Revenge Arrow,Self Rally,Third Glance,Aqua Deflect
+4664,Plant,0x3000c000062044240c84200a0083204800a528cc0ca520cc0484204c0ca5210c,2,1,53,33,31,47,Plant,Beast,Bug,Beast,Plant,Plant,Bug Splat,Death Mark,Prickly Trap,Aqua Deflect
+4665,Aquatic,0x4d08000006088132004220040c2410c410821048004418cc0841084200220842,1,1,43,48,35,38,Beast,Aquatic,Bird,Plant,Beast,Beast,Heart Break,Vegetal Bite,Ivory Stab,Luna Absorb
+4666,Aquatic,0x4000c0000b2444221085204814a128ca04a1210c008121080882308c04a130ca,1,1,45,47,35,37,Aquatic,Bug,Bird,Reptile,Beast,Bug,Blackmail,Chomp,Sugar Rush,Grub Explode
+4667,Aquatic,0x40000000052c31400c2208441025108208231046146018c41062110608200944,1,1,47,52,35,30,Plant,Bird,Aquatic,Aquatic,Reptile,Bird,Swift Escape,Angry Lam,Surprise Invasion,Early Bird
+4668,Bird,0x2000c000060c6441108420c80c83208814a1290a1480280a0c8420c804a3308a,0,1,41,48,35,40,Aquatic,Reptile,Plant,Plant,Reptile,Bug,Aqua Stock,Vegan Diet,Tiny Catapult,Grub Explode
+4669,Plant,0x3700c0000d1c222408a0284a04a5288a1080290c1484210c088030880c84294a,1,1,51,41,31,41,Bird,Aquatic,Bird,Bug,Reptile,Plant,Blackmail,Mite Bite,Tiny Catapult,Gas Unleash
+4670,Plant,0x3a00c0000910823414a4290a10a2280a14a420ca0ca4288a0082310c08a2300a,0,1,53,40,31,40,Reptile,Reptile,Beast,Aquatic,Plant,Bird,Revenge Arrow,Crimson Water,Prickly Trap,Cool Breeze
+4671,Plant,0x3e00c0000504c4310483294a08a2208814a020ca008420c808a220cc10a2300c,0,1,48,42,31,43,Bug,Reptile,Bird,Bird,Beast,Aquatic,Patient Hunter,Dark Swoop,Sugar Rush,Flanking Smack
+4671,Plant,0x3e00c0000504c4310483294a08a2208814a020ca008420c808a220cc10a2300c,0,1,48,42,31,43,Bug,Reptile,Bird,Bird,Beast,Aquatic,Patient Hunter,Dark Swoop,Sugar Rush,Flanking Smack
+4673,Plant,0x3000c0000524404310a4210a108128ca108428cc1084300c0ca430c800a32848,2,1,50,44,31,39,Aquatic,Aquatic,Plant,Aquatic,Aquatic,Beast,Refresh,Fish Hook,Aquaponics,Nut Throw
+4674,Aquatic,0x4000c0000730c333088329081083280a00a0308804a328ca04a3204c10a0210a,2,1,43,49,35,37,Bird,Beast,Bug,Aquatic,Bug,Aquatic,Scarab Curse,Fish Hook,Third Glance,Flanking Smack
+4675,Beast,0xc0000730624404a228c814a2214a08a4310c0c8420cc0083200800a42108,2,1,38,41,31,54,Bug,Bird,Beast,Reptile,Plant,Beast,Revenge Arrow,Chomp,Sweet Party,Nut Throw
+4676,Beast,0xc0000b2014420ca3290a0c83210a0ca3214a0c8031480083310a0481200c,5,1,44,36,31,53,Plant,Plant,Beast,Plant,Plant,Bug,Revenge Arrow,Vegan Diet,Sweet Party,Numbing Lecretion
+4677,Beast,0xc0000614122210832088008428c814a4310c0c81314a00a020080883214a,1,1,38,44,31,51,Aquatic,Reptile,Beast,Beast,Plant,Bird,Woodman Power,Death Mark,Sweet Party,Puffy Smack
+4678,Beast,0xc0000b20a1430ca028ca0ca4284a0080310808a4210c0c84288a00a03148,7,1,40,40,31,53,Plant,Beast,Plant,Plant,Bird,Beast,Aqua Stock,Forest Spirit,Smart Shot,Nut Throw
+4679,Aquatic,0x4000c000040473430ca120ca1484210a14a320881484280a08a4214a04a2310c,2,1,52,45,35,32,Plant,Reptile,Bird,Reptile,Reptile,Bug,Patient Hunter,Why So Serious,Tiny Catapult,Grub Explode
+4680,Aquatic,0x4000c0000410a43308a420ca1083288808a028cc04a430480ca3300c0ca4284a,1,1,47,48,35,34,Bird,Bird,Plant,Aquatic,Bug,Plant,Refresh,Fish Hook,Third Glance,Aqua Deflect
+4681,Beast,0xc0000a2cb43210a329080ca2214a00a3204c1480300a088330c808a0280c,0,1,38,46,31,49,Aquatic,Beast,Bird,Plant,Reptile,Bird,Blackmail,Forest Spirit,Tiny Catapult,Cool Breeze
+4682,Plant,0x300000000b1834320c23114414430842086508c6002110c600251084044108c6,4,1,50,37,31,46,Plant,Bird,Beast,Reptile,Beast,Bug,Single Combat,Kotaro bite,Branch Charge,Twin Needle
+4683,Aquatic,0x400000000620c2341044110214400882086311060461110204441802086218c4,4,1,45,49,35,35,Aquatic,Bird,Bug,Reptile,Bug,Bird,Barb Strike,Kotaro bite,Grub Surprise,Risky Feather
+4684,Beast,0x628d2240c2311040040104200201842086010c40024100214610844,7,1,37,42,31,54,Plant,Beast,Beast,Beast,Bird,Reptile,Single Combat,Piercing Sound,Air Force One,Tiny Swing
+4685,Beast,0x60000000a24a033082311041420110200640884104311061463090200450944,5,1,38,45,31,50,Bird,Beast,Reptile,Reptile,Aquatic,Beast,Vine Dagger,Sneaky Raid,Deep Sea Gore,Night Steal
+4686,Bird,0x2000000005143243082408420040108404640904082118c60461188204441806,7,1,30,50,35,49,Bird,Bug,Bug,Beast,Bird,Bug,Bug Noise,Piercing Sound,Eggbomb,Twin Needle
+4687,Aquatic,0x400000000d24c322082511020c41088404231002104509441042090408650846,5,1,45,51,35,33,Bird,Bug,Aquatic,Plant,Aquatic,Bird,Scale Dart,Drain Bite,Deep Sea Gore,Risky Feather
+4688,Reptile,0x500000000b144242044508c20c44090200451002144319041461114204600902,1,1,50,38,31,45,Bug,Beast,Reptile,Plant,Reptile,Bug,Vine Dagger,Drain Bite,Scaly Lunge,Anesthetic Bait
+4689,Beast,0xb2cc42300401144082510c214620844002118020041180400251104,1,1,34,43,31,56,Beast,Reptile,Beast,Bird,Beast,Beast,Heroic Reward,Soothing Song,Branch Charge,Luna Absorb
+4690,Plant,0x30000000021c742310a3284a0085210a148328cc1484300a1481294a10a22008,0,1,54,41,31,38,Aquatic,Reptile,Reptile,Beast,Reptile,Aquatic,Bulkwark,Death Mark,Tiny Catapult,Flanking Smack
+4691,Aquatic,0x40080000083024220ca028ca0480280a008131480ca520cc108520080ca3200c,6,1,50,43,35,36,Plant,Beast,Aquatic,Bug,Plant,Plant,Shipwreck,Terror Chomp,Prickly Trap,Aqua Deflect
+4692,Aquatic,0x400800000a2c722210a120c814a5290a14a030ca148020c80ca530c80c82210c,2,1,55,45,35,29,Aquatic,Reptile,Plant,Reptile,Reptile,Plant,Refresh,Chomp,Tiny Catapult,Gas Unleash
+4693,Plant,0x300000000a183223104508c20422290810642042006318041040280c00811804,0,1,47,42,31,44,Aquatic,Aquatic,Aquatic,Bug,Beast,Beast,Scale Dart,Blood Taste,Merry Legion,Hare Dagger
+4694,Plant,0x3000c0000d0c53300c8429080c85210a10a028cc1082200810a5300c00a12908,1,1,52,41,31,40,Plant,Aquatic,Aquatic,Plant,Aquatic,Beast,Aqua Vitality,Vegan Diet,Aquaponics,Nut Throw
+4695,Beast,0xc000082c440414842088088228c80c80288c0c80290a08a3300c08802948,5,1,40,45,31,48,Reptile,Plant,Bird,Bird,Plant,Bird,Patient Hunter,Insectivore,Sweet Party,Puffy Smack
+4696,Bug,0x1000c000010c434414a428c800a3284800a5204c148320cc14a4280c04a3308a,6,1,45,36,35,48,Reptile,Beast,Reptile,Beast,Reptile,Bug,Slippery Shield,Self Rally,Tiny Catapult,Grub Explode
+4697,Beast,0xc000042c53020ca1294a0c83208a00a5288c08a4200c10a030ca08a2290c,2,1,38,45,31,50,Plant,Beast,Aquatic,Plant,Bird,Bird,Aqua Vitality,Vegan Diet,Smart Shot,Cool Breeze
+4698,Beast,0xd00c0000714234404822808048428ca0083214a0ca331481081304c0082314c,1,1,37,40,31,56,Bug,Beast,Aquatic,Bug,Plant,Beast,Shipwreck,Terror Chomp,Prickly Trap,Hare Dagger
+4699,Aquatic,0x4000c0000330d43314a3290a0082288800a320c80080280c14a0204a00a1290c,4,1,45,45,35,39,Reptile,Beast,Reptile,Beast,Beast,Beast,Slippery Shield,Death Mark,Sugar Rush,Nut Throw
+4700,Plant,0x3300c0000b1ca322108429480c8429480c83284c0085310c04a228cc00a4208a,0,1,51,36,31,46,Aquatic,Plant,Bug,Plant,Beast,Beast,Scarab Curse,Vegan Diet,Sugar Rush,Nut Throw
+4701,Plant,0x3700c0000c34743200a320880882280a0084314c0ca2300a048528ca10a1210c,0,1,48,39,31,46,Beast,Beast,Bug,Bird,Plant,Aquatic,Bug Splat,Insectivore,Prickly Trap,Flanking Smack
+4702,Plant,0x3000c0000a1c143308a029080483280a1484310c0c8330cc14a220cc1480290a,5,1,56,37,31,40,Bird,Reptile,Reptile,Bug,Plant,Reptile,Slippery Shield,Terror Chomp,Sweet Party,Jar Barrage
+4703,Beast,0x5249324004128c204a008c80080090a0c4308c4104311480445110a,5,1,37,40,31,56,Beast,Beast,Aquatic,Bug,Plant,Bug,Scale Dart,Mite Bite,Wooden Stab,Twin Needle
+4703,Beast,0x5249324004128c204a008c80080090a0c4308c4104311480445110a,5,1,37,40,31,56,Beast,Beast,Aquatic,Bug,Plant,Bug,Scale Dart,Mite Bite,Wooden Stab,Twin Needle
+4705,Aquatic,0x400000000910a2431084208a0c82210810a320cc0ca0308a14a220cc14c3204c,6,1,53,47,35,29,Aquatic,Aquatic,Reptile,Plant,Plant,Reptile,Slippery Shield,Vegan Diet,Prickly Trap,Venom Spray
+4706,Aquatic,0x4000c000011c132404a4204a04a2290a10a528080ca0300a0c80280814822108,1,1,51,43,35,35,Bug,Aquatic,Plant,Bug,Plant,Reptile,Aqua Stock,Mite Bite,Prickly Trap,Jar Barrage
+4707,Aquatic,0x4000c0000308b44300a520480ca528080ca428c800a320080485200a04822148,0,1,47,41,35,41,Beast,Plant,Bug,Plant,Beast,Bug,Bug Splat,Forest Spirit,Sinister Strike,Numbing Lecretion
+4708,Aquatic,0x400800000310322308a421080082210a08a429480084284c00c328ca0ca420ca,1,1,42,48,35,39,Bird,Bird,Beast,Beast,Beast,Plant,Juggling Balls,Death Mark,Sugar Rush,Aqua Deflect
+4709,Bird,0x20004000040ca224142110820840110210211086084119060040110210441006,7,1,32,57,35,40,Reptile,Aquatic,Beast,Bird,Bird,Aquatic,Heroic Reward,Peace Treaty,Cockadoodledoo,Tail Slap
+4710,Plant,0x300000000c142024082210820c2110c4006018840c2209060c4110460c201944,6,1,55,35,31,43,Bird,Beast,Plant,Plant,Plant,Plant,Shroom's Grace,Vegetal Bite,Bamboo Clan,Carrot Hammer
+4711,Reptile,0x5000c000050483310c8428c80ca220c8148020c8108328c80c8120c80c83200a,3,1,55,39,31,39,Plant,Reptile,Plant,Plant,Aquatic,Plant,Aqua Stock,Forest Spirit,Aquaponics,Gas Unleash
+4712,Plant,0x3000c0000628b223148420080ca0294a14a320c80ca0314a00a4288a1484288c,6,1,58,35,31,40,Reptile,Reptile,Beast,Plant,Plant,Reptile,Woodman Power,Forest Spirit,Prickly Trap,Jar Barrage
+4713,Aquatic,0x4a00c0000a14d2320484294800a320081081204c04a428881083214a10a32008,0,1,44,49,35,36,Bug,Aquatic,Aquatic,Beast,Bug,Aquatic,Shipwreck,Self Rally,Third Glance,Flanking Smack
+4714,Beast,0xc0000a24c3230485290810832948108320480081204a08a0210a0c812108,0,1,37,45,31,51,Bug,Aquatic,Bird,Aquatic,Beast,Plant,Patient Hunter,Fish Hook,Sugar Rush,Gas Unleash
+4715,Aquatic,0x4d00c0000230c34404a520c808822048108029080c80280c14803108108328ca,1,1,48,49,35,32,Bug,Aquatic,Reptile,Bird,Plant,Aquatic,Bulkwark,Insectivore,Sweet Party,Water Sphere
+4716,Plant,0x3e00c00002189434108428c800a02908108528cc1483288c0c8120080084310c,0,1,51,40,31,42,Aquatic,Aquatic,Plant,Beast,Reptile,Beast,Aqua Stock,Self Rally,Tiny Catapult,Hare Dagger
+4717,Plant,0x30000000092ca2200484214a008220880c83300a10a428cc08a3310c00a4304c,7,1,48,39,31,46,Bug,Plant,Bird,Beast,Aquatic,Beast,Patient Hunter,Death Mark,Hero's Bane,Nut Throw
+4718,Bug,0x1000c000053441320c85294804a229080ca3208c10a028ca1084290a10a520cc,5,1,45,40,35,44,Plant,Plant,Aquatic,Bug,Aquatic,Aquatic,Shipwreck,Mite Bite,Hero's Bane,Flanking Smack
+4719,Plant,0x3000c0000c0c43340084288a048528080884308c14a1210a0ca0310804a3210c,2,1,51,36,31,46,Beast,Bird,Plant,Bug,Reptile,Bug,Refresh,Terror Chomp,Disarm,Grub Explode
+4720,Plant,0x3000c00008105423048428ca14a1210a04a03088088530cc14a1204a00a2300c,1,1,51,37,31,45,Bug,Bug,Reptile,Reptile,Bird,Beast,Slippery Shield,Chomp,Headshot,Nut Throw
+4721,Bird,0x2000c0000528824414a5290a04a429480ca3294a08a221080ca5288800a42108,6,1,37,48,35,44,Reptile,Plant,Plant,Bug,Bird,Beast,Refresh,Mite Bite,Smart Shot,Nut Throw
+4722,Beast,0x100c000093022020c84294a04a52148108430c810a3284a14a0294a1084280c,0,1,41,45,31,47,Plant,Aquatic,Reptile,Bug,Aquatic,Aquatic,Slippery Shield,Mite Bite,Hero's Bane,Water Sphere
+4723,Plant,0x3000c0000b28543210a420480c85284a0481310a1081204a10a120880c842908,1,1,53,40,31,40,Aquatic,Bug,Aquatic,Plant,Aquatic,Plant,Aqua Vitality,Vegan Diet,Aquaponics,Gas Unleash
+4724,Plant,0x300000000620b4430c4208c20c4211040c6519060c4019061063080408640942,1,1,56,37,31,40,Plant,Plant,Aquatic,Plant,Plant,Bird,Swift Escape,Drain Bite,Wooden Stab,Risky Feather
+4725,Plant,0x300000000834a44308401144084111021422084200200804144410c20c600806,0,1,52,40,31,41,Bird,Reptile,Reptile,Bird,Beast,Plant,Spike Throw,Peace Treaty,Branch Charge,Leek Leak
+4726,Aquatic,0x400000000c147032082111441021090210200846106109460423110210420882,1,1,44,54,35,31,Bird,Aquatic,Bug,Aquatic,Aquatic,Aquatic,Sticky Goo,Angry Lam,Clam Slash,Tail Slap
+4727,Bird,0x200040000918d323082410c20c4008c408431944142410421465190414420902,1,1,39,52,35,38,Bird,Bird,Reptile,Plant,Reptile,Reptile,Vine Dagger,Drain Bite,Poo Fling,Scale Dart
+4728,Plant,0x3000c000050844441081208a08a2210a1083310c0083308814a5310c0080300c,0,1,48,43,31,42,Aquatic,Aquatic,Reptile,Bird,Beast,Beast,Slippery Shield,Dark Swoop,Sugar Rush,Hare Dagger
+4729,Plant,0x3500c0000c28d3030ca42108008528081084200a0880310a10803008148428ca,1,1,51,42,31,40,Plant,Aquatic,Aquatic,Beast,Bird,Reptile,Shipwreck,Death Mark,Headshot,Jar Barrage
+4730,Reptile,0x5000c0000a1083340c8320c8148520ca008229081084280a148521081485208c,5,1,52,42,31,39,Plant,Beast,Reptile,Reptile,Aquatic,Reptile,Bulkwark,Why So Serious,Aquaponics,Jar Barrage
+4731,Beast,0xc000040cb2430883214810a120c80c8430cc048328ca10a4304814a420c8,0,1,40,45,31,48,Bird,Plant,Aquatic,Aquatic,Bug,Reptile,Aqua Vitality,Crimson Water,Dull Grip,Neuro Toxin
+4732,Aquatic,0x4000c000033054220480288a1080200a1081288a08a42888008428cc0c852808,0,1,45,49,35,35,Bug,Aquatic,Beast,Aquatic,Bird,Plant,Revenge Arrow,Fish Hook,Smart Shot,Gas Unleash
+4733,Bug,0x1000000009187202144420880c42208a10421046042118c20c65088a0ca1108c,2,1,49,35,35,45,Reptile,Aquatic,Plant,Plant,Bug,Plant,Cleanse Scent,Drain Bite,Mystic Rush,Aqua Deflect
+4734,Aquatic,0x4000c0000c04542310a4280a00a328080ca0204c00a0204c0ca5290c04802808,5,1,47,44,35,38,Aquatic,Plant,Plant,Beast,Beast,Bug,Refresh,Self Rally,Sinister Strike,Numbing Lecretion
+4735,Beast,0xc00008242202088428880ca2280a0c8128c810a2300a108031480c80300c,0,1,42,44,31,47,Bird,Plant,Aquatic,Plant,Aquatic,Plant,Shipwreck,Forest Spirit,Hero's Bane,Gas Unleash
+4736,Plant,0x3000000001149432082420081022288a142518cc0c612046086430ca14a128ca,4,1,53,42,31,38,Bird,Reptile,Bird,Aquatic,Plant,Reptile,Ill-omened,Angry Lam,Healing Aroma,Neuro Toxin
+4737,Beast,0xc0000530123408a028ca0ca228ca10a0208c108030cc04a330ca0c80210c,1,1,40,44,31,49,Bird,Aquatic,Bug,Plant,Aquatic,Plant,Scarab Curse,Forest Spirit,Aquaponics,Gas Unleash
+4738,Beast,0xc0000228321410a520ca088520c80c8028ca008530ca00a3290a0c8220ca,3,1,38,43,31,52,Aquatic,Plant,Beast,Bird,Beast,Plant,Woodman Power,Insectivore,Sugar Rush,Gas Unleash
+4739,Plant,0x3000c0000b24c432148520ca08a1208a1482280c04a3208a00a12008148220ca,0,1,53,38,31,42,Reptile,Reptile,Beast,Bird,Bug,Reptile,Woodman Power,Dark Swoop,Third Glance,Jar Barrage
+4740,Plant,0x3d00c00007244024088221080481214800a52908008228cc0ca5290a14a1214a,4,1,50,37,31,46,Bird,Beast,Plant,Bug,Beast,Reptile,Refresh,Terror Chomp,Sugar Rush,Neuro Toxin
+4741,Aquatic,0x4000c0000b2431430ca1280a04a0208a0c842848088030081483310a10a1300c,1,1,50,46,35,33,Plant,Plant,Reptile,Bug,Bird,Aquatic,Bulkwark,Mite Bite,Headshot,Flanking Smack
+4742,Plant,0x36000000012893321084214a00a42908008220480cc0290800a2290a08a03048,2,1,47,40,31,46,Aquatic,Beast,Beast,Beast,Plant,Bird,Woodman Power,Self Rally,Seed Bullet,Cool Breeze
+4743,Aquatic,0x4000c00007347444148420480881210a08a028080480284810843008008428cc,1,1,44,50,35,35,Reptile,Bird,Aquatic,Bird,Bug,Beast,Shipwreck,Insectivore,Dull Grip,Hare Dagger
+4744,Aquatic,0x4000c0000310a2340ca3294a1083290a08a5208a0ca5208c14a3294800812008,5,1,49,47,35,33,Plant,Bird,Reptile,Aquatic,Plant,Beast,Slippery Shield,Fish Hook,Prickly Trap,Hare Dagger
+4745,Beast,0xb00c0000a24d4321484214a0ca2288a00a220c81082200a1083304c08a130c8,1,1,39,46,31,48,Reptile,Beast,Aquatic,Plant,Aquatic,Bird,Shipwreck,Forest Spirit,Aquaponics,Cool Breeze
+4746,Aquatic,0x4000c000010c843300a4204804a1280a0c8220cc1080314c1083300a04a3290c,4,1,46,46,35,37,Beast,Plant,Aquatic,Bug,Aquatic,Bug,Shipwreck,Mite Bite,Aquaponics,Grub Explode
+4747,Plant,0x3000c000020c93340084204814a320ca08a021081485314c148528ca08a0208a,7,1,52,41,31,40,Beast,Bird,Reptile,Reptile,Reptile,Bird,Bulkwark,Chomp,Tiny Catapult,Cool Breeze
+4748,Plant,0x3000c0000b18c4220483214800a2290a10a128c80ca02908008531481084308c,1,1,49,39,31,45,Bug,Aquatic,Beast,Beast,Plant,Aquatic,Revenge Arrow,Self Rally,Prickly Trap,Water Sphere
+4749,Aquatic,0x4600000007208304088420440023100810a13006044428021023100a006508c2,1,1,42,50,35,37,Bird,Aquatic,Aquatic,Beast,Bug,Beast,Shelter,Nut Crack,Bug Signal,Rampant Howl
+4750,Plant,0x3600000006047222108420ca1085200a10a4290808a2210a008121480882214a,2,1,46,47,31,40,Aquatic,Aquatic,Beast,Aquatic,Bird,Bird,Revenge Arrow,Fish Hook,Smart Shot,Puffy Smack
+4751,Beast,0xc000040ca442108320c8108020080ca1210c04a2214c0c8430080ca5284a,1,1,43,41,31,49,Aquatic,Plant,Plant,Aquatic,Bug,Plant,Aqua Stock,Fish Hook,Third Glance,Aqua Deflect
+4752,Aquatic,0x4000c0000734842304a020ca04a22908048020080c8428cc088228c80484284a,1,1,46,42,35,41,Bug,Bug,Bird,Bug,Plant,Bug,Blackmail,Mite Bite,Sweet Party,Numbing Lecretion
+4753,Aquatic,0x4000c0000620a34108a0290810a3200804a128c8148030ca08a4280c10833148,1,1,45,52,35,32,Bird,Bug,Bird,Aquatic,Reptile,Aquatic,Patient Hunter,Crimson Water,Tiny Catapult,Water Sphere
+4754,Aquatic,0x460800000b10d3440c20090400a009420024108200640844106021021020314a,1,1,44,48,35,37,Plant,Beast,Aquatic,Beast,Beast,Aquatic,Swift Escape,Self Rally,Merry Legion,Upstream Swim
+4755,Aquatic,0x4c00c000040c90320883200a1481294810a2280a0084210a0085210a10a5280a,2,1,44,51,35,34,Bird,Aquatic,Beast,Reptile,Beast,Aquatic,Revenge Arrow,Why So Serious,Sugar Rush,Flanking Smack
+4756,Bird,0x2000c0000c2c233408a428ca00a020ca1082300808a5310a0882280c00a3210a,1,1,28,57,35,44,Bird,Aquatic,Bird,Beast,Bird,Beast,Blackmail,Self Rally,Smart Shot,Nut Throw
+4757,Beast,0xc0000d28522208a5214a0ca2284a10a4200a0080314804a230ca0c8320cc,0,1,39,42,31,52,Bird,Aquatic,Bug,Plant,Beast,Plant,Scarab Curse,Forest Spirit,Sugar Rush,Gas Unleash
+4758,Aquatic,0x4000000001206234044108441081108a0c2420cc10a420ca08c430c80cc52842,4,1,48,48,35,33,Bug,Plant,Bird,Aquatic,Aquatic,Plant,Triple Threat,Fish Hook,Hero's Bane,Spicy Surprise
+4759,Aquatic,0x400000000418244310a0290a148221081480308c0ca0280c0c8030ca0ca320ca,6,1,55,44,35,30,Aquatic,Reptile,Plant,Reptile,Plant,Plant,Aqua Stock,Why So Serious,Prickly Trap,Aqua Deflect
+4760,Beast,0xd00c0000518c4421080290a10a4280a10a4210c00a5200c088228481483294a,0,1,37,49,31,47,Aquatic,Aquatic,Bird,Aquatic,Beast,Reptile,Blackmail,Crimson Water,Sinister Strike,Jar Barrage
+4761,Plant,0x3000c0000c08b42310a320480ca32848048130cc08a4288c04a0208a0883310a,2,1,49,40,31,44,Aquatic,Bug,Bug,Plant,Bird,Bird,Scarab Curse,Forest Spirit,Smart Shot,Puffy Smack
+4762,Beast,0xc0000734422210a120080084200a0ca230cc0084214a108328c81083290c,7,1,37,46,31,50,Aquatic,Plant,Aquatic,Beast,Beast,Aquatic,Shipwreck,Death Mark,Sugar Rush,Water Sphere
+4763,Aquatic,0x4000c0000c28532308a0288a10a120c8048520ca0c8028080c80308c10833008,5,1,48,48,35,33,Bird,Bug,Plant,Aquatic,Plant,Aquatic,Aqua Stock,Crimson Water,Sweet Party,Water Sphere
+4764,Plant,0x3000c000032ca0230ca520880c8328081083310c0081208a048230480480290a,4,1,52,35,31,46,Plant,Aquatic,Bug,Plant,Beast,Bug,Bug Splat,Vegan Diet,Sugar Rush,Numbing Lecretion
+4765,Beast,0xc0000820b4321084200814a220ca00a020ca0ca020cc00a421080ca2208c,4,1,41,41,31,51,Aquatic,Beast,Beast,Reptile,Plant,Plant,Woodman Power,Chomp,Prickly Trap,Aqua Deflect
+4766,Aquatic,0x400000000b2492331423200404832808148528c808651046106318840c211846,0,1,50,47,35,32,Reptile,Reptile,Aquatic,Bug,Bird,Plant,Swift Escape,Terror Chomp,Air Force One,Carrot Hammer
+4767,Plant,0x3000c0000c089403108428ca0082214a0ca2310a0c80304c08a0288c10a228ca,1,1,51,41,31,41,Aquatic,Plant,Bird,Beast,Plant,Aquatic,Patient Hunter,Death Mark,Sweet Party,Flanking Smack
+4768,Beast,0xc0000c30112304a1214808a3200a0ca020cc0ca030ca0083294800a0210a,7,1,38,40,31,55,Bug,Plant,Beast,Bird,Plant,Beast,Revenge Arrow,Dark Swoop,Prickly Trap,Nut Throw
+4769,Beast,0xc000021c532204a120ca14a029080883214a0c80310800a4204a0080210a,3,1,38,41,31,54,Bug,Bird,Beast,Reptile,Plant,Beast,Woodman Power,Chomp,Sweet Party,Hare Dagger
+4770,Beast,0xc0000310632204a020081484294a0ca5290c048130c800a320080c83210c,1,1,42,37,31,54,Bug,Plant,Beast,Reptile,Bug,Plant,Woodman Power,Why So Serious,Dull Grip,Gas Unleash
+4771,Aquatic,0x4000c0000618624300a320ca0c8328880080204a08a1204a0c8130880c84310c,6,1,48,44,35,37,Beast,Beast,Plant,Plant,Bird,Plant,Aqua Stock,Vegan Diet,Smart Shot,Gas Unleash
+4772,Aquatic,0x4b00c0000c14744410a521481483290a1484308a108331081080300a1480290a,1,1,51,51,35,27,Aquatic,Reptile,Aquatic,Reptile,Aquatic,Reptile,Shipwreck,Why So Serious,Aquaponics,Jar Barrage
+4773,Beast,0xa0c323210441144142211420c2418cc0c61184400452846104018cc,6,1,42,43,31,48,Aquatic,Plant,Beast,Reptile,Plant,Aquatic,Heroic Reward,Sneaky Raid,Healing Aroma,Tail Slap
+4774,Beast,0xc0000a20643004a129080ca1280a08a2288808a230cc1480208a0ca328cc,1,1,41,42,31,50,Bug,Bird,Reptile,Plant,Bird,Plant,Bulkwark,Forest Spirit,Smart Shot,Aqua Deflect
+4775,Beast,0xc0000628443410a229080c8528ca0083310c0883210c00a029080ca2290a,1,1,38,43,31,52,Aquatic,Beast,Beast,Plant,Bird,Plant,Woodman Power,Vegan Diet,Headshot,Aqua Deflect
+4776,Beast,0xc000053452400ca0290a0ca4284a0c83200c1080300c1085290c0ca02948,4,1,45,41,31,47,Plant,Plant,Aquatic,Plant,Aquatic,Plant,Shipwreck,Forest Spirit,Aquaponics,Aqua Deflect
+4777,Aquatic,0x4000c000061c224404a320081080288a00a420ca08a1208c0085304a04a428cc,1,1,42,47,35,40,Bug,Beast,Beast,Aquatic,Bird,Bug,Revenge Arrow,Fish Hook,Smart Shot,Grub Explode
+4778,Beast,0xc0000c24933200a028c814a029480882308800a430cc0480288a0885210c,2,1,35,44,31,54,Beast,Bird,Bug,Reptile,Beast,Bird,Bug Splat,Chomp,Sinister Strike,Puffy Smack
+4779,Reptile,0x5000c0000908a23408a2288a04a0210a10a530ca0ca328c8008329480ca4284c,5,1,47,42,31,44,Bird,Aquatic,Beast,Bug,Plant,Plant,Revenge Arrow,Mite Bite,Prickly Trap,Aqua Deflect
+4780,Beast,0x808c3221080210a1085208a04a12008048228ca10a328080883284c,4,1,36,47,31,50,Aquatic,Bug,Aquatic,Aquatic,Bug,Bird,Aqua Vitality,Fish Hook,Dull Grip,Puffy Smack
+4781,Beast,0xc00004206221108020c80c83290a04a4204800a1290c148130081081210c,1,1,40,43,31,50,Aquatic,Bug,Reptile,Plant,Beast,Aquatic,Bulkwark,Vegan Diet,Sinister Strike,Water Sphere
+4782,Beast,0x600c00001241212048420881482280a108320880082210c0882280c10a4280a,0,1,37,46,31,50,Bug,Aquatic,Bird,Reptile,Beast,Aquatic,Blackmail,Why So Serious,Sugar Rush,Flanking Smack
+4783,Aquatic,0x4000c0000320632300a528c8088429480480280800a1310c0480304c00a4214a,0,1,41,45,35,43,Beast,Bug,Bug,Bird,Beast,Beast,Bug Splat,Insectivore,Sinister Strike,Nut Throw
+4784,Beast,0xc0000a3493300480210810a4208a0c832808048028c80883284a04a2290a,0,1,38,41,31,54,Bug,Plant,Bird,Aquatic,Bug,Bug,Blackmail,Crimson Water,Dull Grip,Grub Explode
+4785,Aquatic,0x4000c0000314d222108228ca0c83280a14a0290a0ca3288a048228081081214a,4,1,51,46,35,32,Aquatic,Reptile,Bug,Plant,Plant,Aquatic,Bug Splat,Vegan Diet,Prickly Trap,Water Sphere
+4786,Aquatic,0x4000c0000104a443048329080ca228ca10a520480c8420cc08a220ca0c83294c,1,1,50,45,35,34,Bug,Aquatic,Bird,Plant,Plant,Plant,Patient Hunter,Forest Spirit,Sweet Party,Gas Unleash
+4787,Beast,0x80000090833220c40114810a029081423104a0024200a08a0284a0064300c,1,1,38,44,31,51,Plant,Reptile,Bird,Aquatic,Beast,Beast,Patient Hunter,Crimson Water,Branch Charge,Rampant Howl
+4788,Beast,0xc0000a20c4230c80294a10a120c81483304c00a1304810a430080883314a,0,1,39,46,31,48,Plant,Reptile,Aquatic,Aquatic,Beast,Bird,Aqua Vitality,Crimson Water,Sinister Strike,Puffy Smack
+4789,Aquatic,0x4000c000052024220c84288804a4280810a3290810a228881485200814803008,6,1,51,47,35,31,Plant,Aquatic,Reptile,Bug,Aquatic,Reptile,Bulkwark,Mite Bite,Hero's Bane,Jar Barrage
+4790,Plant,0x3000c000061c1422108529080ca1284a148120481085290a10a42088148120c8,5,1,55,42,31,36,Aquatic,Reptile,Aquatic,Plant,Aquatic,Reptile,Aqua Vitality,Forest Spirit,Aquaponics,Jar Barrage
+4791,Aquatic,0x4000c0000814d2331480200a00a2204810a0314c10a0290810a420480884300c,5,1,45,53,35,31,Reptile,Aquatic,Aquatic,Beast,Aquatic,Bird,Aqua Vitality,Self Rally,Hero's Bane,Puffy Smack
+4792,Beast,0xc0000b0884341084280810a3284804a320ca108028ca0ca3204a00a23108,1,1,38,45,31,50,Aquatic,Bug,Plant,Aquatic,Aquatic,Beast,Refresh,Crimson Water,Aquaponics,Nut Throw
+4793,Aquatic,0x4900c0000314d12410a22088048528880883204800a030c814a0284c10a1280c,1,1,45,50,35,34,Aquatic,Bird,Reptile,Bug,Beast,Aquatic,Slippery Shield,Terror Chomp,Sinister Strike,Flanking Smack
+4794,Plant,0x300000000810a21410210842102508020c41114400620846086210420c401006,3,1,51,41,31,41,Aquatic,Plant,Bird,Aquatic,Beast,Plant,Ill-omened,Angry Lam,Merry Legion,Cattail Slap
+4795,Aquatic,0x40000000040861320ca4284a0c8028ca00a520880cc321080ca4280a00822148,7,1,51,41,35,37,Plant,Beast,Plant,Plant,Plant,Beast,Refresh,Vegan Diet,Seed Bullet,Hare Dagger
+4796,Plant,0x30000000032022220c83200a108428080ca420480483204a08823048008430ca,6,1,51,38,31,44,Plant,Plant,Bird,Aquatic,Bug,Beast,Blackmail,Fish Hook,Dull Grip,Hare Dagger
+4797,Plant,0x300800000914622300a0210a00a3214800a520ca0080284a0ca420cc1085200a,0,1,47,38,31,48,Beast,Beast,Plant,Beast,Beast,Aquatic,Refresh,Self Rally,Sugar Rush,Water Sphere
+4798,Aquatic,0x40000000010473211085280a008420c810c0308800a4304a08852008108030c8,1,1,42,53,35,34,Aquatic,Aquatic,Bird,Beast,Beast,Aquatic,Blackmail,Death Mark,Sinister Strike,Water Sphere
+4799,Aquatic,0x4a0800000314a2311481284a088320c814a228cc108228080ca230c804832048,0,1,50,47,35,32,Reptile,Reptile,Plant,Bird,Aquatic,Bug,Refresh,Insectivore,Aquaponics,Numbing Lecretion
+4800,Plant,0x3c00c000090862440083288810a1280808a5210a0081280814a320cc00a42008,1,1,47,41,31,45,Beast,Bird,Reptile,Aquatic,Beast,Beast,Slippery Shield,Crimson Water,Sugar Rush,Nut Throw
+4801,Beast,0xc0000a18d4330480280a10a0204a0c80288c0ca0214c04a3288c1082290a,0,1,41,41,31,51,Bug,Plant,Bug,Aquatic,Plant,Aquatic,Scarab Curse,Crimson Water,Prickly Trap,Water Sphere
+4802,Aquatic,0x4000c0000604423308a52908148028080ca3304808a420ca0c8428cc0ca3294a,5,1,51,46,35,32,Bird,Plant,Plant,Reptile,Bird,Plant,Aqua Stock,Why So Serious,Smart Shot,Aqua Deflect
+4803,Plant,0x3000c0000318d2220084288a10a4290a0ca3284a088530ca0ca128cc04a030cc,1,1,51,38,31,44,Beast,Plant,Plant,Aquatic,Bird,Bug,Refresh,Crimson Water,Headshot,Grub Explode
+4804,Beast,0xc0000908234208a1288a1080200a0885214a14a0308814a4310c108228cc,5,1,39,49,31,45,Bird,Bird,Reptile,Aquatic,Reptile,Aquatic,Slippery Shield,Fish Hook,Disarm,Water Sphere
+4805,Plant,0x3000c0000904522314a1294a00a5288a00a5308c0ca4200800a4200a0c83310c,1,1,52,35,31,46,Reptile,Beast,Beast,Beast,Plant,Plant,Woodman Power,Self Rally,Prickly Trap,Gas Unleash
+4806,Beast,0xc0000d1051421080294a00a02008048020080ca420cc0085288c14802848,3,1,39,41,31,53,Aquatic,Bug,Beast,Beast,Plant,Reptile,Revenge Arrow,Self Rally,Prickly Trap,Jar Barrage
+4807,Plant,0x300000000414a4310484290808a4280a04a2284810a3208c0cc428cc14a4208c,1,1,52,38,31,43,Bug,Bug,Plant,Bird,Aquatic,Reptile,October Treat,Dark Swoop,Hero's Bane,Neuro Toxin
+4808,Plant,0x3000c000020422030883280a0ca4200a14a0280a048028880c80310c00a4280a,1,1,53,36,31,44,Bird,Reptile,Plant,Plant,Bug,Beast,Aqua Stock,Forest Spirit,Dull Grip,Nut Throw
+4809,Beast,0x80000062c83220c8328080883200804a3290c04c2210a008328ca04a3290c,1,1,37,39,31,57,Plant,Bug,Beast,Bird,Bug,Bug,Revenge Arrow,Insectivore,Disguise,Grub Explode
+4810,Aquatic,0x4000c000011c524004a3288a088020080c85290c1085314a0c8020c800812008,2,1,47,46,35,36,Bug,Plant,Plant,Bird,Aquatic,Beast,Aqua Stock,Insectivore,Aquaponics,Hare Dagger
+4811,Beast,0x500c0000328d3340ca0210a04a5288800a5280c148030cc08a3200a0481284c,1,1,39,40,31,54,Plant,Beast,Bird,Bug,Reptile,Bug,Patient Hunter,Mite Bite,Tiny Catapult,Numbing Lecretion
+4812,Plant,0x3000c0000424c24314a1200804a3284a0ca02008008330cc1480200808a3280c,1,1,53,37,31,43,Reptile,Plant,Reptile,Bug,Beast,Bird,Bulkwark,Mite Bite,Sugar Rush,Cool Breeze
+4813,Plant,0x3c00c0000220d2230ca1214a00a5204a008428880484204814a1300a1084310a,1,1,51,37,31,45,Plant,Beast,Reptile,Beast,Bug,Aquatic,Slippery Shield,Self Rally,Dull Grip,Water Sphere
+4814,Beast,0x600c000062064340c80280a1081214a0c82288c00a4200a0ca4280c0ca4204c,1,1,44,39,31,50,Plant,Plant,Plant,Aquatic,Beast,Plant,Refresh,Fish Hook,Sinister Strike,Aqua Deflect
+4815,Beast,0x224a442008220c81083280a108428cc1083288c14a4210a0ca020c8,1,1,40,46,31,47,Beast,Aquatic,Reptile,Aquatic,Aquatic,Plant,Slippery Shield,Fish Hook,Aquaponics,Aqua Deflect
+4816,Aquatic,0x40000000071063440c85208a1080200804a120cc00a2208800a4200a14822008,0,1,47,45,35,37,Plant,Bug,Beast,Aquatic,Beast,Reptile,Woodman Power,Fish Hook,Sinister Strike,Jar Barrage
+4817,Plant,0x300800000734a31214a52888008420881482208c08c128ca0ca0300c148430cc,5,1,55,38,31,40,Reptile,Reptile,Plant,Beast,Bird,Reptile,Refresh,Death Mark,Feather Lunge,Jar Barrage
+4818,Aquatic,0x400000000b1423300882080a00a4288a106528c80c2228081440208800833006,1,1,46,48,35,35,Bird,Aquatic,Reptile,Beast,Plant,Beast,Spike Throw,Self Rally,Bamboo Clan,Hare Dagger
+4819,Aquatic,0x4000c0000a0c742310a5290808a4290a0ca330080c8330c80c81280a08a4290a,7,1,49,48,35,32,Aquatic,Plant,Plant,Bird,Plant,Bird,Aqua Stock,Dark Swoop,Sweet Party,Cool Breeze
+4820,Aquatic,0x4000c0000234d2220485280a008229480ca5210804a0310814a428880084200a,3,1,47,42,35,40,Bug,Plant,Reptile,Beast,Bug,Beast,Slippery Shield,Death Mark,Third Glance,Hare Dagger
+4821,Beast,0xc00006146234008228880c8421081080300c1481204c00a521480ca4314a,0,1,41,41,31,51,Beast,Aquatic,Beast,Plant,Reptile,Plant,Woodman Power,Vegan Diet,Tiny Catapult,Aqua Deflect
+4822,Aquatic,0x4000c000052072431483284a00a1200808a330c80483290c08a030880ca13088,5,1,46,47,35,36,Reptile,Bird,Bird,Beast,Bug,Plant,Patient Hunter,Self Rally,Dull Grip,Aqua Deflect
+4823,Beast,0x700c0000810822304a22908108421081483204c0c8030ca0480300a0484304c,0,1,41,39,31,53,Bug,Reptile,Bug,Aquatic,Plant,Bug,Bug Splat,Fish Hook,Sweet Party,Numbing Lecretion
+4824,Plant,0x3700c0000730c034088429480483284810a3290a1484310c0c85310c0c80208c,0,1,54,38,31,41,Bird,Aquatic,Plant,Bug,Reptile,Plant,Aqua Stock,Terror Chomp,Tiny Catapult,Gas Unleash
+4825,Aquatic,0x400040000524903410401042084510c4106210c408401886006309420c240804,7,1,44,52,35,33,Aquatic,Aquatic,Beast,Bird,Bird,Plant,Nitro Leap,Peace Treaty,Cockadoodledoo,Carrot Hammer
+4826,Plant,0x3e0040000914c323cc21108204241104146119420c230806082110c60c651082,1,1,56,35,31,42,Plant,Reptile,Bird,Bug,Plant,Plant,Balloon Pop,Blood Taste,Bamboo Clan,Leek Leak
+4827,Reptile,0x500800000704d4420485084a002210480ca430c20cc2080c0084290608632108,5,1,46,40,31,47,Bug,Plant,Beast,Beast,Plant,Bird,Revenge Arrow,Nut Crack,Seed Bullet,Risky Feather
+4828,Plant,0x3000c000021864430c85290a10a0290a14a3300a0ca3290c10a130ca0881200a,5,1,54,41,31,38,Plant,Reptile,Aquatic,Aquatic,Plant,Bird,Aqua Vitality,Crimson Water,Prickly Trap,Puffy Smack
+4829,Beast,0xc0000c287423108420c814842008148330cc108220c80ca020ca10a12808,5,1,43,46,31,44,Aquatic,Reptile,Plant,Reptile,Aquatic,Aquatic,Refresh,Why So Serious,Aquaponics,Flanking Smack
+4830,Aquatic,0x4000c0000b044234088128ca0880210a0c85308a0480280c0083210a00a420cc,5,1,43,47,35,39,Bird,Plant,Beast,Bird,Bug,Beast,Revenge Arrow,Insectivore,Dull Grip,Nut Throw
+4831,Plant,0x3000c0000120630408a128ca0083288800a430cc0c84304c14a1310a0c83208a,1,1,52,37,31,44,Bird,Beast,Reptile,Beast,Plant,Plant,Slippery Shield,Death Mark,Sweet Party,Gas Unleash
+4832,Aquatic,0x4000c0000810c442108329080ca2280814a0214804a320c8148130480c832908,4,1,53,44,35,32,Aquatic,Reptile,Reptile,Plant,Bug,Plant,Bulkwark,Forest Spirit,Third Glance,Gas Unleash
+4833,Beast,0xc000032cb03004a228481480204a0ca0210a048228cc0082288c0480214c,1,1,40,37,31,56,Bug,Plant,Beast,Reptile,Bug,Bug,Revenge Arrow,Why So Serious,Dull Grip,Numbing Lecretion
+4834,Aquatic,0x40000000053090330884290a108128ca1080290a0ca128ca10c3204c10a020ca,1,1,46,54,35,29,Bird,Aquatic,Aquatic,Aquatic,Plant,Aquatic,Spinal Tap,Fish Hook,Prickly Trap,Flanking Smack
+4835,Aquatic,0x4000c00002308402008120ca0ca2208a10a4208810a3310c04a020081484288a,7,1,48,47,35,34,Beast,Aquatic,Bug,Plant,Aquatic,Reptile,Scarab Curse,Forest Spirit,Hero's Bane,Jar Barrage
+4836,Aquatic,0x4000c00002284034108020c80c842808108128cc0ca431480ca0290a0c82310c,1,1,53,45,35,31,Aquatic,Aquatic,Plant,Plant,Plant,Plant,Refresh,Vegan Diet,Prickly Trap,Gas Unleash
+4837,Plant,0x3000c00001043222148328080484204a08a0314c08a1294c0484288800a02048,5,1,48,39,31,46,Reptile,Bird,Bug,Bug,Bird,Beast,Bug Splat,Terror Chomp,Smart Shot,Nut Throw
+4838,Beast,0xc0000c183433148228c80ca0290a0083290a1082200c108220cc00a428cc,5,1,39,44,31,50,Reptile,Beast,Aquatic,Plant,Aquatic,Beast,Shipwreck,Forest Spirit,Aquaponics,Nut Throw
+4839,Beast,0xc000092c5412108528080c80280a0080304810a428cc1080288a1082308c,1,1,38,48,31,47,Aquatic,Beast,Aquatic,Plant,Aquatic,Aquatic,Shipwreck,Vegan Diet,Hero's Bane,Water Sphere
+4840,Aquatic,0x4000c0000920c312088128880c82280a14a0280a04a3300a10a0200c00833088,3,1,47,47,35,35,Bird,Reptile,Aquatic,Plant,Bug,Beast,Aqua Vitality,Vegan Diet,Third Glance,Hare Dagger
+4841,Beast,0x518530300422082088109020ca4214a0025094c00a4110a0c443144,1,1,37,41,31,55,Beast,Plant,Beast,Bird,Beast,Plant,Woodman Power,Insectivore,Branch Charge,Cattail Slap
+4842,Reptile,0x5000c000030493340084200800a320ca00a428ca00a4308c1080288810a4300a,6,1,41,45,31,47,Beast,Beast,Aquatic,Beast,Beast,Aquatic,Shipwreck,Self Rally,Sinister Strike,Flanking Smack
+4843,Plant,0x3000c000051ca3430ca320c804a520080c81280808a1314804a5300c04a3208c,0,1,52,34,31,47,Plant,Plant,Bug,Bug,Bird,Bug,Scarab Curse,Mite Bite,Smart Shot,Grub Explode
+4844,Plant,0x3000c000022c63400c85290804a228080ca330ca00a4308a0c82290c04a4310a,5,1,54,32,31,47,Plant,Plant,Plant,Bug,Beast,Bug,Aqua Stock,Mite Bite,Sinister Strike,Grub Explode
+4845,Beast,0xc0000b20144200a0214814a420c808a3208804a1294c008428ca00a0214c,1,1,35,42,31,56,Beast,Bird,Beast,Reptile,Bug,Beast,Revenge Arrow,Chomp,Third Glance,Nut Throw
+4846,Plant,0x3000c000050893420083210808a3210a0ca2204c08a220cc0884288814a020ca,3,1,49,42,31,42,Beast,Plant,Bird,Bird,Bird,Reptile,Blackmail,Dark Swoop,Smart Shot,Neuro Toxin
+4847,Aquatic,0x4000c0000624c04408a520880485288a148228ca14a32808008421080c83300a,4,1,49,45,35,35,Bird,Reptile,Beast,Bug,Reptile,Plant,Revenge Arrow,Terror Chomp,Disarm,Gas Unleash
+4848,Plant,0x3000c000023442240c8320c81084204814a2214c00a3310c14a1290800a328c8,3,1,53,38,31,42,Plant,Reptile,Reptile,Aquatic,Beast,Beast,Slippery Shield,Fish Hook,Sinister Strike,Nut Throw
+4849,Plant,0x3000c000032460240c83214a0484280a048228c80ca5308810a5200c00a4310a,3,1,52,35,31,46,Plant,Bug,Aquatic,Bug,Plant,Beast,Aqua Vitality,Terror Chomp,Prickly Trap,Nut Throw
+4850,Plant,0x3000c000081832430ca329080c8428c80c8420c8148420c814813048048228cc,6,1,59,33,31,41,Plant,Plant,Reptile,Plant,Reptile,Bug,Bulkwark,Vegan Diet,Tiny Catapult,Numbing Lecretion
+4851,Plant,0x300000000c049220048429480483290a10a1280808a3300a08a2280a1080290c,6,1,47,43,31,43,Bug,Aquatic,Bird,Bug,Bird,Aquatic,Patient Hunter,Terror Chomp,Smart Shot,Water Sphere
+4852,Plant,0x3000c0000d0c5322008020ca0881280a10a1208c0ca4294800a428cc00a3314c,1,1,47,40,31,46,Beast,Aquatic,Beast,Bird,Plant,Beast,Woodman Power,Insectivore,Prickly Trap,Nut Throw
+4853,Plant,0x3700c000032c14440ca5210a1080290a0c83210804a4204c04a0280c148530ca,1,1,55,35,31,43,Plant,Plant,Bug,Aquatic,Bug,Reptile,Scarab Curse,Fish Hook,Third Glance,Jar Barrage
+4854,Plant,0x3000c0000d20c32410a3280a00a329080080310800a12948108228ca088130c8,0,1,45,43,31,45,Aquatic,Beast,Aquatic,Beast,Beast,Bird,Shipwreck,Self Rally,Sinister Strike,Puffy Smack
+4855,Plant,0x3000c000092cb0430480208a14a2288a00a2208a088031080081210c0083294a,4,1,47,38,31,48,Bug,Beast,Beast,Reptile,Bird,Beast,Revenge Arrow,Chomp,Headshot,Hare Dagger
+4856,Plant,0x300000000910922204a2200814a221480ca0204a1081290c0c8320cc08812008,0,1,54,38,31,41,Bug,Plant,Plant,Reptile,Aquatic,Bird,Aqua Stock,Chomp,Aquaponics,Puffy Smack
+4857,Aquatic,0x400000000d243234144208420040108410231104142319440821188214221846,3,1,49,49,35,31,Reptile,Aquatic,Bird,Beast,Reptile,Reptile,Balloon Pop,Piercing Sound,Poo Fling,Critical Escape
+4858,Aquatic,0x4d0000000330a2340445088208401002106110860844184600441902006218c4,1,1,41,50,35,38,Bug,Aquatic,Beast,Bird,Bird,Beast,Heroic Reward,Peace Treaty,Cockadoodledoo,Rampant Howl
+4859,Reptile,0x500000000b144223104309420c42088414441002086108420025108604651104,7,1,47,43,31,43,Aquatic,Reptile,Beast,Plant,Bird,Bug,Single Combat,Drain Bite,Air Force One,Anesthetic Bait
+4860,Plant,0x3000000005202444084208840c2110c40060188408230906044310460c630842,0,1,50,38,31,45,Bird,Beast,Bug,Plant,Bird,Plant,Barb Strike,Vegetal Bite,Eggbomb,Leek Leak
+4861,Beast,0xc0000d2cc124088328c810a5208a0484214c0082208804a420ca0885200a,0,1,34,45,31,54,Bird,Bug,Bug,Aquatic,Beast,Bird,Scarab Curse,Crimson Water,Sugar Rush,Puffy Smack
+4862,Aquatic,0x4000c000080834201083284a0080204a1083290a04a030880881288810a0200c,0,1,43,52,35,34,Aquatic,Aquatic,Bird,Beast,Bug,Aquatic,Blackmail,Death Mark,Third Glance,Flanking Smack
+4863,Aquatic,0x4f00c000032853310ca4200800842908008230c81084284c08a1294a08a32088,1,1,43,50,35,36,Plant,Beast,Bird,Beast,Aquatic,Bird,Patient Hunter,Death Mark,Aquaponics,Cool Breeze
+4864,Beast,0xc000032072241482204a088020080481288804812908008220880c82288a,1,1,39,40,31,54,Reptile,Bug,Beast,Bird,Bug,Plant,Revenge Arrow,Insectivore,Dull Grip,Gas Unleash
+4865,Plant,0x3000c000011c94330ca4280808a1210a048320cc10a128cc0ca020480c84280c,6,1,54,37,31,42,Plant,Bug,Plant,Bird,Aquatic,Plant,Refresh,Dark Swoop,Hero's Bane,Gas Unleash
+4866,Beast,0xa28a04210a32088048528c80081208a0c8220cc0ca4300a00832008,3,1,39,40,31,54,Aquatic,Beast,Plant,Bug,Plant,Beast,Refresh,Terror Chomp,Sweet Party,Hare Dagger
+4867,Aquatic,0x4000c0000320c24308a3200a08a3280a04a0294a1082208810a0294a0ca120ca,0,1,45,51,35,33,Bird,Bug,Aquatic,Bird,Aquatic,Plant,Aqua Vitality,Dark Swoop,Aquaponics,Aqua Deflect
+4868,Reptile,0x5000c0000220133104a4210a00a2208a0880280c048320ca1081290804842048,1,1,43,42,31,48,Bug,Bird,Aquatic,Beast,Bug,Bug,Shipwreck,Self Rally,Dull Grip,Numbing Lecretion
+4869,Plant,0x3000c0000808523400a220ca0ca0284a1084200804a0314a00a3288a0ca12948,3,1,51,36,31,46,Beast,Aquatic,Beast,Plant,Bug,Plant,Woodman Power,Forest Spirit,Third Glance,Aqua Deflect
+4870,Beast,0xc0000c10243100a0290a00a220ca0082308a0080294810a420ca08a02908,7,1,32,45,31,56,Beast,Beast,Aquatic,Beast,Beast,Bird,Aqua Vitality,Self Rally,Sugar Rush,Cool Breeze
+4871,Aquatic,0x4000c0000918134200a028ca0ca020c8108231081484288a0483300a10a020ca,3,1,48,47,35,34,Beast,Aquatic,Bug,Plant,Reptile,Aquatic,Bug Splat,Forest Spirit,Tiny Catapult,Flanking Smack
+4872,Plant,0x3000c0000910a32200a420c80ca029080480308a08a5200a0084284a08a3280a,3,1,47,39,31,47,Beast,Bug,Beast,Plant,Bird,Bird,Revenge Arrow,Forest Spirit,Smart Shot,Cool Breeze
+4873,Beast,0xd00c000041c30401482294a048420480085290810a3204808a328ca04a1200a,0,1,37,43,31,53,Reptile,Beast,Bird,Bug,Aquatic,Bug,Patient Hunter,Terror Chomp,Hero's Bane,Grub Explode
+4874,Aquatic,0x400000000604414208452142104220c2106021460844080600a2090210a42104,6,1,42,55,35,32,Bird,Aquatic,Beast,Aquatic,Bird,Aquatic,Woodman Power,Swallow,Cockadoodledoo,Flanking Smack
+4875,Beast,0xc000030c44240884210810a4284814a3288a14a030cc0ca328480484200a,1,1,42,43,31,48,Bird,Reptile,Plant,Aquatic,Reptile,Bug,Refresh,Crimson Water,Disarm,Numbing Lecretion
+4876,Plant,0x3000c0000918733304a4208810a128ca0ca330c80c80314800a020c80c822148,1,1,54,35,31,44,Bug,Plant,Beast,Aquatic,Plant,Plant,Woodman Power,Crimson Water,Sweet Party,Gas Unleash
+4877,Beast,0xc0000130844408a3200a0484200a108229080c82280a04a2290a0083210c,2,1,37,42,31,54,Bird,Aquatic,Bug,Bug,Plant,Beast,Scarab Curse,Terror Chomp,Sweet Party,Hare Dagger
+4878,Aquatic,0x4000c000010c733200a5294a1080200a00a030ca0c80310a0c85290a00a5290c,1,1,46,45,35,38,Beast,Beast,Plant,Aquatic,Plant,Beast,Aqua Stock,Fish Hook,Sweet Party,Nut Throw
+4879,Plant,0x3000c000052052430884280a00a4290a1482294800a0300c0ca020c80c8230cc,1,1,52,37,31,44,Bird,Reptile,Plant,Beast,Beast,Plant,Refresh,Self Rally,Sinister Strike,Gas Unleash
+4880,Aquatic,0x4000c000091460220480284a08a32808008330cc04a2200a0ca42848108020cc,3,1,45,46,35,38,Bug,Beast,Plant,Bird,Bug,Aquatic,Refresh,Dark Swoop,Third Glance,Water Sphere
+4881,Plant,0x3c0800000a30244314420882142308040ca11086008529441461104210220846,1,1,56,38,31,39,Reptile,Plant,Reptile,Reptile,Beast,Aquatic,Vine Dagger,Sneaky Raid,Sugar Rush,Upstream Swim
+4882,Plant,0x30000000023454321444210800a508880c4208c40c8528040cc0194808800844,4,1,55,36,31,42,Reptile,Plant,Plant,Beast,Plant,Bird,October Treat,Self Rally,Sweet Party,Puffy Smack
+4883,Plant,0x3000c0000120723214a2200a048328ca0ca0208a148031080c8420ca08a3210c,4,1,56,36,31,41,Reptile,Plant,Plant,Bug,Reptile,Bird,Aqua Stock,Terror Chomp,Tiny Catapult,Cool Breeze
+4884,Aquatic,0x4000c0000c24633400832908008228c800a030ca0ca0284c0ca2288c10a53108,7,1,46,45,35,38,Beast,Beast,Plant,Beast,Plant,Aquatic,Refresh,Death Mark,Prickly Trap,Flanking Smack
+4885,Plant,0x3000c000012c14241483290a0c8420ca00a5200a0c83290c0880214804a32008,5,1,53,36,31,44,Reptile,Beast,Bird,Plant,Plant,Bug,Blackmail,Vegan Diet,Sweet Party,Grub Explode
+4886,Aquatic,0x4b00c00008088224148020c800a028c81083310c10a0284a1085214800a530ca,1,1,45,51,35,33,Reptile,Aquatic,Aquatic,Beast,Aquatic,Beast,Shipwreck,Self Rally,Hero's Bane,Nut Throw
+4887,Aquatic,0x4000c0000804d2300c82204a008429080c8520481080308c04a5210a008520ca,1,1,47,44,35,38,Plant,Plant,Bug,Beast,Aquatic,Beast,Scarab Curse,Death Mark,Aquaponics,Hare Dagger
+4888,Reptile,0x5000c0000a28a13200842808008421081084300a048020cc108328c80c802148,2,1,45,43,31,45,Beast,Aquatic,Aquatic,Beast,Bug,Plant,Shipwreck,Death Mark,Dull Grip,Gas Unleash
+4889,Plant,0x300000000704524304a00884148109041043184a08a010cc1081210810441042,7,1,50,44,31,39,Bug,Aquatic,Aquatic,Reptile,Bird,Aquatic,Shipwreck,Why So Serious,Smart Shot,Tail Slap
+4890,Beast,0xb00c0000828d24410a420880ca0284a0ca3200800a3284c1085280a1085210a,0,1,40,45,31,48,Aquatic,Plant,Aquatic,Plant,Beast,Aquatic,Shipwreck,Forest Spirit,Sinister Strike,Water Sphere
+4891,Plant,0x3000c000050c842310a0280a1080210814a128ca008331480c80308810a4304a,4,1,52,42,31,39,Aquatic,Reptile,Plant,Aquatic,Beast,Aquatic,Aqua Stock,Fish Hook,Sugar Rush,Flanking Smack
+4892,Aquatic,0x4600c0000730c43400a1200a0ca2200a0ca4280a14a120c80c83214c0c8230ca,3,1,54,41,35,34,Beast,Plant,Plant,Plant,Reptile,Plant,Aqua Stock,Forest Spirit,Disarm,Gas Unleash
+4893,Beast,0xc0000224234200a12108108128c8048328c80084308a0ca020ca048128ca,1,1,37,40,31,56,Beast,Bug,Plant,Aquatic,Beast,Bug,Refresh,Fish Hook,Sugar Rush,Numbing Lecretion
+4894,Bug,0x1000c000060473230c80204a10a5200810a3314a00a320c80ca5200c00842908,3,1,43,39,35,47,Plant,Aquatic,Plant,Aquatic,Beast,Beast,Refresh,Crimson Water,Sinister Strike,Hare Dagger
+4895,Beast,0x100c0000b24a2440ca3290a048420c81483294a0883314c0484210c0ca22888,1,1,42,39,31,52,Plant,Reptile,Bug,Bug,Bird,Plant,Bug Splat,Terror Chomp,Headshot,Aqua Deflect
+4896,Aquatic,0x400000000c30c34404a32044088328880461080a0c80310214821108008018ca,5,1,47,44,35,38,Bug,Bug,Reptile,Bird,Plant,Beast,Bulkwark,Insectivore,Sweet Party,Hare Dagger
+4897,Beast,0xc000043013330ca428880c83284a08a120ca148120c800a028cc08a43088,1,1,40,43,31,50,Plant,Bird,Beast,Plant,Reptile,Bird,Woodman Power,Vegan Diet,Tiny Catapult,Cool Breeze
+4898,Plant,0x3000c0000134c2340ca4208a008020c80ca0304c04a03148048430ca1084214a,1,1,52,35,31,46,Plant,Plant,Bug,Beast,Bug,Aquatic,Bug Splat,Death Mark,Third Glance,Water Sphere
+4899,Beast,0xc000072c74020ca0208a10a4284a0c83288a008430880c8228cc04843088,0,1,42,39,31,52,Plant,Plant,Plant,Aquatic,Beast,Bug,Aqua Stock,Crimson Water,Sugar Rush,Numbing Lecretion
+4900,Beast,0x80000042c23420080210a0481204a1081290a1085314a08a5210a04a1294a,2,1,35,45,31,53,Beast,Aquatic,Bird,Bug,Aquatic,Bug,Patient Hunter,Terror Chomp,Aquaponics,Grub Explode
+4901,Aquatic,0x4000c000022840231084280a04a328c80083200c10a1314a008228880484210a,1,1,43,47,35,39,Aquatic,Beast,Beast,Bug,Aquatic,Bug,Revenge Arrow,Mite Bite,Hero's Bane,Numbing Lecretion
+4902,Plant,0x3000c0000704a2240880280a0ca2208a1083310810a420c80482310a0080200c,0,1,49,41,31,43,Bird,Aquatic,Bug,Plant,Aquatic,Beast,Bug Splat,Forest Spirit,Hero's Bane,Hare Dagger
+4903,Beast,0xc0000c2c3244108320880ca320081081210a0485290c1080280a10a330cc,6,1,39,47,31,47,Aquatic,Aquatic,Aquatic,Plant,Bug,Aquatic,Shipwreck,Forest Spirit,Dull Grip,Flanking Smack
+4904,Beast,0xc0000a14a2230c84204810a02808088421480ca2310a0ca420881484204c,0,1,44,42,31,47,Plant,Bird,Plant,Aquatic,Plant,Reptile,Refresh,Crimson Water,Prickly Trap,Jar Barrage
+4905,Beast,0xc000011c23211482204a008420ca04a220c80884200c0081288c0ca13108,1,1,38,41,31,54,Reptile,Bug,Beast,Beast,Bird,Plant,Revenge Arrow,Death Mark,Headshot,Aqua Deflect
+4906,Beast,0xc0000114c2230c84200a00842048108428ca0082200c0884210808a42148,1,1,35,46,31,52,Plant,Aquatic,Bird,Beast,Beast,Bird,Blackmail,Death Mark,Sugar Rush,Cool Breeze
+4907,Beast,0xc0000d2413431485204a00a3288a0ca3294a0ca329080881294c10a2300c,0,1,41,43,31,49,Reptile,Plant,Bird,Beast,Plant,Aquatic,Blackmail,Self Rally,Prickly Trap,Flanking Smack
+4908,Plant,0x3000c00007241032048128080085210804a5280a0483290c08a530080ca028ca,1,1,49,35,31,49,Bug,Bug,Bird,Beast,Bug,Plant,Patient Hunter,Death Mark,Dull Grip,Aqua Deflect
+4909,Aquatic,0x4900c0000214c24308a3200a0484200a0c8028ca10a4288a00a1314c10a428c8,1,1,45,49,35,35,Bird,Plant,Beast,Bug,Aquatic,Aquatic,Woodman Power,Terror Chomp,Hero's Bane,Flanking Smack
+4910,Plant,0x3000c0000b106323008529080c8228c808a0200a0c84208814a2294a14a4214c,4,1,55,37,31,41,Beast,Bird,Reptile,Plant,Plant,Reptile,Slippery Shield,Vegan Diet,Sweet Party,Neuro Toxin
+4911,Beast,0xc0000730a4220c84288810a120ca0484310a00a120c80ca530ca00a3300a,5,1,39,40,31,54,Plant,Bug,Plant,Aquatic,Beast,Beast,Refresh,Crimson Water,Sinister Strike,Nut Throw
+4912,Plant,0x30000000080444440c2029440084088200a529060c4520420c41204c1481190c,1,1,55,34,31,44,Plant,Beast,Plant,Beast,Plant,Reptile,Shroom's Grace,Death Mark,Wooden Stab,Jar Barrage
+4913,Aquatic,0x40000000051022030824200414a5210804402908004310c808443002006420c8,1,1,43,48,35,38,Bird,Bug,Bird,Reptile,Beast,Beast,Heart Break,Chomp,Ivory Stab,Rampant Howl
+4914,Beast,0xc00003087323148528081480208810a4210c08a1290804a4300a10823108,4,1,40,46,31,47,Reptile,Aquatic,Bug,Reptile,Bird,Aquatic,Scarab Curse,Why So Serious,Smart Shot,Water Sphere
+4915,Aquatic,0x4000c0000c2c4232148020c81083290a0c8328c80080314a0c84314800833108,0,1,49,45,35,35,Reptile,Plant,Plant,Aquatic,Beast,Beast,Aqua Stock,Fish Hook,Sugar Rush,Hare Dagger
+4916,Beast,0xc000072c33440c8328ca0c8428c810a5204c0083304a10a1214a14a0280c,0,1,42,43,31,48,Plant,Aquatic,Aquatic,Plant,Beast,Reptile,Aqua Vitality,Vegan Diet,Sugar Rush,Neuro Toxin
+4917,Aquatic,0x4000c0000328523200a3210a14a528c8108430080ca2288a0480290c0083204a,1,1,47,45,35,37,Beast,Aquatic,Bug,Reptile,Plant,Beast,Bug Splat,Chomp,Prickly Trap,Hare Dagger
+4918,Bird,0x2000c0000930b0220c8521480c8520c80c84300a048128cc0483210c00822088,0,1,38,44,35,47,Plant,Plant,Bug,Plant,Bug,Beast,Bug Splat,Vegan Diet,Dull Grip,Hare Dagger
+4919,Aquatic,0x4300c000062462440883208a10a420ca0c8430cc0885310c1083210808a3200a,1,1,44,54,35,31,Bird,Plant,Aquatic,Aquatic,Bird,Bird,Shipwreck,Crimson Water,Headshot,Cool Breeze
+4920,Reptile,0x5000c000051822330ca1214810a320080ca2204a14a330cc1483304c00a4310a,5,1,52,41,31,40,Plant,Plant,Reptile,Aquatic,Reptile,Beast,Bulkwark,Crimson Water,Disarm,Nut Throw
+4921,Plant,0x3000c0000d28642310a329080ca1208a04a130c800a020881080290a00803048,3,1,49,39,31,45,Aquatic,Bug,Aquatic,Plant,Beast,Beast,Shipwreck,Forest Spirit,Sinister Strike,Hare Dagger
+4922,Plant,0x3000c000023073120ca5204a0ca5294800a0214804a0208c0ca329480081290a,1,1,53,33,31,47,Plant,Beast,Plant,Plant,Bug,Beast,Refresh,Forest Spirit,Third Glance,Hare Dagger
+4923,Aquatic,0x4000c0000120d03410a3280a148028c800a428cc00a0208c0ca4210c08852048,1,1,46,48,35,35,Aquatic,Beast,Plant,Reptile,Beast,Bird,Refresh,Why So Serious,Sinister Strike,Puffy Smack
+4924,Plant,0x3000c000051cb42414a0280800a3280a00a3284a0c84284804a3294a00a23008,1,1,50,35,31,48,Reptile,Beast,Bug,Beast,Plant,Beast,Scarab Curse,Self Rally,Sweet Party,Nut Throw
+4925,Beast,0xc0000920830208a4210a08a028ca0ca3290a0ca1200a0ca0200810a53008,6,1,41,44,31,48,Bird,Plant,Plant,Bird,Plant,Aquatic,Refresh,Dark Swoop,Prickly Trap,Flanking Smack
+4926,Plant,0x3000c0000d30220304a0200a08a3204800a530ca1083200a1080300c04a3204c,6,1,47,41,31,45,Bug,Beast,Aquatic,Bird,Aquatic,Bug,Shipwreck,Dark Swoop,Aquaponics,Grub Explode
+4927,Beast,0xc000021440220080280a0ca320ca10a228c80c82200a00a4314808a1280c,7,1,38,43,31,52,Beast,Aquatic,Beast,Plant,Plant,Bird,Woodman Power,Forest Spirit,Sweet Party,Cool Breeze
+4928,Plant,0x3000c000012c424210a0290a04a120c804a428ca00a0288c0c83200a0081310a,0,1,49,36,31,48,Aquatic,Bug,Plant,Bug,Beast,Beast,Aqua Stock,Mite Bite,Sinister Strike,Hare Dagger
+4929,Beast,0xf00c0000304512310a028080c85210808a32148008030481480310a00832888,1,1,38,44,31,51,Aquatic,Bird,Reptile,Plant,Beast,Beast,Bulkwark,Vegan Diet,Sugar Rush,Hare Dagger
+4930,Beast,0xc0000428114208a52008108020c8088130080ca3290a10a4300c0082200a,0,1,36,48,31,49,Bird,Bird,Aquatic,Aquatic,Plant,Beast,Aqua Vitality,Fish Hook,Prickly Trap,Hare Dagger
+4931,Aquatic,0x400800000c08b4430c83200a0c8028ca048130cc1483290c0081294a0883310a,7,1,49,44,35,36,Plant,Bug,Beast,Plant,Reptile,Bird,Revenge Arrow,Vegan Diet,Tiny Catapult,Puffy Smack
+4932,Beast,0xc0000b14d4340ca42808088029080c84200c1482210a04a1294a0ca4208c,2,1,44,39,31,50,Plant,Plant,Bug,Bird,Reptile,Plant,Scarab Curse,Insectivore,Tiny Catapult,Aqua Deflect
+4933,Beast,0xc000063462240885210a0ca4200a1483210c0484210c0ca1308a10802008,0,1,42,42,31,49,Bird,Reptile,Plant,Plant,Bug,Aquatic,Refresh,Forest Spirit,Dull Grip,Water Sphere
+4934,Plant,0x3000c000080c430400a5214a00a029080c84284a0882300800a420ca00a3214c,0,1,46,38,31,49,Beast,Plant,Beast,Beast,Bird,Beast,Woodman Power,Self Rally,Headshot,Nut Throw
+4935,Beast,0xc0000c20943304a5294a00a3280a00a5290a08a03048108330c81080290c,0,1,34,46,31,53,Bug,Beast,Aquatic,Beast,Bird,Aquatic,Shipwreck,Self Rally,Smart Shot,Water Sphere
+4936,Plant,0x3000c000062c70340c8328c80882290a0c85300a00a0208a0080290810a030cc,0,1,50,39,31,44,Plant,Plant,Beast,Bird,Beast,Aquatic,Revenge Arrow,Insectivore,Sinister Strike,Flanking Smack
+4937,Beast,0x800000a08524404822808042110ca0c85094a0ca3300400a0204c0c60214c,3,1,42,36,31,55,Bug,Plant,Beast,Bug,Plant,Plant,Woodman Power,Blood Taste,Prickly Trap,Leek Leak
+4938,Plant,0x3000c0000814c433008528ca14a420ca00a5310c10a430c808a2300a0ca3284c,2,1,50,40,31,43,Beast,Beast,Bird,Reptile,Aquatic,Plant,Patient Hunter,Chomp,Hero's Bane,Aqua Deflect
+4939,Aquatic,0x4000c000021872320083280810a0290a10a3208a14a0288a10a128ca1081210a,5,1,46,53,35,30,Beast,Aquatic,Aquatic,Aquatic,Reptile,Aquatic,Aqua Vitality,Crimson Water,Disarm,Water Sphere
+4940,Aquatic,0x4000c000032c113200a420ca0c8028c814a3200c10a3300a0c85290a108528c8,5,1,50,47,35,32,Beast,Reptile,Plant,Plant,Aquatic,Aquatic,Aqua Stock,Vegan Diet,Hero's Bane,Water Sphere
+4941,Beast,0xc0000308b22214a528c8008320ca00a12808008220c800a0200a00842008,7,1,34,41,31,58,Reptile,Beast,Beast,Beast,Beast,Beast,Woodman Power,Death Mark,Sugar Rush,Hare Dagger
+4942,Beast,0xc00008146423048420ca14822008008430080480210a14a0304a00a3210c,2,1,39,39,31,55,Bug,Beast,Reptile,Reptile,Bug,Beast,Slippery Shield,Why So Serious,Dull Grip,Nut Throw
+4943,Aquatic,0x4000c000030c3033008321080ca1284a1080300a1084288a0ca0204a00a4308a,2,1,47,47,35,35,Beast,Aquatic,Plant,Plant,Aquatic,Beast,Refresh,Forest Spirit,Aquaponics,Nut Throw
+4944,Aquatic,0x4000c0000720d33204a4214804a0200a08a2210c0883290a14a0280814a02148,7,1,47,47,35,35,Bug,Bird,Reptile,Bug,Bird,Reptile,Slippery Shield,Mite Bite,Headshot,Neuro Toxin
+4945,Aquatic,0x4000c0000124a2401083280808a3284a1085310c0483290c0480314c10853008,2,1,44,51,35,34,Aquatic,Aquatic,Bug,Bird,Bug,Aquatic,Bug Splat,Dark Swoop,Dull Grip,Water Sphere
+4946,Bird,0x2000c0000a04d24410a121480482280a14a2200c0c83280810a2204c00a3208a,1,1,36,51,35,42,Aquatic,Reptile,Aquatic,Bug,Plant,Beast,Aqua Vitality,Terror Chomp,Sweet Party,Nut Throw
+4947,Aquatic,0x4000c0000a30932200a5210810a0204a10a2280a0085280c08a1280a048020ca,5,1,42,50,35,37,Beast,Aquatic,Bird,Aquatic,Beast,Bug,Patient Hunter,Crimson Water,Sugar Rush,Numbing Lecretion
+4948,Plant,0x3b00c0000920b2430c8121080084208a00a5204a0883300c14a020ca0ca1310c,2,1,52,37,31,44,Plant,Beast,Reptile,Beast,Bird,Plant,Slippery Shield,Death Mark,Headshot,Aqua Deflect
+4949,Aquatic,0x4200c0000b3014320480294a00a028c80c8020cc10a1290814a2208a148020ca,1,1,50,45,35,34,Bug,Plant,Reptile,Beast,Aquatic,Reptile,Slippery Shield,Self Rally,Hero's Bane,Jar Barrage
+4950,Plant,0x3000c0000b1093440c80200a0ca0200800a121080880200800a1208a0083208a,1,1,49,37,31,47,Plant,Beast,Beast,Plant,Bird,Beast,Woodman Power,Forest Spirit,Headshot,Hare Dagger
+4951,Plant,0x3000000001047322108528880084208810c2208c00a430ca1482200c10c520c8,7,1,49,43,31,41,Aquatic,Aquatic,Reptile,Beast,Beast,Aquatic,Bulkwark,Death Mark,Sinister Strike,Chitin Jump
+4952,Aquatic,0x4f0800000924c2240843208a00a528080c24100c0884210a048020ca04a5214c,0,1,44,46,35,39,Bird,Plant,Bug,Beast,Bird,Bug,Bug Splat,Self Rally,Headshot,Grub Explode
+4953,Aquatic,0x4000c0000c0c134400a529081081210a0ca0214a0c83280814a1200810a32088,4,1,50,47,35,32,Beast,Plant,Reptile,Aquatic,Plant,Aquatic,Slippery Shield,Fish Hook,Sweet Party,Flanking Smack
+4954,Aquatic,0x4000c00007182332108420ca0884280a0483304810a028480ca1284a10a0200c,4,1,46,51,35,32,Aquatic,Bug,Plant,Bird,Aquatic,Aquatic,Refresh,Insectivore,Hero's Bane,Flanking Smack
+4955,Beast,0xc0000c2c63231084290a10a1214808a2290a0ca3208c04a021080c84210c,5,1,40,44,31,49,Aquatic,Bird,Bug,Aquatic,Plant,Plant,Scarab Curse,Crimson Water,Prickly Trap,Gas Unleash
+4956,Aquatic,0x4000c000070813240ca0200a0485204a0c8128cc08a128ca108030c8148330cc,1,1,50,46,35,33,Plant,Plant,Aquatic,Bug,Bird,Reptile,Shipwreck,Terror Chomp,Smart Shot,Jar Barrage
+4957,Beast,0xc0000c0c64321082284814a4288a08a4314a0480210a008030cc10a3310c,7,1,37,46,31,50,Aquatic,Bird,Beast,Reptile,Bug,Aquatic,Revenge Arrow,Chomp,Dull Grip,Flanking Smack
+4958,Reptile,0x5000c000041092330083288a008120c80c8030880084284c0c83200c1083310c,2,1,46,41,31,46,Beast,Plant,Plant,Beast,Beast,Aquatic,Aqua Stock,Death Mark,Sugar Rush,Water Sphere
+4959,Aquatic,0x4000c0000724332404a0294a148328ca14a2310c088528ca0c84280a04a4280a,1,1,50,44,35,35,Bug,Reptile,Plant,Reptile,Bird,Bug,Aqua Stock,Why So Serious,Headshot,Grub Explode
+4960,Aquatic,0x4000c000073434341481208804a5288a1084284c08a0290c0c83284c10a43008,3,1,48,49,35,32,Reptile,Aquatic,Plant,Bug,Bird,Aquatic,Aqua Stock,Mite Bite,Smart Shot,Flanking Smack
+4961,Aquatic,0x4000c000012824231083200a08a02948048228881083300810a3314c0c8028ca,1,1,46,51,35,32,Aquatic,Bug,Aquatic,Bird,Aquatic,Plant,Aqua Vitality,Dark Swoop,Aquaponics,Gas Unleash
+4962,Beast,0xc0000830842408a4204a00a0200a00a1204804a0314c0483210a04a0288a,0,1,34,40,31,59,Bird,Beast,Bug,Beast,Bug,Bug,Bug Splat,Self Rally,Third Glance,Grub Explode
+4963,Bird,0x2000c000080462330882210a008328080085300c0ca4310a04a130c81081308c,0,1,32,51,35,46,Bird,Beast,Bug,Beast,Plant,Aquatic,Scarab Curse,Death Mark,Prickly Trap,Water Sphere
+4964,Plant,0x3000c0000b08c4240085210a108128ca0c83304c00a0204c14a3300c00a2294c,0,1,50,38,31,45,Beast,Plant,Reptile,Aquatic,Beast,Beast,Slippery Shield,Fish Hook,Sinister Strike,Nut Throw
+4965,Plant,0x3000c0000a1c94320ca028481482280a048030cc0083290c088320880ca2280c,1,1,53,36,31,44,Plant,Bug,Bird,Reptile,Beast,Plant,Blackmail,Why So Serious,Sugar Rush,Aqua Deflect
+4966,Plant,0x3000c00005245220108421480c8528080c82308810a1294c008030c804a3214a,1,1,52,38,31,43,Aquatic,Plant,Beast,Plant,Aquatic,Bug,Revenge Arrow,Vegan Diet,Hero's Bane,Grub Explode
+4967,Aquatic,0x4000c0000d243433048428080081200800a03048088128080c8229080ca02088,4,1,46,44,35,39,Bug,Beast,Plant,Beast,Bird,Plant,Aqua Stock,Death Mark,Headshot,Aqua Deflect
+4968,Plant,0x3000c0000804b44008a320c80c82208800a1300a00a5304c08a0280800802808,1,1,46,40,31,47,Bird,Beast,Bird,Plant,Beast,Beast,Patient Hunter,Vegan Diet,Sinister Strike,Hare Dagger
+4969,Aquatic,0x4000c0000a08331310a3200a148520ca04a0280810a0314a0ca5280c0884314c,7,1,48,49,35,32,Aquatic,Bug,Plant,Reptile,Aquatic,Bird,Refresh,Why So Serious,Hero's Bane,Puffy Smack
+4970,Aquatic,0x4d00c0000d1c242308a0204808a3290a0ca0310c0084288a04a3288c10843108,1,1,44,49,35,36,Bird,Plant,Bug,Bird,Beast,Aquatic,Scarab Curse,Dark Swoop,Sugar Rush,Water Sphere
+4971,Aquatic,0x4000c0000120d413108328c80c82288804a0294810a4290a0c80300c1482290c,3,1,51,46,35,32,Aquatic,Bug,Plant,Plant,Aquatic,Reptile,Aqua Stock,Vegan Diet,Hero's Bane,Jar Barrage
+4972,Plant,0x3000c000082882330c842808048421080480308a0c84208a10a02088048328ca,0,1,53,34,31,46,Plant,Bug,Aquatic,Bug,Plant,Bug,Aqua Vitality,Terror Chomp,Sweet Party,Numbing Lecretion
+4973,Bird,0x2000c0000230b34200a0200810a4204a0ca420480c83290c08a3284c10a2284a,1,1,35,53,35,41,Beast,Plant,Bird,Aquatic,Plant,Aquatic,Patient Hunter,Crimson Water,Sweet Party,Flanking Smack
+4974,Aquatic,0x4000c0000128603208852088088420880080310c10a43148008328ca04a428c8,0,1,41,50,35,38,Bird,Beast,Beast,Bird,Aquatic,Bug,Revenge Arrow,Insectivore,Hero's Bane,Grub Explode
+4975,Aquatic,0x4000c0000404732210a32808088428ca1084308c0c83204c0ca229081081308a,1,1,48,51,35,30,Aquatic,Aquatic,Plant,Bird,Plant,Aquatic,Refresh,Insectivore,Sweet Party,Water Sphere
+4976,Aquatic,0x4000c000090c103308a428c814a3200a0c8321481483300a0ca3290a1080214c,0,1,52,47,35,30,Bird,Plant,Plant,Reptile,Reptile,Aquatic,Refresh,Chomp,Tiny Catapult,Water Sphere
+4977,Aquatic,0x4c00c000020c64340ca2204a0080210a008020080080294804a420480485288c,0,1,44,42,35,43,Plant,Beast,Bug,Beast,Beast,Bug,Scarab Curse,Death Mark,Sugar Rush,Numbing Lecretion
+4978,Aquatic,0x4200c00002186434148028c80885200a04842008048020480ca3300a08802908,2,1,47,46,35,36,Reptile,Bug,Plant,Bird,Bug,Bird,Refresh,Insectivore,Dull Grip,Puffy Smack
+4979,Aquatic,0x4000c0000c20c00300a4204a14a02048008028cc0c8020880c85280814a3290c,6,1,51,43,35,35,Beast,Beast,Plant,Reptile,Plant,Reptile,Aqua Stock,Chomp,Sweet Party,Neuro Toxin
+4980,Plant,0x3000c000013053341083200a0c8329480ca430081084214a0ca4280a00812108,2,1,54,38,31,41,Aquatic,Plant,Plant,Plant,Aquatic,Beast,Refresh,Vegan Diet,Aquaponics,Hare Dagger
+4981,Aquatic,0x4000c00009343343148020c808a521480083280c14a3294a1082290c0ca52948,1,1,49,48,35,32,Reptile,Beast,Aquatic,Bird,Reptile,Plant,Shipwreck,Dark Swoop,Disarm,Aqua Deflect
+4982,Aquatic,0x4000c000041822020083204808a3280a0c843108008320880c80300c1485304a,6,1,48,45,35,36,Beast,Plant,Plant,Bird,Beast,Reptile,Aqua Stock,Dark Swoop,Sugar Rush,Jar Barrage
+4983,Plant,0x3000c000010462221484280a0c85200a10a4200a0883300c1080214a148220cc,1,1,54,42,31,37,Reptile,Aquatic,Aquatic,Plant,Bird,Reptile,Shipwreck,Vegan Diet,Headshot,Jar Barrage
+4984,Aquatic,0x4000c0000204523100a0210a08a3210a0ca4290a108130ca14a2314a0c84294a,3,1,49,47,35,33,Beast,Plant,Reptile,Bird,Aquatic,Plant,Slippery Shield,Dark Swoop,Aquaponics,Gas Unleash
+4985,Plant,0x3000c000090464340c80290a088428ca048020cc10842808008030cc0c81304c,3,1,51,38,31,44,Plant,Bug,Beast,Bird,Aquatic,Plant,Revenge Arrow,Insectivore,Aquaponics,Gas Unleash
+4986,Aquatic,0x4000c0000728732210a0210a1085200a1083288a0c8230ca008329481084200c,1,1,46,52,35,31,Aquatic,Aquatic,Beast,Aquatic,Plant,Aquatic,Revenge Arrow,Fish Hook,Sweet Party,Water Sphere
+4987,Aquatic,0x4000c0000908744214a4280a0c80284800a1290c0c8020c81083210c10a33108,5,1,50,47,35,32,Reptile,Beast,Aquatic,Plant,Plant,Aquatic,Shipwreck,Vegan Diet,Sweet Party,Flanking Smack
+4988,Aquatic,0x4000c000051c132210a2208a0881200a08a2284c14a0214c0ca1300c0ca42848,1,1,49,49,35,31,Aquatic,Bird,Plant,Bird,Reptile,Plant,Refresh,Insectivore,Disarm,Aqua Deflect
+4989,Aquatic,0x4000c0000404b14300a1288a0081214810a520cc00a0204c0880280800a13008,6,1,40,49,35,40,Beast,Aquatic,Bird,Beast,Beast,Beast,Blackmail,Death Mark,Sinister Strike,Nut Throw
+4990,Plant,0x3000c0000c14632400a4214a0480210a0c8020cc108520cc0ca3204808822908,5,1,51,38,31,44,Beast,Plant,Plant,Bug,Aquatic,Bird,Refresh,Terror Chomp,Aquaponics,Puffy Smack
+4991,Beast,0xc0000d1022221082214a1082208a0885208c0083310a0083200c0c832108,1,1,36,46,31,51,Aquatic,Bird,Beast,Aquatic,Beast,Plant,Revenge Arrow,Fish Hook,Sugar Rush,Gas Unleash
+4992,Plant,0x3000c000082052220ca129481083204a108020ca0084200a04a3284c0c8330ca,3,1,52,38,31,43,Plant,Aquatic,Bug,Aquatic,Beast,Plant,Scarab Curse,Fish Hook,Sugar Rush,Gas Unleash
+4993,Aquatic,0x4000c0000a2c630210a420ca00a428880080290a1085204a10a220080ca52008,3,1,45,50,35,34,Aquatic,Beast,Aquatic,Beast,Aquatic,Plant,Aqua Vitality,Self Rally,Aquaponics,Aqua Deflect
+4994,Aquatic,0x4000c00004082232148328880482208a0c83310c10a2204a088520c81084308a,1,1,48,49,35,32,Reptile,Plant,Bird,Bug,Aquatic,Aquatic,Blackmail,Terror Chomp,Hero's Bane,Water Sphere
+4995,Aquatic,0x4000c0000120622314a3200810a3290814a320ca00a520880ca430880484304c,2,1,50,45,35,34,Reptile,Reptile,Plant,Aquatic,Beast,Bug,Refresh,Crimson Water,Sinister Strike,Numbing Lecretion
+4996,Plant,0x3000c000052cb4221083284a108120080c8328cc0ca530c804a4308804a330ca,5,1,53,37,31,43,Aquatic,Plant,Bug,Aquatic,Plant,Bug,Scarab Curse,Fish Hook,Prickly Trap,Grub Explode
+4997,Beast,0xc0000830d03300832008048420480ca130c80c84310a10a428ca0081300a,1,1,39,40,31,54,Beast,Plant,Aquatic,Bug,Plant,Beast,Aqua Vitality,Terror Chomp,Sweet Party,Hare Dagger
+4998,Beast,0xc000030843240ca028c80483288a0085214a0c83208810842148088330ca,1,1,39,42,31,52,Plant,Beast,Aquatic,Bug,Plant,Bird,Shipwreck,Terror Chomp,Sweet Party,Puffy Smack
+4999,Beast,0xc0000820a3241080290a1084208a0881304a1483300804a028ca1080314c,1,1,38,48,31,47,Aquatic,Bird,Bug,Aquatic,Reptile,Aquatic,Scarab Curse,Fish Hook,Tiny Catapult,Water Sphere
