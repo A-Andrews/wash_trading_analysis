@@ -26,9 +26,10 @@ def get_axie_attributes(id: int):
     payload = {
                 "operation": "GetAxieDetail",
                 "variables": {"axieId": "1000"},
-                "query": "query GetAxieDetail($axieId: ID!) {axie(axieId: $axieId) {...AxieDetail}}fragment AxieDetail on Axie {id class name genes birthDate bodyShape class stage breedCount level parts { ...AxiePart} stats { ...AxieStats}} fragment AxiePart on AxiePart {id name class type specialGenes stage abilities {...AxieCardAbility}} fragment AxieCardAbility on AxieCardAbility {id name attack defense energy} fragment AxieStats on AxieStats {hp speed skill morale}"}
+                "query": "query GetAxieDetail($axieId: ID!) {axie(axieId: $axieId) {...AxieDetail}}fragment AxieDetail on Axie {id class genes class breedCount level parts { ...AxiePart} stats { ...AxieStats}} fragment AxiePart on AxiePart {class type specialGenes abilities {...AxieCardAbility}} fragment AxieCardAbility on AxieCardAbility {id name attack defense energy} fragment AxieStats on AxieStats {hp speed skill morale}"}
     headers = {"content-type": "application/json"}
 
     response = requests.request("POST", axie_url, json=payload, headers=headers)
     return response.json
 
+print(get_axie_attributes(1000))
