@@ -40,6 +40,7 @@ def get_axie_attributes(ax_id: int):
     return response.json()
 
 def write_axie_to_row(axie):
+
     data = axie["data"]["axie"]
     ax_id, ax_class, genes, breedCount, level = data["id"], data["class"], data["genes"], data["breedCount"], data["level"]
     stats = data["stats"]
@@ -58,12 +59,17 @@ def get_csv_axie(start: int, end: int):
     writer = csv.writer(f)
 
     rows = []
+
     for i in range(start, end):
         data = get_axie_attributes(i)
-        row = write_axie_to_row(data)
+        try:
+            row = write_axie_to_row(data)
+        except:
+            print(i)
         rows.append(row)
-        
     writer.writerows(rows)
+        
+    
 
     f.close()
         
