@@ -2,6 +2,8 @@ import requests
 import pandas as pd
 import csv
 import json
+import sys
+import getopt
 
 #{
 #  "operation": "GetAxieDetail",
@@ -16,6 +18,9 @@ import json
 #                   "order_direction":"desc",
 #                   "offset":"0",
 #                   "limit":"50"}
+
+# id,class,genes,breedCount,level,hp,speed,skill,morale,eyes,ears,back,mouth,horn,tail,ability1,ability2,ability3,ability4
+
 
 opensea_url = "https://api.opensea.io/api/v1/assets"
 axie_url = "https://graphql-gateway.axieinfinity.com/graphql"
@@ -48,18 +53,31 @@ def write_axie_to_row(axie):
 
 def get_csv_axie(start: int, end: int):
 
-    f = open('attribute_files/axie_attributes.csv', 'w')
+    f = open('attribute_files/axie_attributes.csv', 'a')
 
     writer = csv.writer(f)
 
-    writer.writerow(["id","class","genes","breedCount","level","hp","speed","skill","morale","eyes","ears","back","mouth","horn","tail","ability1","ability2","ability3","ability4"])
-
+    rows = []
     for i in range(start, end):
         data = get_axie_attributes(i)
         row = write_axie_to_row(data)
-        writer.writerow(row)
+        rows.append(row)
+        
+    writer.writerows(rows)
 
     f.close()
         
 
-get_csv_axie(1000, 11000)
+#get_csv_axie(1000, 11000)
+
+def main(argv):
+    
+    start = int(argv[0])
+    end = int(argv[1])
+    csv = argv[2]
+
+    if csv == 'axie':
+        get_csv_axie(start, end)
+
+if __name__ == "__main__":
+   main(sys.argv[1:])
