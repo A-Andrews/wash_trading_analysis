@@ -11,9 +11,3 @@ def normalise_attributes(attributes_data):
     attributes_data_norm = attributes_data_norm.drop(attributes_data_norm.columns[[0]], axis=1)
     attributes_data[attributes_data_norm.columns] = attributes_data_norm
     return attributes_data
-
-#print(get_data("attribute_files/axie_attributes.csv").dtypes)
-#print(get_data("attribute_files/axie_attributes.csv").shape)
-#print(normalise(get_data("attribute_files/axie_attributes.csv")).dtypes)
-#print(normalise(get_data("attribute_files/boredape_attributes.csv")).dtypes)
-#print(normalise(get_data("attribute_files/cryptopunk_attributes.csv")).dtypes)
