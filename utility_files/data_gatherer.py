@@ -64,9 +64,10 @@ def get_csv_axie(start: int, end: int):
         data = get_axie_attributes(i)
         try:
             row = write_axie_to_row(data)
+            rows.append(row)
         except:
             print(i)
-        rows.append(row)
+        
     writer.writerows(rows)
         
     
@@ -81,6 +82,10 @@ def main(argv):
     start = int(argv[0])
     end = int(argv[1])
     csv = argv[2]
+
+    if start >= end:
+        print("Please ensure start is lower than end")
+        sys.exit()
 
     if csv == 'axie':
         get_csv_axie(start, end)
