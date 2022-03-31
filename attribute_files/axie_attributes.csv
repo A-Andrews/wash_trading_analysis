@@ -2559,10 +2559,8 @@ id,class,genes,breedCount,level,hp,speed,skill,morale,eyes,ears,back,mouth,horn,
 3557,Plant,0x30000000042060220c2109040c4110c20c230906104019420044110608231844,3,1,53,38,31,42,Plant,Plant,Beast,Plant,Aquatic,Bird,Heroic Reward,Drain Bite,Deep Sea Gore,Early Bird
 3558,Beast,0xa1c44320020094408450804086018c6084310840424110414621844,6,1,35,46,31,52,Beast,Bird,Bug,Bird,Bird,Reptile,Sticky Goo,Peace Treaty,Cockadoodledoo,Tiny Swing
 3559,Aquatic,0x4008000003085344002311040c241084142310c60c441944104218c214441806,6,1,52,45,35,32,Beast,Reptile,Aquatic,Plant,Plant,Reptile,Scale Dart,Vegetal Bite,Wooden Stab,Scale Dart
-3559,Aquatic,0x4008000003085344002311040c241084142310c60c441944104218c214441806,6,1,52,45,35,32,Beast,Reptile,Aquatic,Plant,Plant,Reptile,Scale Dart,Vegetal Bite,Wooden Stab,Scale Dart
 3561,Plant,0x3000000003308232104009040c421144006411440c4111460824100604621884,7,1,51,38,31,44,Aquatic,Beast,Bird,Plant,Plant,Bug,Balloon Pop,Drain Bite,Wooden Stab,Anesthetic Bait
 3562,Beast,0x82080020c2409440c2509021021088200411942104211040c230904,7,1,42,42,31,49,Plant,Aquatic,Aquatic,Plant,Beast,Plant,Scale Dart,Vegetal Bite,Ivory Stab,Carrot Hammer
-3563,Aquatic,0x400000000830142210431142102408840c21084214400806102210840c441044,4,1,51,49,35,29,Aquatic,Plant,Aquatic,Aquatic,Reptile,Plant,Shelter,Angry Lam,Scaly Lunge,Cattail Slap
 3563,Aquatic,0x400000000830142210431142102408840c21084214400806102210840c441044,4,1,51,49,35,29,Aquatic,Plant,Aquatic,Aquatic,Reptile,Plant,Shelter,Angry Lam,Scaly Lunge,Cattail Slap
 3565,Plant,0x30000000021cb003002408440c43114200451904102310441423088610231046,1,1,51,40,31,42,Beast,Beast,Reptile,Plant,Aquatic,Aquatic,Ivory Chop,Drain Bite,Shell Jab,Upstream Swim
 3566,Reptile,0x5000000006106024142310c40c2008840065194404221144146508c210601842,4,1,50,41,31,42,Reptile,Beast,Reptile,Plant,Bug,Aquatic,Vine Dagger,Vegetal Bite,Mystic Rush,Black Bubble
@@ -2573,7 +2571,6 @@ id,class,genes,breedCount,level,hp,speed,skill,morale,eyes,ears,back,mouth,horn,
 3571,Beast,0x10000000830321310201082002209420c441084082218c61462090400441084,0,1,38,44,31,51,Aquatic,Plant,Reptile,Beast,Bird,Beast,Vine Dagger,Nut Crack,Eggbomb,Night Steal
 3572,Beast,0x800000710844300401102144309020824108200441046104308c6002018c4,2,1,35,45,31,53,Beast,Bird,Aquatic,Reptile,Beast,Beast,Scale Dart,Kotaro bite,Ivory Stab,Luna Absorb
 3573,Plant,0x30000000061cd3320c4309440c4110020c20080610650842044408420c241886,6,1,57,34,31,42,Plant,Plant,Bug,Plant,Aquatic,Plant,Barb Strike,Drain Bite,Clam Slash,Carrot Hammer
-3574,Plant,0x310800000124b01200440844082409020860094410401086102419420c440804,1,1,48,44,31,41,Beast,Bird,Aquatic,Bird,Aquatic,Plant,Shelter,Soothing Song,Deep Sea Gore,Cattail Slap
 3574,Plant,0x310800000124b01200440844082409020860094410401086102419420c440804,1,1,48,44,31,41,Beast,Bird,Aquatic,Bird,Aquatic,Plant,Shelter,Soothing Song,Deep Sea Gore,Cattail Slap
 3576,Beast,0x1345433002209020821080210641044146011440c6318c60c600946,4,1,41,43,31,49,Beast,Aquatic,Plant,Bird,Reptile,Plant,Cleanse Scent,Soothing Song,Surprise Invasion,Leek Leak
 3577,Plant,0x300000000b34914114411142102310820c64190604400904142510c60c450882,7,1,57,36,31,40,Reptile,Plant,Reptile,Aquatic,Bug,Plant,Ivory Chop,Angry Lam,Bug Signal,Cattail Slap
@@ -2613,7 +2610,6 @@ id,class,genes,breedCount,level,hp,speed,skill,morale,eyes,ears,back,mouth,horn,
 3611,Plant,0x30000000093052320c2410020843100210630802084008c6004118420c421102,7,1,50,41,31,42,Plant,Aquatic,Beast,Bird,Bird,Plant,Heroic Reward,Peace Treaty,Cockadoodledoo,Cattail Slap
 3612,Beast,0x400001308220c02108440041084208250902006110c6044018020c211806,1,1,35,41,31,57,Beast,Bird,Bug,Beast,Beast,Plant,Barb Strike,Piercing Sound,Merry Legion,Carrot Hammer
 3613,Bug,0x100040000d20321204241102c4221004044111020c20184604251044046018c4,1,1,43,31,35,55,Bug,Bug,Bug,Bug,Plant,Bug,Sticky Goo,Blood Taste,Bamboo Clan,Anesthetic Bait
-3613,Bug,0x100040000d20321204241102c4221004044111020c20184604251044046018c4,1,1,43,31,35,55,Bug,Bug,Bug,Bug,Plant,Bug,Sticky Goo,Blood Taste,Bamboo Clan,Anesthetic Bait
 3615,Beast,0x104a34414241082144308040c210842106311441044094200420884,1,1,42,44,31,47,Reptile,Plant,Aquatic,Reptile,Aquatic,Beast,Scale Dart,Kotaro bite,Clam Slash,Night Steal
 3616,Beast,0xd000000051c82430025110200201044002110c2144311441445088604251004,1,1,38,40,31,55,Beast,Beast,Reptile,Beast,Reptile,Bug,Spike Throw,Nut Crack,Scaly Lunge,Chemical Warfare
 3617,Plant,0x3d0000000520b03404251044042409440841090410411144086318c200641902,1,1,46,41,31,46,Bug,Bird,Bird,Bug,Aquatic,Beast,Ill-omened,Blood Taste,Deep Sea Gore,Rampant Howl
@@ -2637,7 +2633,6 @@ id,class,genes,breedCount,level,hp,speed,skill,morale,eyes,ears,back,mouth,horn,
 3635,Aquatic,0x400000000d10112310200904042009420c240946106110c4102218c210441142,3,1,47,51,35,31,Aquatic,Plant,Aquatic,Bug,Aquatic,Aquatic,Shelter,Blood Taste,Clam Slash,Tail Slap
 3636,Reptile,0x500040000c2c74321425080414240804144511440c4208c404231906082408c6,1,1,52,41,31,40,Reptile,Reptile,Bug,Reptile,Plant,Bird,Sticky Goo,Sneaky Raid,Wooden Stab,Early Bird
 3637,Reptile,0x500000000c2c74320c2508040c24080214200944082310c40c610904002508c6,1,1,51,40,31,42,Plant,Reptile,Plant,Plant,Bird,Beast,Cleanse Scent,Vegetal Bite,Eggbomb,Luna Absorb
-3638,Beast,0xd2c331400231102102410c400401102002008c2106408c210411142,0,1,34,47,31,52,Beast,Beast,Aquatic,Aquatic,Beast,Aquatic,Swift Escape,Angry Lam,Branch Charge,Tail Slap
 3638,Beast,0xd2c331400231102102410c400401102002008c2106408c210411142,0,1,34,47,31,52,Beast,Beast,Aquatic,Aquatic,Beast,Aquatic,Swift Escape,Angry Lam,Branch Charge,Tail Slap
 3640,Aquatic,0x400000000c348304104310c40c23108414411006044018060c45110410651004,7,1,51,46,35,32,Aquatic,Reptile,Plant,Plant,Bug,Aquatic,Shroom's Grace,Vegetal Bite,Bug Signal,Black Bubble
 3641,Aquatic,0x400000000104a424104308420824080200220944106518821024194200451842,0,1,42,53,35,34,Aquatic,Beast,Aquatic,Bird,Aquatic,Beast,Shelter,Soothing Song,Clam Slash,Night Steal
@@ -2664,7 +2659,6 @@ id,class,genes,breedCount,level,hp,speed,skill,morale,eyes,ears,back,mouth,horn,
 3662,Bird,0x20000000053494240820080410410802086218821042114210400842082110c6,6,1,30,61,35,38,Bird,Bird,Aquatic,Aquatic,Aquatic,Bird,Scale Dart,Swallow,Deep Sea Gore,Early Bird
 3663,Plant,0x3b0000000634b30414410884102110820c251106104010060c23090408231142,1,1,54,41,31,38,Reptile,Plant,Plant,Aquatic,Aquatic,Bird,Turnip Rocket,Angry Lam,Deep Sea Gore,Early Bird
 3664,Beast,0xb0000000724b420084010c2144008c40c650844106510061025108600410906,6,1,39,46,31,48,Bird,Plant,Aquatic,Reptile,Aquatic,Beast,Shelter,Kotaro bite,Clam Slash,Night Steal
-3665,Beast,0x81c63310c25090200440804002118060c6019440c63188208231086,4,1,40,40,31,53,Plant,Beast,Plant,Beast,Plant,Bird,Cleanse Scent,Piercing Sound,Healing Aroma,Early Bird
 3665,Beast,0x81c63310c25090200440804002118060c6019440c63188208231086,4,1,40,40,31,53,Plant,Beast,Plant,Beast,Plant,Bird,Cleanse Scent,Piercing Sound,Healing Aroma,Early Bird
 3667,Bird,0x200000000904a4230025110400211082044018c20c420906082108840c2108c6,1,1,34,48,35,47,Beast,Bug,Bird,Beast,Plant,Plant,Balloon Pop,Nut Crack,Wooden Stab,Carrot Hammer
 3668,Plant,0x30000000073074130c2408c404241004044418c41043084210420842104208c4,4,1,51,40,31,42,Plant,Bug,Aquatic,Bug,Aquatic,Aquatic,Scale Dart,Blood Taste,Deep Sea Gore,Tail Slap
@@ -2900,7 +2894,6 @@ id,class,genes,breedCount,level,hp,speed,skill,morale,eyes,ears,back,mouth,horn,
 3898,Aquatic,0x4b0000000420d440042008040c22084400441844102019460862180600230944,1,1,44,47,35,38,Bug,Beast,Bird,Plant,Aquatic,Beast,Ill-omened,Vegetal Bite,Shell Jab,Luna Absorb
 3899,Bug,0x10000000081094420c40090204401044044310840c421086044508c20c610884,5,1,47,31,35,51,Plant,Bug,Bug,Bug,Plant,Plant,Barb Strike,Sunder Claw,Wooden Stab,Leek Leak
 3900,Beast,0xd0800000724940314241002004010420843194200441884086310c40c210806,0,1,37,44,31,52,Reptile,Bird,Bird,Beast,Beast,Plant,Ill-omened,Piercing Sound,Ivory Stab,Carrot Hammer
-3900,Beast,0xd0800000724940314241002004010420843194200441884086310c40c210806,0,1,37,44,31,52,Reptile,Bird,Bird,Beast,Beast,Plant,Ill-omened,Piercing Sound,Ivory Stab,Carrot Hammer
 3902,Beast,0xd2cc114142010c20c2410c20c220942146008c40021194414400944,5,1,46,39,31,48,Reptile,Plant,Beast,Plant,Reptile,Reptile,Single Combat,Vegetal Bite,Surprise Invasion,Scale Dart
 3903,Plant,0x300000000d088233102310c40c4408c2042310840c6310c40421090204200806,6,1,53,34,31,46,Aquatic,Bug,Bug,Plant,Plant,Bug,Sticky Goo,Drain Bite,Healing Aroma,Chemical Warfare
 3904,Beast,0x10884130c4510840022104400430906046118860864184400401006,3,1,35,41,31,57,Plant,Beast,Bird,Beast,Bug,Beast,Ill-omened,Nut Crack,Grub Surprise,Night Steal
@@ -3133,7 +3126,6 @@ id,class,genes,breedCount,level,hp,speed,skill,morale,eyes,ears,back,mouth,horn,
 4131,Aquatic,0x400040000524442214421142104208c408231904102008c21040184600241944,0,1,45,53,35,31,Reptile,Bird,Aquatic,Aquatic,Aquatic,Beast,Scale Dart,Swallow,Shell Jab,Luna Absorb
 4132,Bird,0x2000400002083243082310c214441144146508c6084318c604251044146210c6,6,1,37,52,35,40,Bird,Reptile,Bug,Reptile,Bird,Reptile,Sticky Goo,Kotaro bite,Cockadoodledoo,Tiny Swing
 4133,Reptile,0x50000000023412040c22084210250802102118c414250846006110c40c241804,7,1,50,43,31,40,Plant,Aquatic,Beast,Aquatic,Reptile,Plant,Nitro Leap,Angry Lam,Poo Fling,Carrot Hammer
-4134,Aquatic,0x400040000a34130410241044c42208c2102311020c2519461445110210611886,0,1,49,49,35,31,Aquatic,Aquatic,Reptile,Bug,Plant,Aquatic,Spike Throw,Blood Taste,Bamboo Clan,Black Bubble
 4134,Aquatic,0x400040000a34130410241044c42208c2102311020c2519461445110210611886,0,1,49,49,35,31,Aquatic,Aquatic,Reptile,Bug,Plant,Aquatic,Spike Throw,Blood Taste,Bamboo Clan,Black Bubble
 4135,Aquatic,0x400040000920c242042010841040084404220846106518041025090608610942,7,1,44,51,35,34,Bug,Bug,Aquatic,Aquatic,Aquatic,Bird,Shelter,Swallow,Clam Slash,Risky Feather
 4136,Beast,0x40000d1c144310400904c02110820c411844002118841042194404621106,1,1,37,43,31,53,Aquatic,Plant,Aquatic,Beast,Beast,Bug,Scale Dart,Nut Crack,Branch Charge,Anesthetic Bait
@@ -3579,16 +3571,11 @@ id,class,genes,breedCount,level,hp,speed,skill,morale,eyes,ears,back,mouth,horn,
 4576,Plant,0x3000c0000104b3420c84280a00a4284810a321080483200a0881294c00a42148,2,1,48,39,31,46,Plant,Aquatic,Bird,Beast,Bug,Beast,Blackmail,Self Rally,Dull Grip,Nut Throw
 4577,Beast,0xf00c0000408324404a028ca1483288a048230080c8020ca0c8428ca08803108,0,1,42,39,31,52,Bug,Bug,Plant,Reptile,Plant,Bird,Aqua Stock,Why So Serious,Sweet Party,Puffy Smack
 4578,Reptile,0x500040000a203224142108c41445088214231082146318821423094214201004,5,1,57,41,31,35,Reptile,Reptile,Reptile,Reptile,Reptile,Reptile,Ivory Chop,Kotaro bite,Surprise Invasion,Critical Escape
-4578,Reptile,0x500040000a203224142108c41445088214231082146318821423094214201004,5,1,57,41,31,35,Reptile,Reptile,Reptile,Reptile,Reptile,Reptile,Ivory Chop,Kotaro bite,Surprise Invasion,Critical Escape
-4578,Reptile,0x500040000a203224142108c41445088214231082146318821423094214201004,5,1,57,41,31,35,Reptile,Reptile,Reptile,Reptile,Reptile,Reptile,Ivory Chop,Kotaro bite,Surprise Invasion,Critical Escape
-4578,Reptile,0x500040000a203224142108c41445088214231082146318821423094214201004,5,1,57,41,31,35,Reptile,Reptile,Reptile,Reptile,Reptile,Reptile,Ivory Chop,Kotaro bite,Surprise Invasion,Critical Escape
 4582,Beast,0x72043341082208a1082200810a4284c00c4288c1080290a0c83214c,1,1,38,48,31,47,Aquatic,Aquatic,Aquatic,Aquatic,Beast,Plant,Shipwreck,Fish Hook,Acrobatic,Gas Unleash
 4583,Beast,0xc000060c224310a02848148329080482208a14a2200a108231080ca3200a,7,1,43,43,31,47,Aquatic,Bug,Aquatic,Reptile,Reptile,Plant,Shipwreck,Why So Serious,Disarm,Aqua Deflect
 4584,Plant,0x3000c0000628a2410c8321480482200808a0200a088128080880280808a3310a,5,1,47,43,31,43,Plant,Bird,Bird,Bug,Bird,Bird,Blackmail,Terror Chomp,Headshot,Cool Breeze
 4585,Aquatic,0x4000c0000520d24214a128ca1483290a008430c810a2284c14a0208a088020cc,2,1,49,49,35,31,Reptile,Beast,Reptile,Reptile,Aquatic,Bird,Slippery Shield,Why So Serious,Hero's Bane,Puffy Smack
 4586,Reptile,0x5000c0000208c3020ca028c80c83288a00a32808108228ca0ca021080ca320ca,1,1,52,39,31,42,Plant,Beast,Plant,Plant,Aquatic,Plant,Refresh,Vegan Diet,Aquaponics,Aqua Deflect
-4587,Reptile,0x560040000a08a234142510c21044100414651802c42318041465084614211906,0,1,53,42,31,38,Reptile,Reptile,Reptile,Aquatic,Bug,Reptile,Vine Dagger,Swallow,Mystic Rush,Critical Escape
-4587,Reptile,0x560040000a08a234142510c21044100414651802c42318041465084614211906,0,1,53,42,31,38,Reptile,Reptile,Reptile,Aquatic,Bug,Reptile,Vine Dagger,Swallow,Mystic Rush,Critical Escape
 4587,Reptile,0x560040000a08a234142510c21044100414651802c42318041465084614211906,0,1,53,42,31,38,Reptile,Reptile,Reptile,Aquatic,Bug,Reptile,Vine Dagger,Swallow,Mystic Rush,Critical Escape
 4590,Aquatic,0x460000000c0cc031142408440ca2284804610808042011020c2210c800801946,1,1,50,41,35,38,Reptile,Bug,Plant,Plant,Bug,Beast,Turnip Rocket,Forest Spirit,Mystic Rush,Hare Dagger
 4591,Aquatic,0x400000000328c44410a3204a14a329080ca3210c1484308a0c85304c0083290c,1,1,52,45,35,32,Aquatic,Plant,Plant,Reptile,Reptile,Beast,Aqua Stock,Chomp,Tiny Catapult,Hare Dagger
@@ -3672,7 +3659,6 @@ id,class,genes,breedCount,level,hp,speed,skill,morale,eyes,ears,back,mouth,horn,
 4669,Plant,0x3700c0000d1c222408a0284a04a5288a1080290c1484210c088030880c84294a,1,1,51,41,31,41,Bird,Aquatic,Bird,Bug,Reptile,Plant,Blackmail,Mite Bite,Tiny Catapult,Gas Unleash
 4670,Plant,0x3a00c0000910823414a4290a10a2280a14a420ca0ca4288a0082310c08a2300a,0,1,53,40,31,40,Reptile,Reptile,Beast,Aquatic,Plant,Bird,Revenge Arrow,Crimson Water,Prickly Trap,Cool Breeze
 4671,Plant,0x3e00c0000504c4310483294a08a2208814a020ca008420c808a220cc10a2300c,0,1,48,42,31,43,Bug,Reptile,Bird,Bird,Beast,Aquatic,Patient Hunter,Dark Swoop,Sugar Rush,Flanking Smack
-4671,Plant,0x3e00c0000504c4310483294a08a2208814a020ca008420c808a220cc10a2300c,0,1,48,42,31,43,Bug,Reptile,Bird,Bird,Beast,Aquatic,Patient Hunter,Dark Swoop,Sugar Rush,Flanking Smack
 4673,Plant,0x3000c0000524404310a4210a108128ca108428cc1084300c0ca430c800a32848,2,1,50,44,31,39,Aquatic,Aquatic,Plant,Aquatic,Aquatic,Beast,Refresh,Fish Hook,Aquaponics,Nut Throw
 4674,Aquatic,0x4000c0000730c333088329081083280a00a0308804a328ca04a3204c10a0210a,2,1,43,49,35,37,Bird,Beast,Bug,Aquatic,Bug,Aquatic,Scarab Curse,Fish Hook,Third Glance,Flanking Smack
 4675,Beast,0xc0000730624404a228c814a2214a08a4310c0c8420cc0083200800a42108,2,1,38,41,31,54,Bug,Bird,Beast,Reptile,Plant,Beast,Revenge Arrow,Chomp,Sweet Party,Nut Throw
@@ -3703,7 +3689,6 @@ id,class,genes,breedCount,level,hp,speed,skill,morale,eyes,ears,back,mouth,horn,
 4700,Plant,0x3300c0000b1ca322108429480c8429480c83284c0085310c04a228cc00a4208a,0,1,51,36,31,46,Aquatic,Plant,Bug,Plant,Beast,Beast,Scarab Curse,Vegan Diet,Sugar Rush,Nut Throw
 4701,Plant,0x3700c0000c34743200a320880882280a0084314c0ca2300a048528ca10a1210c,0,1,48,39,31,46,Beast,Beast,Bug,Bird,Plant,Aquatic,Bug Splat,Insectivore,Prickly Trap,Flanking Smack
 4702,Plant,0x3000c0000a1c143308a029080483280a1484310c0c8330cc14a220cc1480290a,5,1,56,37,31,40,Bird,Reptile,Reptile,Bug,Plant,Reptile,Slippery Shield,Terror Chomp,Sweet Party,Jar Barrage
-4703,Beast,0x5249324004128c204a008c80080090a0c4308c4104311480445110a,5,1,37,40,31,56,Beast,Beast,Aquatic,Bug,Plant,Bug,Scale Dart,Mite Bite,Wooden Stab,Twin Needle
 4703,Beast,0x5249324004128c204a008c80080090a0c4308c4104311480445110a,5,1,37,40,31,56,Beast,Beast,Aquatic,Bug,Plant,Bug,Scale Dart,Mite Bite,Wooden Stab,Twin Needle
 4705,Aquatic,0x400000000910a2431084208a0c82210810a320cc0ca0308a14a220cc14c3204c,6,1,53,47,35,29,Aquatic,Aquatic,Reptile,Plant,Plant,Reptile,Slippery Shield,Vegan Diet,Prickly Trap,Venom Spray
 4706,Aquatic,0x4000c000011c132404a4204a04a2290a10a528080ca0300a0c80280814822108,1,1,51,43,35,35,Bug,Aquatic,Plant,Bug,Plant,Reptile,Aqua Stock,Mite Bite,Prickly Trap,Jar Barrage

@@ -1,8 +1,8 @@
 import sys
-import matplotlib
 import matplotlib.pyplot as plt
 from os.path import exists
 from distance_metrics import normalise_attributes, get_attribute_data
+from rarity_finder import replace_rarity
 from light_famd import FAMD
 from kmodes.kprototypes import KPrototypes
 
