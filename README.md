@@ -18,11 +18,22 @@ Leave with:
 > deactivate
 
 ## Usage
+### Data
 In order to get CSV files:
 > python3 data_gatherer.py id_start id_end series
 Where:
-- id_start is the id to start gethering from
-- id_end is the id to stop gathering at
-- series is the name to determine which series to gather
+- id_start: the id to start gethering from
+- id_end: the id to stop gathering at
+- series: the name to determine which series to gather
 
 At some point these will be handled by a bash file.
+
+### Graphing
+In order to perform cluster analysis:
+> python3 cluster_analysis.py series method d
+Where:
+- series: the name to dertemine which series to graph
+- method: the method of analysis
+    - FAMD
+    - K-Prototype
+- d: the number of dimensions or clusters
