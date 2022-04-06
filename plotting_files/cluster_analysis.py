@@ -25,7 +25,7 @@ def plot_kprototype_cluster(X_famd, labels, series, k):
     plt.clf()
     plt.title(f'kprototype clustering of {series} for k = {k}')
     plt.scatter(x=X_famd[:,0], y=X_famd[:,1], c=labels, cmap='tab10')
-    plt.savefig(f'graphs/kprotocol_{series}_k{k}.png')
+    plt.savefig(f'graphs/kprototype_{series}_k{k}.png')
 
 
 def main(argv):
