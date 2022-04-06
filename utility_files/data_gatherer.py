@@ -1,9 +1,6 @@
 import requests
-import pandas as pd
 import csv
-import json
 import sys
-import getopt
 
 #{
 #  "operation": "GetAxieDetail",
