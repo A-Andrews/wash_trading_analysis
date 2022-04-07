@@ -45,8 +45,8 @@ def plot_kprototype_cluster(X_famd, labels, series, k, rarity = False):
     plt.clf()
 
     if rarity:
-        title = f'kprototype clustering of {series} for k = {k} (Rarity)'
-        save_path = f'../graphs/kprototype_{series}_k{k}_rarity.png'
+        title = f'kmeans clustering of {series} for k = {k} (Rarity)'
+        save_path = f'../graphs/kmeans_{series}_k{k}_rarity.png'
     
     else:
         title = f'kprototype clustering of {series} for k = {k}'
@@ -93,13 +93,13 @@ def main(argv):
         norm_data_famd = famd.transform(norm_data)
         if not exists(f'../graphs/kprototype_{series}_k{n_val}.png'): plot_kprototype_cluster(norm_data_famd, clusters, series, n_val)
 
-    if clustering_type == "kprototype-rarity":
+    if clustering_type == "kmeans-rarity":
         rarity_data = replace_rarity(data)
         norm_rarity_data = normalise_attributes(rarity_data)
         clusters = KMeans(n_clusters = n_val).fit_predict(norm_rarity_data)
         pca = PCA(n_components=n_val)
         norm_data_pca = pca.fit_transform(norm_rarity_data)
-        if not exists(f'../graphs/kprototype_{series}_k{n_val}_rarity.png'): plot_kprototype_cluster(norm_data_pca, clusters, series, n_val)
+        if not exists(f'../graphs/kmeans_{series}_k{n_val}_rarity.png'): plot_kprototype_cluster(norm_data_pca, clusters, series, n_val, rarity = True)
         
 
 if __name__ == "__main__":
