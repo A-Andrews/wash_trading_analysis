@@ -38,6 +38,8 @@ def plot_famd_cluster(X_famd, series, d, rarity = False):
         save_path = f'../graphs/pca_{series}_d{d}.png'
 
     plt.title(title)
+    plt.ylabel("Principal Component 2")
+    plt.xlabel("Principal Component 1")
     plt.scatter(x=X_famd[:,0], y=X_famd[:,1], cmap='tab10')
     plt.savefig(save_path)
 
@@ -53,6 +55,8 @@ def plot_kprototype_cluster(X_famd, labels, series, k, rarity = False):
         save_path = f'../graphs/kprototype_{series}_k{k}.png'
 
     plt.title(title)
+    plt.ylabel("Principal Component 2")
+    plt.xlabel("Principal Component 1")
     plt.scatter(x=X_famd[:,0], y=X_famd[:,1], c=labels, cmap='tab10')
     plt.savefig(save_path)
 
@@ -68,10 +72,10 @@ def main(argv):
 
     if clustering_type == "famd":
         famd = FAMD(n_components=n_val)
-        print(norm_data)
         famd.fit(norm_data)
         explained_var = famd.explained_variance_
         norm_data_famd = famd.transform(norm_data)
+        
         if not exists(f'../graphs/famd_explained_{series}_d{n_val}.png'): plot_famd_explained(explained_var, series, n_val)
         if not exists(f'../graphs/famd_{series}_d{n_val}.png'): plot_famd_cluster(norm_data_famd, series, n_val)
 
@@ -81,6 +85,7 @@ def main(argv):
         pca = PCA(n_components=n_val)
         norm_data_pca = pca.fit_transform(norm_rarity_data)
         explained_var = pca.explained_variance_ratio_
+        
         if not exists(f'../graphs/pca_explained_{series}_d{n_val}_rarity.png'): plot_famd_explained(explained_var, series, n_val, rarity = True)
         if not exists(f'../graphs/pca_{series}_d{n_val}_rarity.png'): plot_famd_cluster(norm_data_pca, series, n_val, rarity = True)
 
@@ -91,6 +96,7 @@ def main(argv):
         famd = FAMD(n_components=2)
         famd.fit(norm_data)
         norm_data_famd = famd.transform(norm_data)
+
         if not exists(f'../graphs/kprototype_{series}_k{n_val}.png'): plot_kprototype_cluster(norm_data_famd, clusters, series, n_val)
 
     if clustering_type == "kmeans-rarity":
@@ -99,6 +105,7 @@ def main(argv):
         clusters = KMeans(n_clusters = n_val).fit_predict(norm_rarity_data)
         pca = PCA(n_components=n_val)
         norm_data_pca = pca.fit_transform(norm_rarity_data)
+
         if not exists(f'../graphs/kmeans_{series}_k{n_val}_rarity.png'): plot_kprototype_cluster(norm_data_pca, clusters, series, n_val, rarity = True)
         
 
