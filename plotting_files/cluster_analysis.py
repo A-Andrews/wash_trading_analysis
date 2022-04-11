@@ -3,17 +3,22 @@ import matplotlib.pyplot as plt
 from os.path import exists
 from distance_metrics import normalise_attributes, get_attribute_data
 from rarity_finder import replace_rarity
-from light_famd import FAMD
+from light_famd import FAMD, MCA
 from kmodes.kprototypes import KPrototypes
+from kmodes.kmodes import KModes
 from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
 
-def plot_famd_explained(explained, series, d, rarity = False):
+def plot_famd_explained(explained, series, d, mod = None):
     plt.clf()
 
-    if rarity:
+    if mod == "Rarity":
         title = f'Proportion of explained variance of factors of {series} for d = {d} (PCA)'
         save_path = f'../graphs/pca_explained_{series}_d{d}_rarity.png'
+
+    elif mod == "MCA":
+        title = f'Proportion of explained variance of factors of {series} for d = {d} (MCA)'
+        save_path = f'../graphs/mca_explained_{series}_d{d}_rarity.png'
     
     else:
         title = f'Proportion of explained variance of factors of {series} for d = {d}'
@@ -26,12 +31,16 @@ def plot_famd_explained(explained, series, d, rarity = False):
     plt.bar(range(1,d+1), explained / explained.sum())
     plt.savefig(save_path)
 
-def plot_famd_cluster(X_famd, series, d, rarity = False):
+def plot_famd_cluster(X_famd, series, d, mod = None):
     plt.clf()
     
-    if rarity:
+    if mod == "Rarity":
         title = f'PCA clustering of {series} for d = {d}'
         save_path = f'../graphs/pca_{series}_d{d}_rarity.png'
+
+    elif mod == "MCA":
+        title = f'MCA clustering of {series} for d = {d}'
+        save_path = f'../graphs/mca_{series}_d{d}_rarity.png'
     
     else:
         title = f'FAMD clustering of {series} for d = {d}'
@@ -43,13 +52,17 @@ def plot_famd_cluster(X_famd, series, d, rarity = False):
     plt.scatter(x=X_famd[:,0], y=X_famd[:,1], cmap='tab10')
     plt.savefig(save_path)
 
-def plot_kprototype_cluster(X_famd, labels, series, k, rarity = False):
+def plot_kprototype_cluster(X_famd, labels, series, k, mod = None):
     plt.clf()
 
-    if rarity:
+    if mod == "Rarity":
         title = f'kmeans clustering of {series} for k = {k} (Rarity)'
         save_path = f'../graphs/kmeans_{series}_k{k}_rarity.png'
-    
+
+    elif mod == "MCA":
+        title = f'kmode clustering of {series} for k = {k} (Rarity)'
+        save_path = f'../graphs/kmode_{series}_k{k}_rarity.png'
+
     else:
         title = f'kprototype clustering of {series} for k = {k}'
         save_path = f'../graphs/kprototype_{series}_k{k}.png'
@@ -79,6 +92,17 @@ def main(argv):
         if not exists(f'../graphs/famd_explained_{series}_d{n_val}.png'): plot_famd_explained(explained_var, series, n_val)
         if not exists(f'../graphs/famd_{series}_d{n_val}.png'): plot_famd_cluster(norm_data_famd, series, n_val)
 
+    if clustering_type == "mca":
+        mca = MCA(n_components = n_val)
+        mca.fit(norm_data)
+
+        explained_var = mca.explained_variance_
+        norm_data_mca = mca.transform(norm_data)
+        
+        if not exists(f'../graphs/mca_explained_{series}_d{n_val}.png'): plot_famd_explained(explained_var, series, n_val, mod = "MCA")
+        if not exists(f'../graphs/mca_{series}_d{n_val}.png'): plot_famd_cluster(norm_data_mca, series, n_val, mod = "MCA")
+
+
     if clustering_type == "pca-rarity":
         rarity_data = replace_rarity(data)
         norm_rarity_data = normalise_attributes(rarity_data)
@@ -86,8 +110,8 @@ def main(argv):
         norm_data_pca = pca.fit_transform(norm_rarity_data)
         explained_var = pca.explained_variance_ratio_
         
-        if not exists(f'../graphs/pca_explained_{series}_d{n_val}_rarity.png'): plot_famd_explained(explained_var, series, n_val, rarity = True)
-        if not exists(f'../graphs/pca_{series}_d{n_val}_rarity.png'): plot_famd_cluster(norm_data_pca, series, n_val, rarity = True)
+        if not exists(f'../graphs/pca_explained_{series}_d{n_val}_rarity.png'): plot_famd_explained(explained_var, series, n_val, mod = "Rarity")
+        if not exists(f'../graphs/pca_{series}_d{n_val}_rarity.png'): plot_famd_cluster(norm_data_pca, series, n_val, mod = "Rarity")
 
     if clustering_type == "kprototype":
         categorical_col = norm_data.select_dtypes(include='object').columns.tolist()
@@ -99,6 +123,14 @@ def main(argv):
 
         if not exists(f'../graphs/kprototype_{series}_k{n_val}.png'): plot_kprototype_cluster(norm_data_famd, clusters, series, n_val)
 
+    if clustering_type == "kmode":
+        clusters = KModes(n_clusters = n_val).fit_predict(norm_data)
+        mca = MCA(n_components = n_val)
+        mca.fit(norm_data)
+        norm_data_mca = mca.transform(norm_data)
+
+        if not exists(f'../graphs/kmodes_{series}_k{n_val}.png'): plot_kprototype_cluster(norm_data_mca, clusters, series, n_val, mod = "MCA")
+
     if clustering_type == "kmeans-rarity":
         rarity_data = replace_rarity(data)
         norm_rarity_data = normalise_attributes(rarity_data)
@@ -106,7 +138,7 @@ def main(argv):
         pca = PCA(n_components=n_val)
         norm_data_pca = pca.fit_transform(norm_rarity_data)
 
-        if not exists(f'../graphs/kmeans_{series}_k{n_val}_rarity.png'): plot_kprototype_cluster(norm_data_pca, clusters, series, n_val, rarity = True)
+        if not exists(f'../graphs/kmeans_{series}_k{n_val}_rarity.png'): plot_kprototype_cluster(norm_data_pca, clusters, series, n_val, mod = "Rarity")
         
 
 if __name__ == "__main__":
