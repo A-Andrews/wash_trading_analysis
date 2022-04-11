@@ -38,4 +38,8 @@ Where:
 - method: the method of analysis
     - FAMD
     - K-Prototype
+    - PCA
+    - K-Means
+    - K-Mode
+    - MCA
 - d: the number of dimensions or clusters
