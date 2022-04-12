@@ -77,7 +77,9 @@ def get_csv_axie_transactions(start: int, end: int):
 
     for i in range(start, end):
         data = get_axie_history(i)
-        #print(data)
+        if data == {'message': 'API rate limit exceeded'}:
+            print(i)
+            break
         try:
             row, eth_row = write_axie_history_to_row(data)
             if row != []: rows.extend(row)
