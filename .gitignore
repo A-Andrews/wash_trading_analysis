@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 # To keep apikeys secure
-apikeys.py
+*_key.txt*

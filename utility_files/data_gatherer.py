@@ -117,6 +117,13 @@ def get_csv_axie(start: int, end: int):
     
 
     f.close()
+
+def get_api_key(key):
+    contents = None
+    with open(f'../apikeys/{key}_key.txt') as f:
+        contents = f.read()
+    
+    return contents
         
 
 def main(argv):
@@ -134,6 +141,9 @@ def main(argv):
 
     if csv == 'axie_transactions':
         get_csv_axie_transactions(start, end)
+    
+    if csv == 'BAYC_transactions':
+        api_key = get_api_key('BAYC')
 
 if __name__ == "__main__":
    main(sys.argv[1:])
