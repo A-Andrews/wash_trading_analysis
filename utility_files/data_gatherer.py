@@ -1,9 +1,10 @@
 import requests
 import csv
 import sys
+import json
 
 
-opensea_url = "https://api.opensea.io/api/v1/assets"
+opensea_url = "https://api.opensea.io/api/v1/events"
 axie_url = "https://graphql-gateway.axieinfinity.com/graphql"
 
 
@@ -124,6 +125,49 @@ def get_api_key(key):
         contents = f.read()
     
     return contents
+
+def make_BAYC_request(ba_id, key):
+    url = opensea_url
+    i = 1
+    #for i in range(0, 100):
+
+    querystring = {"asset_contract_address":"0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+                   "event_type":"successful",
+                   "only_opensea":"true",
+                   "token_id": ba_id}
+
+    transquerystring = {"asset_contract_address":"0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+                   "event_type":"successful",
+                   "only_opensea":"true",
+                   "token_id": ba_id}
+
+    headers = {"Accept": "application/json", "X-API-KEY": "f1ea9dfea2f04362b79cfcf256d095bd"}
+
+    response = requests.request("GET", url, headers=headers, params=querystring)
+    out = response.json()['asset_events']
+
+    transresponse = requests.request("GET", url, headers=headers, params=transquerystring)
+    trans_out = transresponse.json()['asset_events']
+    
+def write_opensea_trade(data):
+    rows = []
+    for i in data:
+        break
+    return 0
+
+
+
+def get_csv_BAYC_transactions(start, end, api):
+
+    f = open('../transaction_files/BAYC_transactions.csv', 'a')
+    writer = csv.writer(f)
+    rows = []
+
+    for i in range(start, end):
+        break
+
+    return 0
+
         
 
 def main(argv):
@@ -144,6 +188,7 @@ def main(argv):
     
     if csv == 'BAYC_transactions':
         api_key = get_api_key('BAYC')
+        make_BAYC_request(1957, api_key)
 
 if __name__ == "__main__":
    main(sys.argv[1:])
