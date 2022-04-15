@@ -2,6 +2,7 @@ import requests
 import csv
 import sys
 import json
+import time
 
 
 opensea_url = "https://api.opensea.io/api/v1/events"
@@ -128,8 +129,6 @@ def get_api_key(key):
 
 def make_BAYC_request(ba_id, key):
     url = opensea_url
-    i = 1
-    #for i in range(0, 100):
 
     querystring = {"asset_contract_address":"0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
                    "event_type":"successful",
@@ -137,23 +136,52 @@ def make_BAYC_request(ba_id, key):
                    "token_id": ba_id}
 
     transquerystring = {"asset_contract_address":"0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
-                   "event_type":"successful",
-                   "only_opensea":"true",
+                   "event_type":"transfer",
                    "token_id": ba_id}
 
-    headers = {"Accept": "application/json", "X-API-KEY": "f1ea9dfea2f04362b79cfcf256d095bd"}
+    headers = {"Accept": "application/json", "X-API-KEY": key}
 
     response = requests.request("GET", url, headers=headers, params=querystring)
     out = response.json()['asset_events']
 
     transresponse = requests.request("GET", url, headers=headers, params=transquerystring)
     trans_out = transresponse.json()['asset_events']
+
+    return out, trans_out
     
-def write_opensea_trade(data):
+def write_opensea_trade(token_id, data):
     rows = []
     for i in data:
-        break
-    return 0
+        seller = i["seller"]
+        buyer = i["winner_account"]
+        seller_username = seller["user"]["username"]
+        seller_address = seller["address"]
+        buyer_username = buyer["user"]["username"]
+        buyer_address = buyer["address"]
+        amount = i["total_price"]
+        time = i["transaction"]["timestamp"]
+        row = [token_id, seller_username, seller_address, buyer_username, buyer_address, amount, time]
+        rows.append(row)
+    return rows
+
+def write_opensea_transfer(token_id, data):
+    rows = []
+    data = data[:-1]
+    seller_username = "NA"
+    buyer_username = "NA"
+    for i in data:
+        seller = i["from_account"]
+        buyer = i["to_account"]
+        if seller["user"]["username"] != None:
+            seller_username = seller["user"]["username"]
+        seller_address = seller["address"]
+        if buyer["user"]["username"] != None:
+            buyer_username = buyer["user"]["username"]
+        buyer_address = buyer["address"]
+        time = i["transaction"]["timestamp"]
+        row = [token_id, seller_username, seller_address, buyer_username, buyer_address, time]
+        rows.append(row)
+    return rows
 
 
 
@@ -161,14 +189,30 @@ def get_csv_BAYC_transactions(start, end, api):
 
     f = open('../transaction_files/BAYC_transactions.csv', 'a')
     writer = csv.writer(f)
-    rows = []
+    sales_rows = []
+
+    g = open('../transaction_files/BAYC_transfers.csv', 'a')
+    trans_writer = csv.writer(g)
+    trans_rows = []
 
     for i in range(start, end):
-        break
+        try:
+            sales, trans = make_BAYC_request(i, api)
+            sales_row = write_opensea_trade(i, sales)
+            trans_row = write_opensea_transfer(i, trans)
+            sales_rows.extend(sales_row)
+            trans_rows.extend(trans_row)
+        except:
+            print(i)
+            break
+        time.sleep(0.5)
 
-    return 0
+    writer.writerows(sales_rows)
+    trans_writer.writerows(trans_rows)
 
-        
+    f.close()
+    g.close()
+       
 
 def main(argv):
     
@@ -188,7 +232,8 @@ def main(argv):
     
     if csv == 'BAYC_transactions':
         api_key = get_api_key('BAYC')
-        make_BAYC_request(1957, api_key)
+        get_csv_BAYC_transactions(start, end, api_key)
+        
 
 if __name__ == "__main__":
    main(sys.argv[1:])
