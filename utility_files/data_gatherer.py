@@ -154,9 +154,15 @@ def write_opensea_trade(token_id, data):
     for i in data:
         seller = i["seller"]
         buyer = i["winner_account"]
-        seller_username = seller["user"]["username"]
+        try:
+            seller_username = seller["user"]["username"]
+        except:
+            seller_username = ""
         seller_address = seller["address"]
-        buyer_username = buyer["user"]["username"]
+        try:
+            buyer_username = buyer["user"]["username"]
+        except:
+            buyer_username = ""
         buyer_address = buyer["address"]
         amount = i["total_price"]
         time = i["transaction"]["timestamp"]
@@ -167,16 +173,19 @@ def write_opensea_trade(token_id, data):
 def write_opensea_transfer(token_id, data):
     rows = []
     data = data[:-1]
-    seller_username = "NA"
-    buyer_username = "NA"
+    
     for i in data:
         seller = i["from_account"]
         buyer = i["to_account"]
-        if seller["user"]["username"] != None:
+        try:
             seller_username = seller["user"]["username"]
+        except:
+            seller_username = ""
         seller_address = seller["address"]
-        if buyer["user"]["username"] != None:
+        try:
             buyer_username = buyer["user"]["username"]
+        except:
+            buyer_username = ""
         buyer_address = buyer["address"]
         time = i["transaction"]["timestamp"]
         row = [token_id, seller_username, seller_address, buyer_username, buyer_address, time]
@@ -196,15 +205,11 @@ def get_csv_BAYC_transactions(start, end, api):
     trans_rows = []
 
     for i in range(start, end):
-        try:
-            sales, trans = make_BAYC_request(i, api)
-            sales_row = write_opensea_trade(i, sales)
-            trans_row = write_opensea_transfer(i, trans)
-            sales_rows.extend(sales_row)
-            trans_rows.extend(trans_row)
-        except:
-            print(i)
-            break
+        sales, trans = make_BAYC_request(i, api)
+        sales_row = write_opensea_trade(i, sales)
+        trans_row = write_opensea_transfer(i, trans)
+        sales_rows.extend(sales_row)
+        trans_rows.extend(trans_row)
         time.sleep(0.5)
 
     writer.writerows(sales_rows)
