@@ -127,15 +127,15 @@ def get_api_key(key):
     
     return contents
 
-def make_BAYC_request(ba_id, key):
+def make_opensea_request(ba_id, key, address):
     url = opensea_url
 
-    querystring = {"asset_contract_address":"0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+    querystring = {"asset_contract_address":address,
                    "event_type":"successful",
                    "only_opensea":"true",
                    "token_id": ba_id}
 
-    transquerystring = {"asset_contract_address":"0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+    transquerystring = {"asset_contract_address":address,
                    "event_type":"transfer",
                    "token_id": ba_id}
 
@@ -148,6 +148,8 @@ def make_BAYC_request(ba_id, key):
     trans_out = transresponse.json()['asset_events']
 
     return out, trans_out
+
+
     
 def write_opensea_trade(token_id, data):
     rows = []
@@ -194,18 +196,18 @@ def write_opensea_transfer(token_id, data):
 
 
 
-def get_csv_BAYC_transactions(start, end, api):
+def get_csv_opensea_transactions(start, end, api, address, series):
 
-    f = open('../transaction_files/BAYC_transactions.csv', 'a')
+    f = open(f'../transaction_files/{series}_transactions.csv', 'a')
     writer = csv.writer(f)
     sales_rows = []
 
-    g = open('../transaction_files/BAYC_transfers.csv', 'a')
+    g = open(f'../transaction_files/{series}_transfers.csv', 'a')
     trans_writer = csv.writer(g)
     trans_rows = []
 
     for i in range(start, end):
-        sales, trans = make_BAYC_request(i, api)
+        sales, trans = make_opensea_request(i, api, address)
         sales_row = write_opensea_trade(i, sales)
         trans_row = write_opensea_transfer(i, trans)
         sales_rows.extend(sales_row)
@@ -236,8 +238,12 @@ def main(argv):
         get_csv_axie_transactions(start, end)
     
     if csv == 'BAYC_transactions':
-        api_key = get_api_key('BAYC')
-        get_csv_BAYC_transactions(start, end, api_key)
+        api_key = get_api_key('opensea')
+        get_csv_opensea_transactions(start, end, api_key, "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d", "BAYC")
+
+    if csv == 'Cryptopunk_transactions':
+        api_key = get_api_key('opensea')
+        get_csv_opensea_transactions(start, end, api_key, "0xb47e3cd837dDF8e4c57F05d70Ab865de6e193BBB", "cryptopunk")
         
 
 if __name__ == "__main__":
