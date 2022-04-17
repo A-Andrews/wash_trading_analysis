@@ -174,7 +174,7 @@ def write_opensea_trade(token_id, data):
 
 def write_opensea_transfer(token_id, data):
     rows = []
-    data = data[:-1]
+    #data = data[:-1]
     
     for i in data:
         seller = i["from_account"]
