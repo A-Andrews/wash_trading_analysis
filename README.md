@@ -1,5 +1,6 @@
 # all-that-glitters-is-not-gold
 Masters project for NFT valuation comparing multiple methodologies.
+Uses data up to 18th April 2022 for analysis.
 
 ## Visualisations
 
