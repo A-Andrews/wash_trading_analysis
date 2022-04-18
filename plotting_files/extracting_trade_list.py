@@ -7,7 +7,6 @@ def get_opensea_trade_data(series):
     ids = ids['id'].unique()
     addresses = data[['buyer_address']].copy()
     addresses = addresses['buyer_address'].unique()
-    print(len(addresses))
 
     return data, ids, addresses
     
@@ -37,4 +36,25 @@ def get_to_from_addresses(data, address):
 
     return to_addresses, from_addresses
 
+def get_all_to_from(data, addresses):
+    to_list = []
+    from_list = []
 
+    for i in addresses:
+        to_addresses, from_addresses = get_to_from_addresses(data, i)
+        to_list.append(to_addresses)
+        from_list.append(from_addresses)
+
+    return to_list, from_list
+
+def get_common_addresses(data, min_count):
+    counts = data['buyer_address'].value_counts()
+    return counts.loc[counts >= min_count]
+
+def get_common_pairs(data, min_count):
+    data_addresses = data[['seller_address', 'buyer_address']]
+    counts = data_addresses.groupby(['seller_address', 'buyer_address']).value_counts()
+    return counts.loc[counts >= min_count]
+
+data, ids, addresses = get_opensea_trade_data('BAYC')
+print(get_common_pairs(data, 9))
