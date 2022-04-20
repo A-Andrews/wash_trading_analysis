@@ -83,12 +83,30 @@ def get_node_pairs_from_singles(data, addresses):
 
     return list(dict.fromkeys(out))
 
-def find_loops():
-    # Identifies loops
-    return 0
+# helper function for find_loops
+def indices(lst, item):
+    return [i for i, x in enumerate(lst) if x == item]
 
-def find_common_sequences():
-    # Finds series of x length that occur y number of times ordered
+# given list of addresses checks for loops returns a list of addreses in the loop(s) if a loop is not present returns an empty list
+def find_loops(addresses):
+
+    if len(addresses) == len(set(addresses)): return []
+
+    out = []
+
+    for i, address in enumerate(addresses):
+        indexes = indices(addresses, address)
+        if len(indexes) > 1:
+            for j in indexes:
+                if j > i:
+                    out.append(addresses[i:j+1])
+
+    return out
+
+# given list of addresses finds series of common addresses of x length that occur y number of times
+def find_common_sequences(addresses, min_length, min_occurances):
+    # use pairs join the pairs together to make longer sequences must be a lambda or something?
+    # use id history?
     return 0
 
 def find_associated_addresses():
@@ -100,9 +118,11 @@ def create_adjacency_matrix():
     return 0
 
 
-data, ids, addresses = get_opensea_trade_data('BAYC')
-common_adds = get_common_addresses(data, 9)
+#data, ids, addresses = get_opensea_trade_data('BAYC')
+#common_adds = get_common_addresses(data, 9)
 #print(common_adds)
-test = get_node_pairs_from_singles(data, common_adds)
-print(test)
-print(len(test))
+#test = get_node_pairs_from_singles(data, common_adds)
+#print(test)
+#print(len(test))
+
+print(find_loops([4,3,5,4,6,4,6,3,4]))
