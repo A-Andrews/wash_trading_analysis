@@ -72,7 +72,7 @@ def get_node_pairs_from_pairs(addresses):
     return addresses.index.tolist()
 
 # Given list of addresses returns list of pairs of those addresses connections as node to node pairs
-def get_node_pairs_from_singles(data, addresses):
+def get_node_pairs_from_singles(data, addresses, duplicates = False):
     out = []
     to_list, from_list = get_all_to_from(data, addresses)
     for i in range(0, len(to_list)):
@@ -80,6 +80,8 @@ def get_node_pairs_from_singles(data, addresses):
         node_from_list = map(lambda e: (e[0], addresses.index[i]), from_list[i])
         out.extend(node_to_list)
         out.extend(node_from_list)
+    if duplicates:
+        return out
 
     return list(dict.fromkeys(out))
 
@@ -103,11 +105,32 @@ def find_loops(addresses):
 
     return out
 
-# given list of addresses finds series of common addresses of x length that occur y number of times
-def find_common_sequences(addresses, min_length, min_occurances):
-    # use pairs join the pairs together to make longer sequences must be a lambda or something?
-    # use id history?
-    return 0
+def flatten(t):
+    return [item for sublist in t for item in sublist]
+
+# given list of ids finds series of common addresses of x length that occur y number of times
+def find_common_sequences(data, ids, min_length = 1, min_occurances = 1):
+
+    address_list, _ = get_all_address_time_pairs(data, ids)
+
+    min_length_lists = [i for i in address_list if len(i) >= min_length]
+    counts = {}
+    for i in min_length_lists:
+        if len(i) == min_length:
+            key = ','.join(flatten(i.tolist()))
+            counts[key] = counts.get(key, 0) + 1
+
+        else:
+            keys = map(list, zip(*(flatten(i.tolist())[j:] for j in range(min_length))))
+            for k in keys:
+                key = ','.join(k)
+                counts[key] = counts.get(key, 0) + 1
+
+    out = [k.split(',') for k, v in counts.items() if v >= min_occurances]
+
+
+
+    return out
 
 def find_associated_addresses():
     # Finds x addresses that occur in the same nft transaction histories y times
@@ -118,11 +141,14 @@ def create_adjacency_matrix():
     return 0
 
 
-#data, ids, addresses = get_opensea_trade_data('BAYC')
+data, ids, addresses = get_opensea_trade_data('BAYC')
 #common_adds = get_common_addresses(data, 9)
 #print(common_adds)
 #test = get_node_pairs_from_singles(data, common_adds)
 #print(test)
 #print(len(test))
 
-print(find_loops([4,3,5,4,6,4,6,3,4]))
+#print(find_loops([4,3,5,4,6,4,6,3,4]))
+cs = find_common_sequences(data, ids, 7, 7)
+print(cs)
+print(len(cs))
