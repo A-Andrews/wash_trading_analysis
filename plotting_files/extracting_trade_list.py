@@ -150,15 +150,23 @@ def find_associated_addresses(data, ids, min_length = 1, min_occurances = 1):
     out = [list(k) for k, v in counts.items() if v >= min_occurances]
     return out
 
-def create_adjacency_matrix():
-    # Creates adjacency matrix given list of pairs
-    return 0
+# creates adjacency matrix given list of pairs
+def create_adjacency_matrix(pairs):
+    labels = {k: v for v, k in enumerate(list(set(flatten(pairs))))}
+    pairs_rep = [[labels[i] for i in pair] for pair in pairs]
+    edges = np.array(pairs_rep)
+    matrix = np.zeros((edges.max()+1, edges.max()+1))
+    matrix[edges[:,0], edges[:,1]] = 1
+
+    labeled_matrix = pd.DataFrame(matrix, index=labels, columns=labels)
+
+    return labeled_matrix
 
 
 data, ids, addresses = get_opensea_trade_data('BAYC')
-#common_adds = get_common_addresses(data, 9)
+common_adds = get_common_addresses(data, 30)
 #print(common_adds)
-#test = get_node_pairs_from_singles(data, common_adds)
+test = get_node_pairs_from_singles(data, common_adds)
 #print(test)
 #print(len(test))
 
@@ -167,6 +175,10 @@ data, ids, addresses = get_opensea_trade_data('BAYC')
 #print(cs)
 #print(len(cs))
 
-cs = find_associated_addresses(data, ids, 7, 7)
-print(cs)
-print(len(cs))
+#cs = find_associated_addresses(data, ids, 7, 7)
+#print(cs)
+#print(len(cs))
+
+
+res = create_adjacency_matrix(test)
+print(res)
