@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from datetime import datetime
 
 # given a series name returns their data, the list of id numbers and the list of unique buyers
 def get_opensea_trade_data(series):
@@ -16,8 +17,19 @@ def get_opensea_addresses_times(data, i):
     rows = data.loc[data["id"] == i]
     wallets = rows[['buyer_address']].to_numpy()
     times = rows[['time']].to_numpy()
+    try:
+        times = np.array([[datetime.fromisoformat(t)] for t in flatten(times)])
+    except:
+        print(times, i)
 
     return wallets, times
+
+# given datetimes and a list of wallets and their times return the wallets and times in that
+def get_wallets_for_time(wallets, times, range_start, range_end):
+    wallets_ret = [w for i, w in enumerate(wallets) if times[i] >= range_start and times[i] <= range_end]
+    times_ret = [t for t in times if t >= range_start and t <= range_end]
+
+    return wallets_ret, times_ret
 
 # given data and a list of ids returns the address lists and time lists associated with those ids
 def get_all_address_time_pairs(data, ids):
@@ -29,6 +41,21 @@ def get_all_address_time_pairs(data, ids):
         times_list.append(times)
 
     return address_list, times_list
+
+# given lists of lists of wallets and times and start and end datetimes in YYYY-MM-DDTHH:MM:SS format returns those that fit
+def get_all_wallets_for_time(wallets_list, times_list, range_start, range_end):
+    start, end = datetime.fromisoformat(range_start), datetime.fromisoformat(range_end)
+
+    wallets = []
+    times = []
+    for i in range(0, len(wallets_list)):
+        w = wallets_list[i]
+        t = times_list[i]
+        wallets.append(get_wallets_for_time(w, t, start, end))
+        times.append(get_wallets_for_time(w, t, start, end))
+
+    return wallets, times
+
 
 # given data and an address return a list of addresses it has sent to and a list of a addresses it has recieved from
 def get_to_from_addresses(data, address):
@@ -150,7 +177,7 @@ def find_associated_addresses(data, ids, min_length = 1, min_occurances = 1):
     out = [list(k) for k, v in counts.items() if v >= min_occurances]
     return out
 
-# creates adjacency matrix given list of pairs
+# creates adjacency matrix given list of pairs returns a labeled pandas dataframe
 def create_adjacency_matrix(pairs):
     labels = {k: v for v, k in enumerate(list(set(flatten(pairs))))}
     pairs_rep = [[labels[i] for i in pair] for pair in pairs]
@@ -164,9 +191,9 @@ def create_adjacency_matrix(pairs):
 
 
 data, ids, addresses = get_opensea_trade_data('BAYC')
-common_adds = get_common_addresses(data, 30)
+#common_adds = get_common_addresses(data, 30)
 #print(common_adds)
-test = get_node_pairs_from_singles(data, common_adds)
+#test = get_node_pairs_from_singles(data, common_adds)
 #print(test)
 #print(len(test))
 
@@ -180,5 +207,13 @@ test = get_node_pairs_from_singles(data, common_adds)
 #print(len(cs))
 
 
-res = create_adjacency_matrix(test)
-print(res)
+#res = create_adjacency_matrix(test)
+#print(res)
+
+#ids, times = get_opensea_addresses_times(data, 6)
+#print(ids, times)
+#t_ids, t_times = get_wallets_for_time(ids, times, datetime(2021, 6, 21, 15, 56, 28), datetime(2021, 12, 22, 19, 23, 15))
+#print(t_ids, t_times)
+
+w, t = get_all_address_time_pairs(data, ids)
+print(get_all_wallets_for_time(w, t, "2021-06-21T15:56:28", "2021-12-22T19:23:15"))

@@ -3,9 +3,6 @@ import extracting_trade_list
 from plotting_files.extracting_trade_list import get_opensea_trade_data
 import networkx as nx
 
-def create_adjacency_matrix():
-    return 0
-
 def list_for_time_period():
     return 0
 
