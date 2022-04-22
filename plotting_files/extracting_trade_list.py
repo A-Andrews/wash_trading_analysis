@@ -128,13 +128,27 @@ def find_common_sequences(data, ids, min_length = 1, min_occurances = 1):
 
     out = [k.split(',') for k, v in counts.items() if v >= min_occurances]
 
-
-
     return out
 
-def find_associated_addresses():
-    # Finds x addresses that occur in the same nft transaction histories y times
-    return 0
+# given list of ids finds sequences containing x number of related addresses that occur together y number of times
+def find_associated_addresses(data, ids, min_length = 1, min_occurances = 1):
+    address_list, _ = get_all_address_time_pairs(data, ids)
+
+    min_length_lists = [list(set(flatten(i.tolist()))) for i in address_list if len(list(set(flatten(i.tolist())))) >= min_length]
+    counts = {}
+    for i in min_length_lists:
+        if len(i) == min_length:
+            key = frozenset(i)
+            counts[key] = counts.get(key, 0) + 1
+
+        else:
+            keys = map(list, zip(*(i[j:] for j in range(min_length))))
+            for k in keys:
+                key = frozenset(k)
+                counts[key] = counts.get(key, 0) + 1
+
+    out = [list(k) for k, v in counts.items() if v >= min_occurances]
+    return out
 
 def create_adjacency_matrix():
     # Creates adjacency matrix given list of pairs
@@ -149,6 +163,10 @@ data, ids, addresses = get_opensea_trade_data('BAYC')
 #print(len(test))
 
 #print(find_loops([4,3,5,4,6,4,6,3,4]))
-cs = find_common_sequences(data, ids, 7, 7)
+#cs = find_common_sequences(data, ids, 7, 7)
+#print(cs)
+#print(len(cs))
+
+cs = find_associated_addresses(data, ids, 7, 7)
 print(cs)
 print(len(cs))
