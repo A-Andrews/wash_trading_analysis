@@ -11,7 +11,24 @@ def get_opensea_trade_data(series):
     addresses = addresses['buyer_address'].unique()
 
     return data, ids, addresses
-    
+
+# given wallet address returns list of ids owned by that wallet and at what times that ownership began
+def get_ids_for_address(data, address):
+    rows = data.loc[data['buyer_address'] == address]
+    ids = rows[['id']].to_numpy()
+    times = rows[['time']].to_numpy()
+    times = np.array([[datetime.fromisoformat(t)] for t in flatten(times)])
+    return ids, times
+
+# given list of wallet addresses returns list of list of ids owned by that wallet and times the ownership began
+def get_ids_for_addresses(data, addresses):
+    ids_list, times_list = [], []
+    for i in addresses:
+        ids, times = get_ids_for_address(data, i)
+        ids_list.append(ids)
+        times_list.append(times)
+    return ids_list, times_list
+
 # given an id and the data returns a list of wallets that have held that id and at what times they were
 def get_opensea_addresses_times(data, i):
     rows = data.loc[data["id"] == i]
@@ -215,5 +232,9 @@ data, ids, addresses = get_opensea_trade_data('BAYC')
 #t_ids, t_times = get_wallets_for_time(ids, times, datetime(2021, 6, 21, 15, 56, 28), datetime(2021, 12, 22, 19, 23, 15))
 #print(t_ids, t_times)
 
-w, t = get_all_address_time_pairs(data, ids)
-print(get_all_wallets_for_time(w, t, "2021-06-21T15:56:28", "2021-12-22T19:23:15"))
+#w, t = get_all_address_time_pairs(data, ids)
+#print(get_all_wallets_for_time(w, t, "2021-06-21T15:56:28", "2021-12-22T19:23:15"))
+
+i, t = get_ids_for_addresses(data, addresses)
+#print(i, t)
+print(get_all_wallets_for_time(i, t, "2021-06-21T15:56:28", "2021-12-22T19:23:15"))
