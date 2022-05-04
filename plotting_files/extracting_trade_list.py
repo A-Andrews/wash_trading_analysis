@@ -4,7 +4,7 @@ from datetime import datetime
 
 # given a series name returns their data, the list of id numbers and the list of unique buyers
 def get_opensea_trade_data(series):
-    data = pd.read_csv(f"transaction_files/{series}_transfers.csv")
+    data = pd.read_csv(f"../transaction_files/{series}_transfers.csv")
     ids = data[['id']].copy()
     ids = ids['id'].unique()
     addresses = data[['buyer_address']].copy()
@@ -194,6 +194,20 @@ def find_associated_addresses(data, ids, min_length = 1, min_occurances = 1):
     out = [list(k) for k, v in counts.items() if v >= min_occurances]
     return out
 
+# given list of sequences of addresses produce list of pairs
+def get_list_pairs_for_associations(sequences):
+    pairs = []
+    pairs_set = set()
+    for i in sequences:
+        for j in range(len(i) - 1):
+            pair = [i[j], i[j+1]]
+            pair_k = (i[j], i[j+1])
+            if pair_k not in pairs_set:
+                pairs_set.add(pair_k)
+                pairs.append(pair)
+
+    return pairs
+
 # creates adjacency matrix given list of pairs returns a labeled pandas dataframe
 def create_adjacency_matrix(pairs):
     labels = {k: v for v, k in enumerate(list(set(flatten(pairs))))}
@@ -207,7 +221,8 @@ def create_adjacency_matrix(pairs):
     return labeled_matrix
 
 
-data, ids, addresses = get_opensea_trade_data('BAYC')
+
+#data, ids, addresses = get_opensea_trade_data('BAYC')
 #common_adds = get_common_addresses(data, 30)
 #print(common_adds)
 #test = get_node_pairs_from_singles(data, common_adds)
@@ -235,6 +250,8 @@ data, ids, addresses = get_opensea_trade_data('BAYC')
 #w, t = get_all_address_time_pairs(data, ids)
 #print(get_all_wallets_for_time(w, t, "2021-06-21T15:56:28", "2021-12-22T19:23:15"))
 
-i, t = get_ids_for_addresses(data, addresses)
+#i, t = get_ids_for_addresses(data, addresses)
 #print(i, t)
-print(get_all_wallets_for_time(i, t, "2021-06-21T15:56:28", "2021-12-22T19:23:15"))
+#print(get_all_wallets_for_time(i, t, "2021-06-21T15:56:28", "2021-12-22T19:23:15"))
+
+#print(get_list_pairs_for_associations([[1,2,3,4,5],[6,7,6,7,6,7]]))
