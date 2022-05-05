@@ -31,6 +31,13 @@ def common_pairs_network(data, common_number, series):
 
 def common_sequences_network(data, ids, series, min_length = 1, min_occurances = 1):
     sequences = find_common_sequences(data, ids, min_length, min_occurances)
+    pairs = get_list_pairs_for_sequences(sequences)
+    adj_mat = create_adjacency_matrix(pairs)
+    create_adjacency_graph(adj_mat)
+    plt.show()
+
+def common_associations_network(data, ids, series, min_length = 1, min_occurances = 1):
+    sequences = find_associated_addresses(data, ids, min_length, min_occurances)
     pairs = get_list_pairs_for_associations(sequences)
     adj_mat = create_adjacency_matrix(pairs)
     create_adjacency_graph(adj_mat)
@@ -54,6 +61,8 @@ def main(argv):
         common_pairs_network(data, common_number, series)
     if network_type == 'common_sequences':
         common_sequences_network(data, ids, series, common_number, common_number)
+    if network_type == 'common_associations':
+        common_associations_network(data, ids, series, common_number, common_number)
         
 
 

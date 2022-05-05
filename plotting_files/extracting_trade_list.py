@@ -195,7 +195,7 @@ def find_associated_addresses(data, ids, min_length = 1, min_occurances = 1):
     return out
 
 # given list of sequences of addresses produce list of pairs
-def get_list_pairs_for_associations(sequences):
+def get_list_pairs_for_sequences(sequences):
     pairs = []
     pairs_set = set()
     for i in sequences:
@@ -205,6 +205,21 @@ def get_list_pairs_for_associations(sequences):
             if pair_k not in pairs_set:
                 pairs_set.add(pair_k)
                 pairs.append(pair)
+
+    return pairs
+
+# given list of associated addresses produce list of pairs
+def get_list_pairs_for_associations(sequences):
+    pairs = []
+    pairs_set = set()
+    for i in sequences:
+        for j in range(len(i) - 1):
+            for k in range(len(i)):
+                pair = [i[j], i[k]]
+                pair_k = (i[j], i[k])
+                if pair_k not in pairs_set and not i[j] == i[k]:
+                    pairs_set.add(pair_k)
+                    pairs.append(pair)
 
     return pairs
 
@@ -253,5 +268,7 @@ def create_adjacency_matrix(pairs):
 #i, t = get_ids_for_addresses(data, addresses)
 #print(i, t)
 #print(get_all_wallets_for_time(i, t, "2021-06-21T15:56:28", "2021-12-22T19:23:15"))
+
+#print(get_list_pairs_for_associations([[1,2,3,4,5],[6,7,6,7,6,7]]))
 
 #print(get_list_pairs_for_associations([[1,2,3,4,5],[6,7,6,7,6,7]]))
