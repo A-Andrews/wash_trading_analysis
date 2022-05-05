@@ -133,7 +133,7 @@ def get_node_pairs_from_singles(data, addresses, duplicates = False):
 def indices(lst, item):
     return [i for i, x in enumerate(lst) if x == item]
 
-# given list of addresses checks for loops returns a list of addreses in the loop(s) if a loop is not present returns an empty list
+# given list of addresses checks for loops returns a list of addresses in the loop(s) if a loop is not present returns an empty list
 def find_loops(addresses):
 
     if len(addresses) == len(set(addresses)): return []
@@ -146,6 +146,15 @@ def find_loops(addresses):
             for j in indexes:
                 if j > i:
                     out.append(addresses[i:j+1])
+
+    return out
+
+# given list of lists of addresses returns list of list of loops
+def find_all_loops(addresses_list):
+    out = []
+    for i in addresses_list:
+        loops = find_loops(i)
+        out.extend(loops)
 
     return out
 

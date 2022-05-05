@@ -43,6 +43,15 @@ def common_associations_network(data, ids, series, min_length = 1, min_occurance
     create_adjacency_graph(adj_mat)
     plt.show()
 
+def simple_loops_network(data, ids, series, min_length = 1, min_occurances = 1):
+    sequences = find_common_sequences(data, ids, min_length, min_occurances)
+    loops = find_all_loops(sequences)
+    pairs = get_list_pairs_for_sequences(loops)
+    adj_mat = create_adjacency_matrix(pairs)
+    create_adjacency_graph(adj_mat)
+    plt.show()
+
+
 def main(argv):
     series = argv[0]
     network_type = argv[1]
@@ -63,6 +72,8 @@ def main(argv):
         common_sequences_network(data, ids, series, common_number, common_number)
     if network_type == 'common_associations':
         common_associations_network(data, ids, series, common_number, common_number)
+    if network_type == 'simple_loops':
+        simple_loops_network(data, ids, series, common_number, common_number)
         
 
 
