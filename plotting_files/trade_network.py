@@ -13,7 +13,7 @@ def create_graph_for_one(addresses, i, time):
 
 
 def create_adjacency_graph(adj_mat):
-    nx.draw_networkx(nx.from_pandas_adjacency(adj_mat), node_size = 30, font_size=1, arrows = True, arrowsize = 5)
+    nx.draw_networkx(nx.from_pandas_adjacency(adj_mat), node_size = 30, font_size=3, arrows = True, arrowsize = 5)
 
 def common_singles_network(data, common_number, series):
     common_addresses = get_common_addresses(data, common_number)

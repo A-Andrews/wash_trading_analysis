@@ -254,6 +254,7 @@ def create_adjacency_matrix(pairs):
 #print(len(test))
 
 #print(find_loops([4,3,5,4,6,4,6,3,4]))
+#print(get_list_pairs_for_sequences(find_loops([4,3,5,4,6,4,6,3,4])))
 #cs = find_common_sequences(data, ids, 7, 7)
 #print(cs)
 #print(len(cs))
