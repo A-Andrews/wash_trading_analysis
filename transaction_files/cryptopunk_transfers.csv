@@ -1,4 +1,5 @@
-id, seller_username, seller_address, buyer_username, buyer_address, time0,,0xd7d7e4ee53d954c9dabe63c1e69fa7d233a3d1c9,,0x965d9e3fccf522399606f0b9c4ef87ef35dd9fac,2022-04-17T10:46:56
+id,seller_username,seller_address,buyer_username,buyer_address,time
+0,,0xd7d7e4ee53d954c9dabe63c1e69fa7d233a3d1c9,,0x965d9e3fccf522399606f0b9c4ef87ef35dd9fac,2022-04-17T10:46:56
 0,,0xed01f8a737813f0bda2d4340d191dbf8c2cbcf30,Iamnot_Sweettooth_Vault,0x3c63ec009037cb7b07711ee3e726fa121e594b3b,2022-04-17T10:49:06
 0,WrappedCryptoPunks-Escrow,0xb7f7f6c52f2e2fdb1963eab30438024864c313f6,,0xed01f8a737813f0bda2d4340d191dbf8c2cbcf30,2022-04-17T10:49:06
 0,,0xd7d7e4ee53d954c9dabe63c1e69fa7d233a3d1c9,,0x965d9e3fccf522399606f0b9c4ef87ef35dd9fac,2022-04-17T10:46:56

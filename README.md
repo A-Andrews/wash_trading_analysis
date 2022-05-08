@@ -1,5 +1,6 @@
 # all-that-glitters-is-not-gold
 Masters project for NFT valuation comparing multiple methodologies.
+Uses data up to 18th April 2022 for analysis.
 
 ## Visualisations
 
@@ -43,3 +44,18 @@ Where:
     - K-Mode
     - MCA
 - d: the number of dimensions or clusters
+
+In order to produce basic networks:
+> python3 trade_network.py series method time_start time_end method_number
+
+Where:
+- series: the name to dertemine which series to graph
+- method: the method of analysis
+    - common_singles
+    - common_pairs
+    - common_sequences
+    - common_associations
+    - simple_loops
+- time_start: eliminate transactions before this time (set to 0 to ignore)
+- time_end: used with time start to select a window of transactions
+- method_number: used with methods that require additional numbers
