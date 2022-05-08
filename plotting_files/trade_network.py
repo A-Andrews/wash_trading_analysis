@@ -64,6 +64,8 @@ def main(argv):
 
     if series == 'BAYC' or series == 'cryptopunk':
         data, ids, addresses = get_opensea_trade_data(series)
+        if time_range_start != '0':
+            data = remove_out_of_time(data, time_range_start, time_range_end)
     if network_type == 'common_singles':
         common_singles_network(data, common_number, series)
     if network_type == 'common_pairs':

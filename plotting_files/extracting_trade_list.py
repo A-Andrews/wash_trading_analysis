@@ -244,6 +244,14 @@ def create_adjacency_matrix(pairs):
 
     return labeled_matrix
 
+def remove_out_of_time(data, range_start, range_end):
+    start, end = datetime.fromisoformat(range_start), datetime.fromisoformat(range_end)
+    times = pd.to_datetime(data['time'])
+    mask = (times >= start) & (times <= end)
+    rows = data.loc[mask]
+
+    return rows
+
 
 
 #data, ids, addresses = get_opensea_trade_data('BAYC')
@@ -252,6 +260,8 @@ def create_adjacency_matrix(pairs):
 #test = get_node_pairs_from_singles(data, common_adds)
 #print(test)
 #print(len(test))
+
+#print(remove_out_of_time(data, '2021-04-30T21:11:46', '2021-05-25T17:56:54'))
 
 #print(find_loops([4,3,5,4,6,4,6,3,4]))
 #print(get_list_pairs_for_sequences(find_loops([4,3,5,4,6,4,6,3,4])))
