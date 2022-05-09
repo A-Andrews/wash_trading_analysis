@@ -111,6 +111,9 @@ def get_common_pairs(data, min_count):
 def get_topx_common(common, amount):
     return common.head(amount)
 
+def get_topx_common_list(common, amount):
+    return common[:amount]
+
 # given a df of pairs of addresses returns them as a list of node to node pairs
 def get_node_pairs_from_pairs(addresses):
     return addresses.index.tolist()
