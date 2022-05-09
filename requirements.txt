@@ -47,6 +47,7 @@ matplotlib==3.4.3
 matplotlib-inline==0.1.3
 mccabe==0.7.0
 mistune==0.8.4
+mpl-chord-diagram==0.3.2
 mypy-extensions==0.4.3
 nbclient==0.5.11
 nbconvert==6.4.2
