@@ -24,6 +24,25 @@ def simple_common_pairs_chord(data, common_number, amount, series):
     adj_mat = create_adjacency_matrix(top_pairs)
     plot_chord(adj_mat)
 
+def simple_common_sequences_chord(data, ids, series, min_length = 1, min_occurances = 1):
+    sequences = find_common_sequences(data, ids, min_length, min_occurances)
+    pairs = get_list_pairs_for_sequences(sequences)
+    adj_mat = create_adjacency_matrix(pairs)
+    plot_chord(adj_mat)
+
+def simple_common_associations_chord(data, ids, series, min_length = 1, min_occurances = 1):
+    sequences = find_associated_addresses(data, ids, min_length, min_occurances)
+    pairs = get_list_pairs_for_associations(sequences)
+    adj_mat = create_adjacency_matrix(pairs)
+    plot_chord(adj_mat)
+
+def simple_common_loops_chord(data, ids, series, min_length = 1, min_occurances = 1):
+    sequences = find_common_sequences(data, ids, min_length, min_occurances)
+    loops = find_all_loops(sequences)
+    pairs = get_list_pairs_for_sequences(loops)
+    adj_mat = create_adjacency_matrix(pairs)
+    plot_chord(adj_mat)
+
 def main(argv):
     series = argv[0]
     network_type = argv[1]
@@ -43,6 +62,12 @@ def main(argv):
         simple_common_chord(data, common_number, amount, series)
     elif network_type == 'simple_common_pairs_chord':
         simple_common_pairs_chord(data, common_number, amount, series)
+    elif network_type == 'simple_common_sequences_chord':
+        simple_common_sequences_chord(data, ids, series, min_length=common_number, min_occurances=amount)
+    elif network_type == 'simple_common_associations_chord':
+        simple_common_associations_chord(data, ids, series, common_number, amount)
+    elif network_type == 'simple_common_loops_chord':
+        simple_common_loops_chord(data, ids, series, common_number, amount)
         
 
 if __name__ == "__main__":
