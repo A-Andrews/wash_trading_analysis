@@ -11,6 +11,7 @@ bleach==4.1.0
 certifi==2021.10.8
 cffi==1.15.0
 charset-normalizer==2.0.12
+chord==1.0.2
 click==8.0.4
 cycler==0.11.0
 debugpy==1.5.1
