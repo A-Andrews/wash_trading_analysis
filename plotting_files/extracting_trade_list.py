@@ -36,7 +36,7 @@ def get_addresses_ids_dict(data, addresses):
     out = dict()
     ids_list, _ = get_ids_for_addresses(data, addresses)
     for i in range(len(addresses)):
-        out[addresses[i]] = tuple(flatten(ids_list[i]))
+        out[addresses[i]] = tuple(set(flatten(ids_list[i])))
 
     return out
 

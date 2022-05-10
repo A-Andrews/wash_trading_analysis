@@ -6,7 +6,7 @@ import numpy as np
 from extracting_trade_list import *
 
 def plot_hypergraph(ownership):
-    hnx.drawing.rubber_band.draw(ownership)
+    hnx.drawing.rubber_band.draw(ownership, node_radius = 1)
     plt.show()
 
 def basic_hypergraph_addresses(data, common_number, amount, series):
@@ -16,6 +16,17 @@ def basic_hypergraph_addresses(data, common_number, amount, series):
     ownership = get_addresses_ids_dict(data, top_addresses.index.to_numpy())
     h = hnx.Hypergraph(ownership)
     plot_hypergraph(h)
+
+def basic_hypergraph_ids(data, common_number, amount, series):
+    common_addresses = get_common_addresses(data, common_number)
+    top_addresses = get_topx_common(common_addresses, amount)
+    
+    ownership = get_addresses_ids_dict(data, top_addresses.index.to_numpy())
+    h = hnx.Hypergraph(ownership)
+    plot_hypergraph(h.dual())
+
+def basic_hypergraph_pairs_addresses(data, common_number, amount, series):
+    return 0
 
 def main(argv):
     series = argv[0]
@@ -34,6 +45,8 @@ def main(argv):
             data = remove_out_of_time(data, time_range_start, time_range_end)
     if network_type == 'basic_hypergraph_addresses':
         basic_hypergraph_addresses(data, common_number, amount, series)
+    elif network_type == 'basic_hypergraph_ids':
+        basic_hypergraph_ids(data, common_number, amount, series)
 
 
 if __name__ == "__main__":
