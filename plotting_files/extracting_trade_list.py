@@ -2,6 +2,9 @@ import pandas as pd
 import numpy as np
 from datetime import datetime
 
+def flatten(t):
+    return [item for sublist in t for item in sublist]
+
 # given a series name returns their data, the list of id numbers and the list of unique buyers
 def get_opensea_trade_data(series):
     data = pd.read_csv(f"../transaction_files/{series}_transfers.csv")
@@ -28,6 +31,15 @@ def get_ids_for_addresses(data, addresses):
         ids_list.append(ids)
         times_list.append(times)
     return ids_list, times_list
+
+def get_addresses_ids_dict(data, addresses):
+    out = dict()
+    ids_list, _ = get_ids_for_addresses(data, addresses)
+    for i in range(len(addresses)):
+        out[addresses[i]] = tuple(flatten(ids_list[i]))
+
+    return out
+
 
 # given an id and the data returns a list of wallets that have held that id and at what times they were
 def get_opensea_addresses_times(data, i):
@@ -161,8 +173,7 @@ def find_all_loops(addresses_list):
 
     return out
 
-def flatten(t):
-    return [item for sublist in t for item in sublist]
+
 
 # given list of ids finds series of common addresses of x length that occur y number of times
 def find_common_sequences(data, ids, min_length = 1, min_occurances = 1):
