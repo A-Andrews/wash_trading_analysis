@@ -294,6 +294,50 @@ def get_addresses_ids_dict(data, addresses):
 
     return out
 
+# returns dictionary of names to addresses
+def get_addresses_dict(data, names):
+    out = dict()
+
+    for i in names:
+        rows = data.loc[data['buyer_username'] == i]
+        name = rows['buyer_address'].dropna().unique()
+        if name.size > 0:
+            out[i] = name[0]
+
+    return out
+
+# given a list of mixed names and addresses
+def replace_mixed_names_addresses(data, mix):
+    addresses_dict = get_addresses_dict(data, mix)
+
+    return [addresses_dict[i] if i in addresses_dict else i for i in mix]
+
+
+# given data and addresses returns list of amounts of ids
+def get_owned_nums(data, addresses):
+
+    ids, times = get_ids_for_addresses(data, addresses)
+
+    return [len(i) for i in ids]
+
+# given data and a pair finds the number of trades between the two
+def get_trades_between_pair(data, pair):
+    rows = data.loc[data['buyer_address'] == pair[1]]
+    rows = rows.loc[data['seller_address'] == pair[0]]
+    ids = rows[['id']].to_numpy()
+    return len(ids)
+
+# given pairs and data returns amount of trades between the two
+def get_trades_between_pairs(data, pairs):
+
+    out = []
+
+    for i in pairs:
+        out.append(get_trades_between_pair(data, i))
+
+
+    return out
+
 # creates adjacency matrix given list of pairs returns a labeled pandas dataframe
 def create_adjacency_matrix(pairs):
     labels = {k: v for v, k in enumerate(list(set(flatten(pairs))))}
@@ -314,11 +358,17 @@ def create_adjacency_matrix(pairs):
 #print(test)
 #print(len(test))
 
+#print(get_trades_between_pairs(data, test))
+
+#print(get_owned_nums(data, common_adds.index))
+
 #print(replace_pairs_names(data, test))
 
 #names = get_names_dict(data, addresses)
 
 #replaced = replace_with_names(test, names)
+
+#print(replace_mixed_names_addresses(data, flatten(replaced)))
 
 #print(replaced)
 
