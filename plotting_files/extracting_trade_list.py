@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 from datetime import datetime
+from collections import Counter
 
 def flatten(t):
     return [item for sublist in t for item in sublist]
@@ -335,6 +336,30 @@ def get_trades_between_pairs(data, pairs):
     for i in pairs:
         out.append(get_trades_between_pair(data, i))
 
+
+    return out
+
+# get ids that are owned by pairs returns list
+def get_pair_ownership(data, pair):
+    rows = data.loc[data['buyer_address'] == pair[1]]
+    rows = rows.loc[data['seller_address'] == pair[0]]
+    ids = rows[['id']].unique().to_numpy()
+    return ids
+
+# returns dictionary of ids names or address to owned ids when those ids occur a specified number of times
+def get_all_pairs_ownership_dict(data, addresses, num = 0):
+    out = dict()
+
+    ids_list, _ = get_ids_for_addresses(data, addresses)
+
+    occurances = Counter(flatten(flatten(ids_list)))
+
+    names = get_names_dict(data, addresses)
+
+    ids_list = [[i for i in flatten(j) if occurances[i] >= num] for j in ids_list]
+
+    for i in range(len(addresses)):
+        out[names[addresses[i]] if addresses[i] in names else addresses[i]] = tuple(set(ids_list[i]))
 
     return out
 

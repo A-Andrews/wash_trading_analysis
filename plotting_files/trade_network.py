@@ -18,7 +18,7 @@ def create_adjacency_graph(data, adj_mat, weights):
     pos = nx.spring_layout(g, seed=4)
     nodes, degree = map(list, zip(*list_degree))
     nodes_amounts = get_owned_nums(data, replace_mixed_names_addresses(data, nodes))
-    nx.draw_networkx(g, pos = pos, font_size=6, nodelist=nodes, node_size=[(v * 1.3)+1 for v in nodes_amounts], arrowstyle='-|>')
+    nx.draw_networkx(g, pos = pos, font_size=6, nodelist=nodes, node_size=[(v * 0.7)+1 for v in nodes_amounts], arrowstyle='-|>')
 
     for i, e in enumerate(g.edges):
         nx.draw_networkx_edges(g, pos, edgelist=[e], width = weights[i]*0.1)
