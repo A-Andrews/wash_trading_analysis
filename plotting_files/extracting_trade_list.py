@@ -246,7 +246,7 @@ def get_list_pairs_for_associations(sequences):
     return pairs
 
 # removes entries from the list that don't fit in the time range
-def remove_out_of_time(data, range_start, range_end):
+def remove_out_of_time(data, range_start = '2021-04-30T00:00:00', range_end = '2022-05-30T00:00:00'):
     start, end = datetime.fromisoformat(range_start), datetime.fromisoformat(range_end)
     times = pd.to_datetime(data['time'])
     mask = (times >= start) & (times <= end)
