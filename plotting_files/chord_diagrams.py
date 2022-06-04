@@ -14,6 +14,7 @@ def simple_common_chord(data, common_number, amount, series):
     common_addresses = get_common_addresses(data, common_number)
     pairs = get_node_pairs_from_singles(data, common_addresses)
     top_pairs = get_topx_common_list(pairs, amount)
+    top_pairs = replace_pairs_names(data, top_pairs)
     adj_mat = create_adjacency_matrix(top_pairs)
     plot_chord(adj_mat)
 
@@ -21,18 +22,21 @@ def simple_common_pairs_chord(data, common_number, amount, series):
     pairs = get_common_pairs(data, common_number)
     top_pairs = get_topx_common(pairs, amount)
     top_pairs = get_node_pairs_from_pairs(top_pairs)
+    top_pairs = replace_pairs_names(data, top_pairs)
     adj_mat = create_adjacency_matrix(top_pairs)
     plot_chord(adj_mat)
 
 def simple_common_sequences_chord(data, ids, series, min_length = 1, min_occurances = 1):
     sequences = find_common_sequences(data, ids, min_length, min_occurances)
     pairs = get_list_pairs_for_sequences(sequences)
+    pairs = replace_pairs_names(data, pairs)
     adj_mat = create_adjacency_matrix(pairs)
     plot_chord(adj_mat)
 
 def simple_common_associations_chord(data, ids, series, min_length = 1, min_occurances = 1):
     sequences = find_associated_addresses(data, ids, min_length, min_occurances)
     pairs = get_list_pairs_for_associations(sequences)
+    pairs = replace_pairs_names(data, pairs)
     adj_mat = create_adjacency_matrix(pairs)
     plot_chord(adj_mat)
 
@@ -40,6 +44,7 @@ def simple_common_loops_chord(data, ids, series, min_length = 1, min_occurances 
     sequences = find_common_sequences(data, ids, min_length, min_occurances)
     loops = find_all_loops(sequences)
     pairs = get_list_pairs_for_sequences(loops)
+    pairs = replace_pairs_names(data, pairs)
     adj_mat = create_adjacency_matrix(pairs)
     plot_chord(adj_mat)
 

@@ -1,13 +1,18 @@
 import pandas as pd
 import numpy as np
 from datetime import datetime
+from collections import Counter
 
 def flatten(t):
     return [item for sublist in t for item in sublist]
 
 # given a series name returns their data, the list of id numbers and the list of unique buyers
-def get_opensea_trade_data(series):
-    data = pd.read_csv(f"../transaction_files/{series}_transfers.csv")
+def get_opensea_trade_data(series, test = False):
+    data = None
+    if test:
+        data = pd.read_csv(f"transaction_files/{series}_transfers.csv")
+    else:
+        data = pd.read_csv(f"../transaction_files/{series}_transfers.csv")
     ids = data[['id']].copy()
     ids = ids['id'].unique()
     addresses = data[['buyer_address']].copy()
@@ -32,13 +37,7 @@ def get_ids_for_addresses(data, addresses):
         times_list.append(times)
     return ids_list, times_list
 
-def get_addresses_ids_dict(data, addresses):
-    out = dict()
-    ids_list, _ = get_ids_for_addresses(data, addresses)
-    for i in range(len(addresses)):
-        out[addresses[i]] = tuple(set(flatten(ids_list[i])))
 
-    return out
 
 
 # given an id and the data returns a list of wallets that have held that id and at what times they were
@@ -246,6 +245,124 @@ def get_list_pairs_for_associations(sequences):
 
     return pairs
 
+# removes entries from the list that don't fit in the time range
+def remove_out_of_time(data, range_start = '2021-04-30T00:00:00', range_end = '2022-05-30T00:00:00'):
+    start, end = datetime.fromisoformat(range_start), datetime.fromisoformat(range_end)
+    times = pd.to_datetime(data['time'])
+    mask = (times >= start) & (times <= end)
+    rows = data.loc[mask]
+
+    return rows
+
+# returns a dictionary of addresses to names
+def get_names_dict(data, addresses):
+    out = dict()
+
+    for i in addresses:
+        rows = data.loc[data['buyer_address'] == i]
+        name = rows['buyer_username'].dropna().unique()
+        if name.size > 0:
+            out[i] = name[0]
+
+    return out
+
+# replaces lists of pairs with lists
+def replace_with_names(pairs, names):
+    return [[names[i[0]] if i[0] in names else i[0], names[i[1]] if i[1] in names else i[1]] for i in pairs]
+
+# same as above in effect but combined for easier adjustment of existing implementation
+def replace_pairs_names(data, pairs):
+    names = dict()
+    addresses = flatten(pairs)
+
+    for i in addresses:
+        rows = data.loc[data['buyer_address'] == i]
+        name = rows['buyer_username'].dropna().unique()
+        if name.size > 0:
+            names[i] = name[0]
+
+    return [[names[i[0]] if i[0] in names else i[0], names[i[1]] if i[1] in names else i[1]] for i in pairs]
+
+# returns dictionary of addresses and ids for use in hypergraphs
+def get_addresses_ids_dict(data, addresses):
+    out = dict()
+    ids_list, _ = get_ids_for_addresses(data, addresses)
+
+    names = get_names_dict(data, addresses)
+
+    for i in range(len(addresses)):
+        out[names[addresses[i]] if addresses[i] in names else addresses[i]] = tuple(set(flatten(ids_list[i])))
+
+    return out
+
+# returns dictionary of names to addresses
+def get_addresses_dict(data, names):
+    out = dict()
+
+    for i in names:
+        rows = data.loc[data['buyer_username'] == i]
+        name = rows['buyer_address'].dropna().unique()
+        if name.size > 0:
+            out[i] = name[0]
+
+    return out
+
+# given a list of mixed names and addresses
+def replace_mixed_names_addresses(data, mix):
+    addresses_dict = get_addresses_dict(data, mix)
+
+    return [addresses_dict[i] if i in addresses_dict else i for i in mix]
+
+
+# given data and addresses returns list of amounts of ids
+def get_owned_nums(data, addresses):
+
+    ids, times = get_ids_for_addresses(data, addresses)
+
+    return [len(i) for i in ids]
+
+# given data and a pair finds the number of trades between the two
+def get_trades_between_pair(data, pair):
+    rows = data.loc[data['buyer_address'] == pair[1]]
+    rows = rows.loc[data['seller_address'] == pair[0]]
+    ids = rows[['id']].to_numpy()
+    return len(ids)
+
+# given pairs and data returns amount of trades between the two
+def get_trades_between_pairs(data, pairs):
+
+    out = []
+
+    for i in pairs:
+        out.append(get_trades_between_pair(data, i))
+
+
+    return out
+
+# get ids that are owned by pairs returns list
+def get_pair_ownership(data, pair):
+    rows = data.loc[data['buyer_address'] == pair[1]]
+    rows = rows.loc[data['seller_address'] == pair[0]]
+    ids = rows[['id']].unique().to_numpy()
+    return ids
+
+# returns dictionary of ids names or address to owned ids when those ids occur a specified number of times
+def get_all_pairs_ownership_dict(data, addresses, num = 0):
+    out = dict()
+
+    ids_list, _ = get_ids_for_addresses(data, addresses)
+
+    occurances = Counter(flatten(flatten(ids_list)))
+
+    names = get_names_dict(data, addresses)
+
+    ids_list = [[i for i in flatten(j) if occurances[i] >= num] for j in ids_list]
+
+    for i in range(len(addresses)):
+        out[names[addresses[i]] if addresses[i] in names else addresses[i]] = tuple(set(ids_list[i]))
+
+    return out
+
 # creates adjacency matrix given list of pairs returns a labeled pandas dataframe
 def create_adjacency_matrix(pairs):
     labels = {k: v for v, k in enumerate(list(set(flatten(pairs))))}
@@ -258,22 +375,27 @@ def create_adjacency_matrix(pairs):
 
     return labeled_matrix
 
-def remove_out_of_time(data, range_start, range_end):
-    start, end = datetime.fromisoformat(range_start), datetime.fromisoformat(range_end)
-    times = pd.to_datetime(data['time'])
-    mask = (times >= start) & (times <= end)
-    rows = data.loc[mask]
 
-    return rows
-
-
-
-#data, ids, addresses = get_opensea_trade_data('BAYC')
+#data, ids, addresses = get_opensea_trade_data('BAYC', test = True)
 #common_adds = get_common_addresses(data, 30)
 #print(common_adds)
 #test = get_node_pairs_from_singles(data, common_adds)
 #print(test)
 #print(len(test))
+
+#print(get_trades_between_pairs(data, test))
+
+#print(get_owned_nums(data, common_adds.index))
+
+#print(replace_pairs_names(data, test))
+
+#names = get_names_dict(data, addresses)
+
+#replaced = replace_with_names(test, names)
+
+#print(replace_mixed_names_addresses(data, flatten(replaced)))
+
+#print(replaced)
 
 #print(remove_out_of_time(data, '2021-04-30T21:11:46', '2021-05-25T17:56:54'))
 
