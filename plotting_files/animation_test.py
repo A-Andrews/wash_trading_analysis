@@ -2,6 +2,8 @@ from matplotlib import pyplot as plt, animation
 import networkx as nx
 import random
 
+data, ids, addresses = get_opensea_trade_data(series)
+
 plt.rcParams["figure.figsize"] = [8, 8]
 plt.rcParams["figure.autolayout"] = True
 

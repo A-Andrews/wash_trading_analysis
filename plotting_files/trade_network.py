@@ -31,19 +31,21 @@ def create_graph_for_one(addresses, i, time):
 
 
 def create_adjacency_graph(adj_mat, weights):
-    g = nx.from_pandas_adjacency(adj_mat)
+    g = nx.MultiDiGraph()
+    g.add_edges_from(adj_mat)
+    #g = nx.from_pandas_adjacency(adj_mat)
     list_degree=list(g.degree())
-    pos = nx.spring_layout(g, seed=4)
+    pos = nx.spring_layout(g, k = 0.18, seed=16)
     nodes_list, degree = map(list, zip(*list_degree))
     nodes_amounts = get_owned_nums(data, replace_mixed_names_addresses(data, nodes_list))
     node_size = [(v * 0.3) for v in nodes_amounts]
 
     nodes = nx.draw_networkx_nodes(g, pos = pos, nodelist=nodes_list, node_size = node_size, alpha = 0.6)
-    labels = nx.draw_networkx_labels(g, pos, font_size = 6, alpha = 0.7)
+    labels = nx.draw_networkx_labels(g, pos, font_size = 5, alpha = 0.7)
 
     weights_rgb = [plt.cm.plasma(i / max(weights)) for i in weights]
     cmap = plt.cm.plasma
-    edges = nx.draw_networkx_edges(g, pos, edge_color = weights_rgb, edge_cmap = cmap, nodelist = nodes_list, node_size = node_size, width = 2, arrowsize=4, arrows = True)
+    edges = nx.draw_networkx_edges(g, pos, edge_color = weights_rgb, edge_cmap = cmap, nodelist = nodes_list, node_size = node_size, width = 2, arrowsize=4, arrows = True, connectionstyle='arc3,rad=0.2')
 
     pc = plt.cm.ScalarMappable(cmap=cmap, norm=plt.Normalize(vmin = min(weights), vmax=max(weights)))
     plt.colorbar(pc)
@@ -56,7 +58,7 @@ def common_singles_network(common_number):
     weights_p = get_trades_between_pairs(data, pairs)
     pairs = replace_pairs_names(data, pairs)
     adj_mat = create_adjacency_matrix(pairs)
-    return create_adjacency_graph(adj_mat, weights_p)
+    return create_adjacency_graph(pairs, weights_p)
 
 def common_pairs_network(common_number):
     pairs = get_common_pairs(data, common_number)
@@ -64,7 +66,7 @@ def common_pairs_network(common_number):
     weights_p = get_trades_between_pairs(data, pairs)
     pairs = replace_pairs_names(data, pairs)
     adj_mat = create_adjacency_matrix(pairs)
-    return create_adjacency_graph(adj_mat, weights_p)
+    return create_adjacency_graph(pairs, weights_p)
 
 def common_sequences_network(min_length = 1, min_occurances = 1):
     sequences = find_common_sequences(data, ids, min_length, min_occurances)
@@ -72,7 +74,7 @@ def common_sequences_network(min_length = 1, min_occurances = 1):
     weights_p = get_trades_between_pairs(data, pairs)
     pairs = replace_pairs_names(data, pairs)
     adj_mat = create_adjacency_matrix(pairs)
-    return create_adjacency_graph(adj_mat, weights_p)
+    return create_adjacency_graph(pairs, weights_p)
 
 def common_associations_network(min_length = 1, min_occurances = 1):
     sequences = find_associated_addresses(data, ids, min_length, min_occurances)
@@ -80,7 +82,7 @@ def common_associations_network(min_length = 1, min_occurances = 1):
     weights_p = get_trades_between_pairs(data, pairs)
     pairs = replace_pairs_names(data, pairs)
     adj_mat = create_adjacency_matrix(pairs)
-    return create_adjacency_graph(adj_mat, weights_p)
+    return create_adjacency_graph(pairs, weights_p)
 
 def simple_loops_network(min_length = 1, min_occurances = 1):
     sequences = find_common_sequences(data, ids, min_length, min_occurances)
@@ -89,7 +91,7 @@ def simple_loops_network(min_length = 1, min_occurances = 1):
     weights_p = get_trades_between_pairs(data, pairs)
     pairs = replace_pairs_names(data, pairs)
     adj_mat = create_adjacency_matrix(pairs)
-    return create_adjacency_graph(adj_mat, weights_p)
+    return create_adjacency_graph(pairs, weights_p)
 
 def update(days, g):
     global data
@@ -119,6 +121,8 @@ def main(argv):
     time_range_end = argv[3]
     common_number = int(argv[4])
 
+    plt.figure(figsize=(20,8))
+
     if series == 'BAYC' or series == 'cryptopunk':
         global data, ids, addresses
         data, ids, addresses = get_opensea_trade_data(series)
@@ -137,6 +141,7 @@ def main(argv):
     if network_type == 'animated_singles':
         animated_singles(common_number, 10)
 
+    
     plt.show()
         
 
