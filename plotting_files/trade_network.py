@@ -33,9 +33,9 @@ def create_graph_for_one(addresses, i, time):
 def create_adjacency_graph(adj_mat, weights):
     g = nx.MultiDiGraph()
     g.add_edges_from(adj_mat)
-    #g = nx.from_pandas_adjacency(adj_mat)
+    #g = nx.from_pandas_adjacency(adj_mat, create_using=nx.DiGraph)
     list_degree=list(g.degree())
-    pos = nx.spring_layout(g, k = 0.18, seed=16)
+    pos = nx.spring_layout(g, k = 0.18, seed=10)
     nodes_list, degree = map(list, zip(*list_degree))
     nodes_amounts = get_owned_nums(data, replace_mixed_names_addresses(data, nodes_list))
     node_size = [(v * 0.3) for v in nodes_amounts]
@@ -85,7 +85,7 @@ def common_associations_network(min_length = 1, min_occurances = 1):
     return create_adjacency_graph(pairs, weights_p)
 
 def simple_loops_network(min_length = 1, min_occurances = 1):
-    sequences = find_common_sequences(data, ids, min_length, min_occurances)
+    sequences = find_common_sequences(data, ids, min_length, 10)
     loops = find_all_loops(sequences)
     pairs = get_list_pairs_for_sequences(loops)
     weights_p = get_trades_between_pairs(data, pairs)
@@ -106,7 +106,7 @@ def animated_singles(common_number, interval):
     weights_p = get_trades_between_pairs(data, pairs)
     pairs = replace_pairs_names(data, pairs)
     adj_mat = create_adjacency_matrix(pairs)
-    nodes, edges, labels, g = create_adjacency_graph(adj_mat, weights_p)
+    nodes, edges, labels, g = create_adjacency_graph(pairs, weights_p)
     fig = plt.figure(figsize=(8,8))
 
     ani = FuncAnimation(fig, update, fargs=(g), frames=100, interval=1000, repeat=True)

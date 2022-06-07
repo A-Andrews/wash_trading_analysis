@@ -375,6 +375,17 @@ def create_adjacency_matrix(pairs):
 
     return labeled_matrix
 
+def create_weighted_adjacency_matrix(pairs, weight):
+    labels = {k: v for v, k in enumerate(list(set(flatten(pairs))))}
+    pairs_rep = [[labels[i] for i in pair] for pair in pairs]
+    edges = np.array(pairs_rep)
+    matrix = np.zeros((edges.max()+1, edges.max()+1))
+    matrix[edges[:,0], edges[:,1]] = weight
+
+    labeled_matrix = pd.DataFrame(matrix, index=labels, columns=labels)
+
+    return labeled_matrix
+
 
 #data, ids, addresses = get_opensea_trade_data('BAYC', test = True)
 #common_adds = get_common_addresses(data, 30)

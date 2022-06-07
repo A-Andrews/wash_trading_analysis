@@ -6,8 +6,7 @@ import numpy as np
 from extracting_trade_list import *
 
 def plot_hypergraph(ownership):
-    hnx.drawing.rubber_band.draw(ownership, node_radius = 1)
-    plt.show()
+    hnx.drawing.rubber_band.draw(ownership, label_alpha = 0, with_node_labels = False, with_node_counts = True)
 
 def basic_hypergraph_addresses(data, common_number, amount, series, display_ids = False, id_occurances = 0):
     common_addresses = get_common_addresses(data, common_number)
@@ -101,6 +100,8 @@ def main(argv):
     data = None
     ids = None
 
+    plt.figure(figsize=(20,8))
+
     if series == 'BAYC' or series == 'cryptopunk':
         data, ids, addresses = get_opensea_trade_data(series)
         if time_range_start != '0':
@@ -136,7 +137,7 @@ def main(argv):
     elif network_type == 'restricted_hypergraph_loops':
         basic_hypergraph_loops(data, ids, series, common_number, amount, id_occurances = common_number)
 
-
+    plt.show()
 
 if __name__ == "__main__":
    main(sys.argv[1:])
