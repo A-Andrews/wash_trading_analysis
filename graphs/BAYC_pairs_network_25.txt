@@ -1,0 +1,122 @@
+\begin{table}[H]
+\centering
+\begin{tabular}{ |c|c||c|  }
+\hline
+\multicolumn{3}{|c|}{BAYC Feature List} \\ 
+\hline
+Sender & Reciever & Trades\\ 
+\hline
+j1mmy & j1mmy_vault & 147 \\ 
+\hline
+0xf8e0c93fd48b4c34a4194d3af436b13032e641f3 & 0x3cf9a2b7aaad51e107453e510bfd470a06205d4c & 112 \\ 
+\hline
+dingalingg & dingaling & 112 \\ 
+\hline
+degen_ape & 0x98e711f31e49c2e50c1a290b6f2b1e493e43ea76 & 105 \\ 
+\hline
+0x520edc55cbf109139ec9f9c27db79a1d5d2c8865 & 0xf8e0c93fd48b4c34a4194d3af436b13032e641f3 & 100 \\ 
+\hline
+0x17e347aad89b30b96557bcbfbff8a14e75cc88a1 & 0xf1de205c1ac2c90db0b7210fbe96917724fcfb10 & 100 \\ 
+\hline
+0x8c46e646cf73173042f5efaee5ad85ee8d52419d & 0x17e347aad89b30b96557bcbfbff8a14e75cc88a1 & 100 \\ 
+\hline
+0xca4a5b8297d88d051436092dbfb8ab0ff294f5a0 & 0x520edc55cbf109139ec9f9c27db79a1d5d2c8865 & 100 \\ 
+\hline
+0xf1de205c1ac2c90db0b7210fbe96917724fcfb10 & 0xca4a5b8297d88d051436092dbfb8ab0ff294f5a0 & 100 \\ 
+\hline
+0x06bb452582e3db7708f4e49e599663cbc7e6e60c & 0x8c46e646cf73173042f5efaee5ad85ee8d52419d & 99 \\ 
+\hline
+0xcc7d3706ea82cdb4ec7d2a3eac0e487e17ab975a & 0x06bb452582e3db7708f4e49e599663cbc7e6e60c & 98 \\ 
+\hline
+gabusch & 0xcc7d3706ea82cdb4ec7d2a3eac0e487e17ab975a & 98 \\ 
+\hline
+4932114 & 23342021 & 90 \\ 
+\hline
+canarycollection & 0xd38a87d7b690323ef6883e887614502abcf9b1eb & 72 \\ 
+\hline
+thediamondcollection1 & canarycollection & 70 \\ 
+\hline
+MightyMaxy6 & MM_S & 67 \\ 
+\hline
+NFTX & bochan228 & 61 \\ 
+\hline
+0x3cf9a2b7aaad51e107453e510bfd470a06205d4c & 0xf8e0c93fd48b4c34a4194d3af436b13032e641f3 & 52 \\ 
+\hline
+bochan228 & NFTX & 51 \\ 
+\hline
+0x7c2b65b98a86d9d2e10216f92674f28cb9fe0f86 & 0xfa898efdb91e35bd311c45b9b955f742b6719aa2 & 49 \\ 
+\hline
+0xfa898efdb91e35bd311c45b9b955f742b6719aa2 & 0xa7ab7a265f274fa664187698932d3cabb851023d & 49 \\ 
+\hline
+bochan228_vault_2 & bochan228_vault & 47 \\ 
+\hline
+depreciated & 0x6b4df334368b09f87b3722449703060eef284126 & 47 \\ 
+\hline
+Hungrytechy & gabusch & 44 \\ 
+\hline
+0x98e711f31e49c2e50c1a290b6f2b1e493e43ea76 & degen_ape & 43 \\ 
+\hline
+009977 & 0x88341d1a8f672d2780c8dc725902aae72f143b0c & 43 \\ 
+\hline
+0x88341d1a8f672d2780c8dc725902aae72f143b0c & 009977 & 41 \\ 
+\hline
+7f71dd & 2849128421jfdsldfkj12981sdlfksdjfs & 41 \\ 
+\hline
+j1mmy & Tweety_Pie & 39 \\ 
+\hline
+bochan228_vault & bochan228_vault_2 & 37 \\ 
+\hline
+bochan228 & bochan228_phunks & 37 \\ 
+\hline
+cryptobeaker & bkrcold & 37 \\ 
+\hline
+0x5f6ac80cdb9e87f3cfa6a90e5140b9a16a361d5c & 0xdbfd76af2157dc15ee4e57f3f942bb45ba84af24 & 36 \\ 
+\hline
+0x70b97a0da65c15dfb0ffa02aee6fa36e507c2762 & 0x5f6ac80cdb9e87f3cfa6a90e5140b9a16a361d5c & 36 \\ 
+\hline
+1K & Art1k & 35 \\ 
+\hline
+0x3b968d2d299b895a5fcf3bba7a64ad0f566e6f88 & 0x70b97a0da65c15dfb0ffa02aee6fa36e507c2762 & 35 \\ 
+\hline
+PrepsToThePros & PrepsToThePros_Gallery_Vault_2 & 34 \\ 
+\hline
+0x6b4df334368b09f87b3722449703060eef284126 & ape48 & 33 \\ 
+\hline
+NFTX & FA8379 & 33 \\ 
+\hline
+ApeDAO & 0xa7ab7a265f274fa664187698932d3cabb851023d & 32 \\ 
+\hline
+bochan228_phunks & bochan228_vault & 32 \\ 
+\hline
+0x31fe8439f34ed04514288a6f0f19f26c647cd6ad & 0x6df304782b0866d2538c8fd2e46904a7f2ae321c & 31 \\ 
+\hline
+Hot_Hot_Hot & 0xc310e760778ecbca4c65b6c559874757a4c4ece0 & 31 \\ 
+\hline
+Art1k & 1k_Vault & 30 \\ 
+\hline
+2849128421jfdsldfkj12981sdlfksdjfs & oldies123 & 30 \\ 
+\hline
+NFTX & cryptobeaker & 30 \\ 
+\hline
+oldies123 & 0xc5267 & 30 \\ 
+\hline
+0x7c15561590fc9eb063b3803b55165633eef207ec & FA8379 & 29 \\ 
+\hline
+0x6d5596d228c44453b0e16d1e4abd3f14724773fb & 0xed4701 & 29 \\ 
+\hline
+0x677d38a & 0x6d5596d228c44453b0e16d1e4abd3f14724773fb & 28 \\ 
+\hline
+Coco__Bear & gabusch & 28 \\ 
+\hline
+cryptobeaker & zunk14882 & 26 \\ 
+\hline
+0xc310e760778ecbca4c65b6c559874757a4c4ece0 & Hot_Hot_Hot & 25 \\ 
+\hline
+BoredSpaceApe & bsaVAULT & 25 \\ 
+\hline
+ajjaffy_vault & 0xc310e760778ecbca4c65b6c559874757a4c4ece0 & 25 \\ 
+\hline
+\end{tabular}
+\label{}
+\caption{}
+\end{table}

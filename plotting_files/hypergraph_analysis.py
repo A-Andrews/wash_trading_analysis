@@ -6,7 +6,7 @@ import numpy as np
 from extracting_trade_list import *
 
 def plot_hypergraph(ownership):
-    hnx.drawing.rubber_band.draw(ownership, label_alpha = 0, with_node_labels = False, with_node_counts = True)
+    hnx.drawing.rubber_band.draw(ownership, node_radius = 1, label_alpha = 0, with_node_labels = False, with_node_counts = False)
 
 def basic_hypergraph_addresses(data, common_number, amount, series, display_ids = False, id_occurances = 0):
     common_addresses = get_common_addresses(data, common_number)
@@ -96,6 +96,7 @@ def main(argv):
     time_range_end = argv[3]
     common_number = int(argv[4])
     amount = int(argv[5])
+    id_occurrences = int(argv[6])
 
     data = None
     ids = None
@@ -127,15 +128,15 @@ def main(argv):
     elif network_type == 'basic_hypergraph_loops_ids':
         basic_hypergraph_loops(data, ids, series, common_number, amount, display_ids = True)
     elif network_type == 'restricted_hypergraph_addresses':
-        basic_hypergraph_addresses(data, common_number, amount, series, id_occurances = common_number)
+        basic_hypergraph_addresses(data, common_number, amount, series, id_occurances = id_occurrences)
     elif network_type == 'restricted_hypergraph_pairs':
-        basic_hypergraph_pairs(data, common_number, amount, series, id_occurances = common_number)
+        basic_hypergraph_pairs(data, common_number, amount, series, id_occurances = id_occurrences)
     elif network_type == 'restricted_hypergraph_sequences':
-        basic_hypergraph_sequences(data, ids, series, common_number, amount, id_occurances = common_number)
+        basic_hypergraph_sequences(data, ids, series, common_number, amount, id_occurances = id_occurrences)
     elif network_type == 'restricted_hypergraph_associations':
-        basic_hypergraph_associations(data, ids, series, common_number, amount, id_occurances = common_number)
+        basic_hypergraph_associations(data, ids, series, common_number, amount, id_occurances = id_occurrences)
     elif network_type == 'restricted_hypergraph_loops':
-        basic_hypergraph_loops(data, ids, series, common_number, amount, id_occurances = common_number)
+        basic_hypergraph_loops(data, ids, series, common_number, amount, id_occurances = id_occurrences)
 
     plt.show()
 

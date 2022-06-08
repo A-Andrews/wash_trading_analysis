@@ -1,0 +1,152 @@
+\begin{table}[H]
+\centering
+\begin{tabular}{ |c|c||c|  }
+\hline
+\multicolumn{3}{|c|}{BAYC Feature List} \\ 
+\hline
+Sender & Reciever & Trades\\ 
+\hline
+0xcbd482af76059e2a5e4a825c4cd5ced9f2dfe286 & MR703 & 700 \\ 
+\hline
+0xc352b534e8b987e036a93539fd6897f53488e56a & 0xa858ddc0445d8131dac4d1de01f834ffcba52ef1 & 399 \\ 
+\hline
+0x00d7c902fbbcd3c9db2da80a439c94486c50eb81 & Wilcox_NFT & 328 \\ 
+\hline
+Wilcox_NFT & Wilcox & 289 \\ 
+\hline
+0x1919db36ca2fa2e15f9000fd9cdc2edcf863e685 & punksotc & 220 \\ 
+\hline
+0x19384795bf01c1643f633db579458211449956ff & WrappedCryptoPunks-Escrow & 179 \\ 
+\hline
+Hemba & 0x19384795bf01c1643f633db579458211449956ff & 177 \\ 
+\hline
+Pranksy & 0x77675847041c3a896f791aa5f357a8c33a38cbac & 161 \\ 
+\hline
+0x77675847041c3a896f791aa5f357a8c33a38cbac & WrappedCryptoPunks-Escrow & 161 \\ 
+\hline
+0x48db199821bbd5be47c29bb242e3cdf1ef099d7e & mb_public_mixed & 156 \\ 
+\hline
+MR703 & 0x938bd22a82eaad001cce2d4ef8f030b8a8f07017 & 150 \\ 
+\hline
+PunkDraft2021 & 0x2cbee43c8147a8c35bceab79842663cddc58a79e & 149 \\ 
+\hline
+0xc352b534e8b987e036a93539fd6897f53488e56a & PunkDraft2021 & 148 \\ 
+\hline
+sov & sovpunk & 146 \\ 
+\hline
+0xc352b534e8b987e036a93539fd6897f53488e56a & 0xb88f61e6fbda83fbfffabe364112137480398018 & 139 \\ 
+\hline
+0xa18fd5dfbc015a115a247e2911fcb9d0a19c999a & WrappedCryptoPunks-Escrow & 139 \\ 
+\hline
+GoWest23 & 0xa18fd5dfbc015a115a247e2911fcb9d0a19c999a & 139 \\ 
+\hline
+0xba7ccc2f5e04425617589665e27fdd41e6557dfc & 0xcffc336e6d019c1af58257a0b10bf2146a3f42a4 & 129 \\ 
+\hline
+WrappedCryptoPunks-Escrow & NFTX & 121 \\ 
+\hline
+0xe4d36bb198a38fc1d5aee62164831e86dfcdac88 & Hemba & 120 \\ 
+\hline
+0x650dcdeb6ecf05ae3caf30a70966e2f395d5e9e5 & 0x24e267d13314dd742d86c3321e727b801ed99542 & 106 \\ 
+\hline
+0x1335242f595f7da21ba9dd5cf2bd75d143be6a30 & 0xd79b937791724e47f193f67162b92cdfbf7abdfd & 105 \\ 
+\hline
+0xe45df57df7980d8219a5ea811aff949907d0a355 & 0x1a96afe48e215c47d80eeff6eef64685247c2503 & 105 \\ 
+\hline
+0xa5f05cc01916f74b24cc3b7c50315bec578c91ea & WrappedCryptoPunks-Escrow & 104 \\ 
+\hline
+0x650dcdeb6ecf05ae3caf30a70966e2f395d5e9e5 & 0xa5f05cc01916f74b24cc3b7c50315bec578c91ea & 104 \\ 
+\hline
+0x24e267d13314dd742d86c3321e727b801ed99542 & 0x650dcdeb6ecf05ae3caf30a70966e2f395d5e9e5 & 104 \\ 
+\hline
+WrappedCryptoPunks-Escrow & 0x13816f65ba8195768e6825eb774fd3c6a05a0ac8 & 100 \\ 
+\hline
+0x207355e167cb42cd93dd38a784016b2d2e93c840 & 0x4084df8bf74ba73f04eb39b89df698608df7f4b5 & 98 \\ 
+\hline
+0x0601d0235645a6ce6356ef11aa0b225c68605131 & 0x31a5ff62a1b2c0f030aee1661eab6513ae676e23 & 98 \\ 
+\hline
+WrappedCryptoPunks-Escrow & agx-2020 & 87 \\ 
+\hline
+GoWest23 & GoWestBTC & 81 \\ 
+\hline
+WrappedCryptoPunks-Escrow & 0x62bdc64a14405e797f86796ea3c2476209ee0bf9 & 81 \\ 
+\hline
+Carlini8 & 0xaadfe3c8df8b2baa4b656631aea1e9bc8d6a4a4d & 79 \\ 
+\hline
+0xaadfe3c8df8b2baa4b656631aea1e9bc8d6a4a4d & WrappedCryptoPunks-Escrow & 79 \\ 
+\hline
+WrappedCryptoPunks-Escrow & GoWest23 & 77 \\ 
+\hline
+mb_public_mixed & mb_public_vault & 76 \\ 
+\hline
+0x6611fe71c233e4e7510b2795c242c9a57790b376 & foundationNFT & 75 \\ 
+\hline
+WrappedCryptoPunks-Escrow & NeonNFT & 68 \\ 
+\hline
+0x51eac3daa1c34f5c2874aa62097ac9965a180b6d & 0xcc2a855946a3c20683858fe6ee15acf8b836f0b3 & 67 \\ 
+\hline
+0x269616d549d7e8eaa82dfb17028d0b212d11232a & 0x1919db36ca2fa2e15f9000fd9cdc2edcf863e685 & 63 \\ 
+\hline
+0xac12a80ab3b4983822993c69f0f8a2f99a7a08f5 & WrappedCryptoPunks-Escrow & 62 \\ 
+\hline
+agx-2020 & 0xac12a80ab3b4983822993c69f0f8a2f99a7a08f5 & 62 \\ 
+\hline
+VeeFriendsVault & GaryVault & 60 \\ 
+\hline
+0xca8fe4acb1cb8b5550a3c71ffe2399f6c7016686 & Cool-Punks & 60 \\ 
+\hline
+0x8992 & 0x47bab64e576e2172327f57a0f40e47b98108448a & 59 \\ 
+\hline
+WrappedCryptoPunks-Escrow & 0xe4c479a60633caf3c86228ed6a9b0bdd5d14cf79 & 59 \\ 
+\hline
+0x47bab64e576e2172327f57a0f40e47b98108448a & WrappedCryptoPunks-Escrow & 59 \\ 
+\hline
+WrappedCryptoPunks-Escrow & Afterverse_eth & 52 \\ 
+\hline
+Gennady & VeeFriendsVault & 52 \\ 
+\hline
+0xae08128fd5b5ea015f6bb6d43a8dbd4ecc7db55c & WrappedCryptoPunks-Escrow & 51 \\ 
+\hline
+0xa3cb30128532f43fe1c8a9f4c19422aa631307a9 & Cool-Punks & 51 \\ 
+\hline
+0xd79b937791724e47f193f67162b92cdfbf7abdfd & 0xae08128fd5b5ea015f6bb6d43a8dbd4ecc7db55c & 51 \\ 
+\hline
+WrappedCryptoPunks-Escrow & Ali_Scooper & 51 \\ 
+\hline
+0xc352b534e8b987e036a93539fd6897f53488e56a & Pranksy & 50 \\ 
+\hline
+0x8321795bdace7428d4fadfa30c2ee8e727e491e5 & niftynaut & 50 \\ 
+\hline
+0x5c2ebaf462ca8fd5e3c82a452ad29542884b0415 & WrappedCryptoPunks-Escrow & 50 \\ 
+\hline
+0xcffc336e6d019c1af58257a0b10bf2146a3f42a4 & 0x5c2ebaf462ca8fd5e3c82a452ad29542884b0415 & 50 \\ 
+\hline
+beautiful_nfts & 0x6500c066068f919d93edcc0d7806c83421084bad & 49 \\ 
+\hline
+0x6500c066068f919d93edcc0d7806c83421084bad & WrappedCryptoPunks-Escrow & 49 \\ 
+\hline
+0x62bdc64a14405e797f86796ea3c2476209ee0bf9 & 0xeb0a8f56d33ef6f8abe6d90b0a1ea8cc1181b230 & 49 \\ 
+\hline
+0xeb0a8f56d33ef6f8abe6d90b0a1ea8cc1181b230 & WrappedCryptoPunks-Escrow & 49 \\ 
+\hline
+0x00d7c902fbbcd3c9db2da80a439c94486c50eb81 & 0xd16e1172a4d33e46e94b2e2ff96b7c87489b7f67 & 48 \\ 
+\hline
+0xc352b534e8b987e036a93539fd6897f53488e56a & 0x4d8e16a70f38414f33e8578913eef6a0e4a633b5 & 48 \\ 
+\hline
+WrappedCryptoPunks-Escrow & beautiful_nfts & 48 \\ 
+\hline
+MR703 & 0xb88f61e6fbda83fbfffabe364112137480398018 & 46 \\ 
+\hline
+0xc352b534e8b987e036a93539fd6897f53488e56a & 0xfeeb2d7f276b319896f71431ef64fdf1e4ab8d5b & 45 \\ 
+\hline
+WrappedCryptoPunks-Escrow & 0x8992 & 45 \\ 
+\hline
+Snowfro & 0x2cc12318de28edc9c753f7cb22100890af630c2d & 44 \\ 
+\hline
+0xc352b534e8b987e036a93539fd6897f53488e56a & LarvaLabs & 41 \\ 
+\hline
+0xf1ad946ae30a285d96ea396acd3fd22c5aa75ef8 & 0x03205743e7fc513a073ae39097204cb07591b910 & 40 \\ 
+\hline
+\end{tabular}
+\label{}
+\caption{}
+\end{table}

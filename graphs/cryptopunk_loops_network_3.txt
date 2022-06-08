@@ -1,0 +1,24 @@
+\begin{table}[H]
+\centering
+\begin{tabular}{ |c|c||c|  }
+\hline
+\multicolumn{3}{|c|}{} \\ 
+\hline
+Sender & Reciever & Trades\\ 
+\hline
+agx-2020 & agx-2020 & 0 \\ 
+\hline
+WrappedCryptoPunks-Escrow & 0xcb7624475c911d0ed4c1c01267c484ccc6949e0d & 0 \\ 
+\hline
+0xcb7624475c911d0ed4c1c01267c484ccc6949e0d & WrappedCryptoPunks-Escrow & 38 \\ 
+\hline
+WrappedCryptoPunks-Escrow & WrappedCryptoPunks-Escrow & 0 \\ 
+\hline
+Wilcox_NFT & 0x3a844195fefd2dd02ba61f5a2de45a95bba0cb5a & 22 \\ 
+\hline
+0x3a844195fefd2dd02ba61f5a2de45a95bba0cb5a & Wilcox_NFT & 12 \\ 
+\hline
+\end{tabular}
+\label{}
+\caption{}
+\end{table}

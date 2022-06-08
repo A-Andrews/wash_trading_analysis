@@ -68,6 +68,24 @@ def common_pairs_network(common_number):
     adj_mat = create_adjacency_matrix(pairs)
     return create_adjacency_graph(pairs, weights_p)
 
+def common_pairs_network_text(common_number):
+    pairs = get_common_pairs(data, common_number)
+    pairs = get_node_pairs_from_pairs(pairs)
+    weights_p = get_trades_between_pairs(data, pairs)
+    pairs = replace_pairs_names(data, pairs)
+
+
+
+    with open(f'../graphs/{series}_pairs_network_{common_number}.txt', 'w') as f:
+        f.write('\\begin{table}[H]\n\centering\n\\begin{tabular}{ |c|c||c|  }\n\hline\n\multicolumn{3}{|c|}{BAYC Feature List} \\\ \n\hline\nSender & Reciever & Trades\\\ \n\hline\n')
+        for n, i in enumerate(pairs):
+            seller = i[0]
+            buyer = i[1]
+            trades = weights_p[n]
+            f.write(f'{seller} & {buyer} & {trades} \\\ \n\hline\n')
+        f.write('\end{tabular}\n\label{}\n\caption{}\n\end{table}')
+
+
 def common_sequences_network(min_length = 1, min_occurances = 1):
     sequences = find_common_sequences(data, ids, min_length, min_occurances)
     pairs = get_list_pairs_for_sequences(sequences)
@@ -89,9 +107,28 @@ def simple_loops_network(min_length = 1, min_occurances = 1):
     loops = find_all_loops(sequences)
     pairs = get_list_pairs_for_sequences(loops)
     weights_p = get_trades_between_pairs(data, pairs)
+    print(weights_p)
     pairs = replace_pairs_names(data, pairs)
     adj_mat = create_adjacency_matrix(pairs)
     return create_adjacency_graph(pairs, weights_p)
+
+def simple_loops_text(min_length = 1, min_occurances = 1):
+    sequences = find_common_sequences(data, ids, min_length, 10)
+    loops = find_all_loops(sequences)
+    pairs = get_list_pairs_for_sequences(loops)
+    print(pairs)
+    weights_p = get_trades_between_pairs(data, pairs)
+    print(weights_p)
+    pairs = replace_pairs_names(data, pairs)
+
+    with open(f'../graphs/{series}_loops_network_{common_number}.txt', 'w') as f:
+        f.write('\\begin{table}[H]\n\centering\n\\begin{tabular}{ |c|c||c|  }\n\hline\n\multicolumn{3}{|c|}{} \\\ \n\hline\nSender & Reciever & Trades\\\ \n\hline\n')
+        for n, i in enumerate(pairs):
+            seller = i[0]
+            buyer = i[1]
+            trades = weights_p[n]
+            f.write(f'{seller} & {buyer} & {trades} \\\ \n\hline\n')
+        f.write('\end{tabular}\n\label{}\n\caption{}\n\end{table}')
 
 def update(days, g):
     global data
@@ -132,6 +169,8 @@ def main(argv):
         common_singles_network(common_number)
     if network_type == 'common_pairs':
         common_pairs_network(common_number)
+    if network_type == 'common_pairs_text':
+        common_pairs_network_text(common_number)
     if network_type == 'common_sequences':
         common_sequences_network(common_number, common_number)
     if network_type == 'common_associations':
@@ -140,6 +179,8 @@ def main(argv):
         simple_loops_network(common_number, common_number)
     if network_type == 'animated_singles':
         animated_singles(common_number, 10)
+    if network_type == 'simple_loops_text':
+        simple_loops_text(common_number, common_number)
 
     
     plt.show()

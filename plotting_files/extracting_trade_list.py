@@ -13,6 +13,8 @@ def get_opensea_trade_data(series, test = False):
         data = pd.read_csv(f"transaction_files/{series}_transfers.csv")
     else:
         data = pd.read_csv(f"../transaction_files/{series}_transfers.csv")
+
+    
     ids = data[['id']].copy()
     ids = ids['id'].unique()
     addresses = data[['buyer_address']].copy()
