@@ -104,7 +104,7 @@ def main(argv):
     plt.figure(figsize=(20,8))
 
     if series == 'BAYC' or series == 'cryptopunk':
-        data, ids, addresses = get_opensea_trade_data(series)
+        data, ids, addresses = get_opensea_trade_data(series, True)
         if time_range_start != '0':
             data = remove_out_of_time(data, time_range_start, time_range_end)
     if network_type == 'basic_hypergraph_addresses':

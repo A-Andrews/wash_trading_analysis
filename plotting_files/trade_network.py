@@ -41,7 +41,6 @@ def create_adjacency_graph(adj_mat, weights):
     edges = nx.draw_networkx_edges(g, pos, edge_color = weights_rgb, edge_cmap = cmap, nodelist = nodes_list, node_size = node_size, width = 2, arrowsize=4, arrows = True, connectionstyle='arc3,rad=0.2')
 
     pc = plt.cm.ScalarMappable(cmap=cmap, norm=plt.Normalize(vmin = min(weights), vmax=max(weights)))
-    pc.set_label('# of contacts', rotation=270)
     plt.colorbar(pc)
 
     return nodes, edges, labels, g
@@ -183,7 +182,7 @@ def main(argv):
 
     if series == 'BAYC' or series == 'cryptopunk':
         global data, ids, addresses
-        data, ids, addresses = get_opensea_trade_data(series)
+        data, ids, addresses = get_opensea_trade_data(series, True)
         if time_range_start != '0':
             data = remove_out_of_time(data, time_range_start, time_range_end)
     if network_type == 'common_singles':

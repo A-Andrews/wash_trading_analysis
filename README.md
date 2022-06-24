@@ -3,6 +3,7 @@ Masters project for NFT wash trading identification utilising visualisations.
 Uses data up to 18th April 2022 for analysis.
 
 ## Visualisations
+These are all run with their own script files from the base folder.
 
 ### Cluster analysis:
 
@@ -26,7 +27,7 @@ Where:
 
 ![network](graphs/BAYCpairs16.png)
 
-> python3 trade_network.py series method time_start time_end method_number
+> source networks.sh series method time_start time_end method_number
 
 Where:
 - series: the name to dertemine which series to graph
@@ -46,6 +47,8 @@ Where:
 
 ![chord](graphs/Crypchord40_400.png)
 
+> source chords.sh series method time_start time_end method_number amount
+
 Where:
 - series: the name to dertemine which series to graph
 - method: the method of analysis
@@ -62,6 +65,8 @@ Where:
 ### Hypergraphs
 
 ![hyper](graphs/BAYChyppairs25_10.png)
+
+> source hypergraphs.sh series method time_start time_end method_number amount sharing_restriction
 
 Where:
 - series: the name to dertemine which series to graph

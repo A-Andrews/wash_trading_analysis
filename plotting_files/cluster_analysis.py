@@ -79,7 +79,7 @@ def main(argv):
     clustering_type = argv[1]
     n_val = int(argv[2])
     
-    data = get_attribute_data(f"../attribute_files/{series}_attributes.csv")
+    data = get_attribute_data(f"attribute_files/{series}_attributes.csv")
     norm_data = normalise_attributes(data)
     norm_data.drop('id', axis=1, inplace=True)
 
