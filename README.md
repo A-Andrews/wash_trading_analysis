@@ -113,5 +113,3 @@ Where:
 - id_start: the id to start gethering from
 - id_end: the id to stop gathering at
 - series: the name to determine which series to gather
-
-At some point these will be handled by a bash file.
