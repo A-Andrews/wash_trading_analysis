@@ -1,0 +1,1 @@
+python3 plotting_files/trade_network.py $1 $2 $3 $4 $5

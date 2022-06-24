@@ -377,6 +377,7 @@ def create_adjacency_matrix(pairs):
 
     return labeled_matrix
 
+# creates adjacency matrix given list of pairs returns a labeled pandas dataframe
 def create_weighted_adjacency_matrix(pairs, weight):
     labels = {k: v for v, k in enumerate(list(set(flatten(pairs))))}
     pairs_rep = [[labels[i] for i in pair] for pair in pairs]
@@ -387,59 +388,3 @@ def create_weighted_adjacency_matrix(pairs, weight):
     labeled_matrix = pd.DataFrame(matrix, index=labels, columns=labels)
 
     return labeled_matrix
-
-
-#data, ids, addresses = get_opensea_trade_data('cryptopunk', test = True)
-
-#print(len(addresses))
-#common_adds = get_common_addresses(data, 30)
-#print(common_adds)
-#test = get_node_pairs_from_singles(data, common_adds)
-#print(test)
-#print(len(test))
-
-#print(get_trades_between_pairs(data, test))
-
-#print(get_owned_nums(data, common_adds.index))
-
-#print(replace_pairs_names(data, test))
-
-#names = get_names_dict(data, addresses)
-
-#replaced = replace_with_names(test, names)
-
-#print(replace_mixed_names_addresses(data, flatten(replaced)))
-
-#print(replaced)
-
-#print(remove_out_of_time(data, '2021-04-30T21:11:46', '2021-05-25T17:56:54'))
-
-#print(find_loops([4,3,5,4,6,4,6,3,4]))
-#print(get_list_pairs_for_sequences(find_loops([4,3,5,4,6,4,6,3,4])))
-#cs = find_common_sequences(data, ids, 7, 7)
-#print(cs)
-#print(len(cs))
-
-#cs = find_associated_addresses(data, ids, 7, 7)
-#print(cs)
-#print(len(cs))
-
-
-#res = create_adjacency_matrix(test)
-#print(res)
-
-#ids, times = get_opensea_addresses_times(data, 6)
-#print(ids, times)
-#t_ids, t_times = get_wallets_for_time(ids, times, datetime(2021, 6, 21, 15, 56, 28), datetime(2021, 12, 22, 19, 23, 15))
-#print(t_ids, t_times)
-
-#w, t = get_all_address_time_pairs(data, ids)
-#print(get_all_wallets_for_time(w, t, "2021-06-21T15:56:28", "2021-12-22T19:23:15"))
-
-#i, t = get_ids_for_addresses(data, addresses)
-#print(i, t)
-#print(get_all_wallets_for_time(i, t, "2021-06-21T15:56:28", "2021-12-22T19:23:15"))
-
-#print(get_list_pairs_for_associations([[1,2,3,4,5],[6,7,6,7,6,7]]))
-
-#print(get_list_pairs_for_associations([[1,2,3,4,5],[6,7,6,7,6,7]]))

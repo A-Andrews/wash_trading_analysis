@@ -7,8 +7,8 @@ from mpl_chord_diagram import chord_diagram
 
 def plot_chord(matrix):
     chord_diagram(matrix.to_numpy(), list(matrix.columns.values), fontsize = 4, rotate_names = True, chordwidth = 0.1, pad = 4)
-    #Chord(matrix.values.tolist(), list(matrix.columns.values)).to_html()
 
+# plots chord diagram of top single addresses
 def simple_common_chord(data, common_number, amount, series):
     common_addresses = get_common_addresses(data, common_number)
     pairs = get_node_pairs_from_singles(data, common_addresses)
@@ -18,6 +18,7 @@ def simple_common_chord(data, common_number, amount, series):
     adj_mat = create_weighted_adjacency_matrix(top_pairs, weights_p)
     plot_chord(adj_mat)
 
+# plots chord diagram of top pairs of addresses
 def simple_common_pairs_chord(data, common_number, amount, series):
     pairs = get_common_pairs(data, common_number)
     top_pairs = get_topx_common(pairs, amount)
@@ -27,6 +28,7 @@ def simple_common_pairs_chord(data, common_number, amount, series):
     adj_mat = create_weighted_adjacency_matrix(top_pairs, weights_p)
     plot_chord(adj_mat)
 
+# plots chord diagram of sequences of addresses of a specified length that occur a certain number of times
 def simple_common_sequences_chord(data, ids, series, min_length = 1, min_occurances = 1):
     sequences = find_common_sequences(data, ids, min_length, min_occurances)
     pairs = get_list_pairs_for_sequences(sequences)
@@ -35,6 +37,7 @@ def simple_common_sequences_chord(data, ids, series, min_length = 1, min_occuran
     adj_mat = create_weighted_adjacency_matrix(pairs, weights_p)
     plot_chord(adj_mat)
 
+# plots chord diagram of association of addresses of a specified set size that occur a certain number of times
 def simple_common_associations_chord(data, ids, series, min_length = 1, min_occurances = 1):
     sequences = find_associated_addresses(data, ids, min_length, min_occurances)
     pairs = get_list_pairs_for_associations(sequences)
@@ -43,6 +46,7 @@ def simple_common_associations_chord(data, ids, series, min_length = 1, min_occu
     adj_mat = create_weighted_adjacency_matrix(pairs, weights_p)
     plot_chord(adj_mat)
 
+# plots chord diagram of loops of a specified length
 def simple_common_loops_chord(data, ids, series, min_length = 1, min_occurances = 1):
     sequences = find_common_sequences(data, ids, min_length, min_occurances)
     loops = find_all_loops(sequences)
@@ -80,8 +84,7 @@ def main(argv):
     elif network_type == 'simple_common_loops_chord':
         simple_common_loops_chord(data, ids, series, common_number, amount)
 
-    plt.show()
-        
+    plt.show() 
 
 if __name__ == "__main__":
    main(sys.argv[1:])

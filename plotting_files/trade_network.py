@@ -22,18 +22,11 @@ ani = None
 
 earliest_date = '2021-04-30T00:00:00'
 
-def list_for_time_period():
-    return 0
-
-def create_graph_for_one(addresses, i, time):
-    return 0
-
-
-
+# plots network graph
 def create_adjacency_graph(adj_mat, weights):
     g = nx.MultiDiGraph()
     g.add_edges_from(adj_mat)
-    #g = nx.from_pandas_adjacency(adj_mat, create_using=nx.DiGraph)
+
     list_degree=list(g.degree())
     pos = nx.spring_layout(g, k = 0.18, seed=10)
     nodes_list, degree = map(list, zip(*list_degree))
@@ -53,6 +46,7 @@ def create_adjacency_graph(adj_mat, weights):
 
     return nodes, edges, labels, g
 
+# plots network graph of single addresses occurring over a threshold
 def common_singles_network(common_number):
     common_addresses = get_common_addresses(data, common_number)
     pairs = get_node_pairs_from_singles(data, common_addresses)
@@ -61,6 +55,7 @@ def common_singles_network(common_number):
     adj_mat = create_adjacency_matrix(pairs)
     return create_adjacency_graph(pairs, weights_p)
 
+# plots network graph of pairs of addresses occurring over a threshold
 def common_pairs_network(common_number):
     pairs = get_common_pairs(data, common_number)
     pairs = get_node_pairs_from_pairs(pairs)
@@ -69,13 +64,12 @@ def common_pairs_network(common_number):
     adj_mat = create_adjacency_matrix(pairs)
     return create_adjacency_graph(pairs, weights_p)
 
+# returns a latex formated table of pairs of addresses occurring over a threshold
 def common_pairs_network_text(common_number):
     pairs = get_common_pairs(data, common_number)
     pairs = get_node_pairs_from_pairs(pairs)
     weights_p = get_trades_between_pairs(data, pairs)
     pairs = replace_pairs_names(data, pairs)
-
-
 
     with open(f'../graphs/{series}_pairs_network_{common_number}.txt', 'w') as f:
         f.write('\\begin{table}[H]\n\centering\n\\begin{tabular}{ |c|c||c|  }\n\hline\n\multicolumn{3}{|c|}{BAYC Feature List} \\\ \n\hline\nSender & Reciever & Trades\\\ \n\hline\n')
@@ -86,6 +80,7 @@ def common_pairs_network_text(common_number):
             f.write(f'{seller} & {buyer} & {trades} \\\ \n\hline\n')
         f.write('\end{tabular}\n\label{}\n\caption{}\n\end{table}')
 
+# returns the addresses as a latex table for pairs occurring over a threshold
 def common_pairs_network_text_addresses(common_number):
     pairs = get_common_pairs(data, common_number)
     pairs = get_node_pairs_from_pairs(pairs)
@@ -105,15 +100,13 @@ def common_pairs_network_text_addresses(common_number):
         amounts[buyer] += trades
         total += trades
 
-
-
     with open(f'../graphs/{series}_pairs_network_addresses_{common_number}.txt', 'w') as f:
         f.write('\\begin{table}[H]\n\centering\n\\begin{tabular}{ c c c }\n\hline\n \\\ \n\hline\n Address & Trade Involvement & Wash Trading Likelihood\\\ \n\hline\n')
         for k, v in amounts.items():
             f.write(f'{k} & {v} & 0 \\\ \n')
         f.write('\hline \\\ \n \end{tabular}\n\label{}\n\caption{'+ str(total) +'}\n\end{table}')
 
-
+# plots network graph of sequences of a certain length that occur a certain number of times
 def common_sequences_network(min_length = 1, min_occurances = 1):
     sequences = find_common_sequences(data, ids, min_length, min_occurances)
     pairs = get_list_pairs_for_sequences(sequences)
@@ -122,6 +115,7 @@ def common_sequences_network(min_length = 1, min_occurances = 1):
     adj_mat = create_adjacency_matrix(pairs)
     return create_adjacency_graph(pairs, weights_p)
 
+# plots association graphs of addresses that occur together in groups of a specified size a certain number of times
 def common_associations_network(min_length = 1, min_occurances = 1):
     sequences = find_associated_addresses(data, ids, min_length, min_occurances)
     pairs = get_list_pairs_for_associations(sequences)
@@ -130,6 +124,7 @@ def common_associations_network(min_length = 1, min_occurances = 1):
     adj_mat = create_adjacency_matrix(pairs)
     return create_adjacency_graph(pairs, weights_p)
 
+# plots loops of a certain size that occur a certain number of times
 def simple_loops_network(min_length = 1, min_occurances = 1):
     sequences = find_common_sequences(data, ids, min_length, 10)
     loops = find_all_loops(sequences)
@@ -176,8 +171,6 @@ def animated_singles(common_number, interval):
 
     ani = FuncAnimation(fig, update, fargs=(g), frames=100, interval=1000, repeat=True)
 
-
-
 def main(argv):
     global series, common_number
     series = argv[0]
@@ -211,11 +204,8 @@ def main(argv):
         animated_singles(common_number, 10)
     if network_type == 'simple_loops_text':
         simple_loops_text(common_number, common_number)
-
     
-    plt.show()
-        
-
+    plt.show()      
 
 if __name__ == "__main__":
    main(sys.argv[1:])
