@@ -41,7 +41,7 @@ Where:
     - simple_loops_text
 - time_start: eliminate transactions before this time (set to 0 to ignore)
 - time_end: used with time start to select a window of transactions
-- method_number: used with methods that require additional numbers
+- method_number: used with methods that require additional numbers (number of occurrences)
 
 ### Chord Diagrams
 
@@ -59,7 +59,7 @@ Where:
     - simple_common_loops_chord
 - time_start: eliminate transactions before this time (set to 0 to ignore)
 - time_end: used with time start to select a window of transactions
-- method_number: used with methods that require additional numbers
+- method_number: used with methods that require additional numbers (number of occurrences)
 - amount: number of addresses to plot from the top
 
 ### Hypergraphs
@@ -88,7 +88,7 @@ Where:
     - restricted_hypergraph_loops
 - time_start: eliminate transactions before this time (set to 0 to ignore)
 - time_end: used with time start to select a window of transactions
-- method_number: used with methods that require additional numbers
+- method_number: used with methods that require additional numbers (number of occurrences)
 - amount: number of addresses to plot from the top
 - sharing_restriction: amount of addresses an NFT node must occur in in order to be plotted
 
