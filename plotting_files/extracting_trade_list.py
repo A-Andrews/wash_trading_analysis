@@ -389,7 +389,9 @@ def create_weighted_adjacency_matrix(pairs, weight):
     return labeled_matrix
 
 
-#data, ids, addresses = get_opensea_trade_data('BAYC', test = True)
+#data, ids, addresses = get_opensea_trade_data('cryptopunk', test = True)
+
+#print(len(addresses))
 #common_adds = get_common_addresses(data, 30)
 #print(common_adds)
 #test = get_node_pairs_from_singles(data, common_adds)

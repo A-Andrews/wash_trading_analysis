@@ -1,0 +1,81 @@
+\begin{table}[H]
+\centering
+\begin{tabular}{ c c c }
+\hline
+ \\ 
+\hline
+ Address & Trade Involvement & Wash Trading Likelihood\\ 
+\hline
+j1mmy & 186 & 0 \\ 
+j1mmy_vault & 147 & 0 \\ 
+0xf8e0c93fd48b4c34a4194d3af436b13032e641f3 & 264 & 0 \\ 
+0x3cf9a2b7aaad51e107453e510bfd470a06205d4c & 164 & 0 \\ 
+dingalingg & 112 & 0 \\ 
+dingaling & 112 & 0 \\ 
+degen_ape & 148 & 0 \\ 
+0x98e711f31e49c2e50c1a290b6f2b1e493e43ea76 & 148 & 0 \\ 
+0x520edc55cbf109139ec9f9c27db79a1d5d2c8865 & 200 & 0 \\ 
+0x17e347aad89b30b96557bcbfbff8a14e75cc88a1 & 200 & 0 \\ 
+0xf1de205c1ac2c90db0b7210fbe96917724fcfb10 & 200 & 0 \\ 
+0x8c46e646cf73173042f5efaee5ad85ee8d52419d & 199 & 0 \\ 
+0xca4a5b8297d88d051436092dbfb8ab0ff294f5a0 & 200 & 0 \\ 
+0x06bb452582e3db7708f4e49e599663cbc7e6e60c & 197 & 0 \\ 
+0xcc7d3706ea82cdb4ec7d2a3eac0e487e17ab975a & 196 & 0 \\ 
+gabusch & 170 & 0 \\ 
+4932114 & 90 & 0 \\ 
+23342021 & 90 & 0 \\ 
+canarycollection & 142 & 0 \\ 
+0xd38a87d7b690323ef6883e887614502abcf9b1eb & 72 & 0 \\ 
+thediamondcollection1 & 70 & 0 \\ 
+MightyMaxy6 & 67 & 0 \\ 
+MM_S & 67 & 0 \\ 
+NFTX & 175 & 0 \\ 
+bochan228 & 149 & 0 \\ 
+0x7c2b65b98a86d9d2e10216f92674f28cb9fe0f86 & 49 & 0 \\ 
+0xfa898efdb91e35bd311c45b9b955f742b6719aa2 & 98 & 0 \\ 
+0xa7ab7a265f274fa664187698932d3cabb851023d & 81 & 0 \\ 
+bochan228_vault_2 & 84 & 0 \\ 
+bochan228_vault & 116 & 0 \\ 
+depreciated & 47 & 0 \\ 
+0x6b4df334368b09f87b3722449703060eef284126 & 80 & 0 \\ 
+Hungrytechy & 44 & 0 \\ 
+009977 & 84 & 0 \\ 
+0x88341d1a8f672d2780c8dc725902aae72f143b0c & 84 & 0 \\ 
+7f71dd & 41 & 0 \\ 
+2849128421jfdsldfkj12981sdlfksdjfs & 71 & 0 \\ 
+Tweety_Pie & 39 & 0 \\ 
+bochan228_phunks & 69 & 0 \\ 
+cryptobeaker & 93 & 0 \\ 
+bkrcold & 37 & 0 \\ 
+0x5f6ac80cdb9e87f3cfa6a90e5140b9a16a361d5c & 72 & 0 \\ 
+0xdbfd76af2157dc15ee4e57f3f942bb45ba84af24 & 36 & 0 \\ 
+0x70b97a0da65c15dfb0ffa02aee6fa36e507c2762 & 71 & 0 \\ 
+1K & 35 & 0 \\ 
+Art1k & 65 & 0 \\ 
+0x3b968d2d299b895a5fcf3bba7a64ad0f566e6f88 & 35 & 0 \\ 
+PrepsToThePros & 34 & 0 \\ 
+PrepsToThePros_Gallery_Vault_2 & 34 & 0 \\ 
+ape48 & 33 & 0 \\ 
+FA8379 & 62 & 0 \\ 
+ApeDAO & 32 & 0 \\ 
+0x31fe8439f34ed04514288a6f0f19f26c647cd6ad & 31 & 0 \\ 
+0x6df304782b0866d2538c8fd2e46904a7f2ae321c & 31 & 0 \\ 
+Hot_Hot_Hot & 56 & 0 \\ 
+0xc310e760778ecbca4c65b6c559874757a4c4ece0 & 81 & 0 \\ 
+1k_Vault & 30 & 0 \\ 
+oldies123 & 60 & 0 \\ 
+0xc5267 & 30 & 0 \\ 
+0x7c15561590fc9eb063b3803b55165633eef207ec & 29 & 0 \\ 
+0x6d5596d228c44453b0e16d1e4abd3f14724773fb & 57 & 0 \\ 
+0xed4701 & 29 & 0 \\ 
+0x677d38a & 28 & 0 \\ 
+Coco__Bear & 28 & 0 \\ 
+zunk14882 & 26 & 0 \\ 
+BoredSpaceApe & 25 & 0 \\ 
+bsaVAULT & 25 & 0 \\ 
+ajjaffy_vault & 25 & 0 \\ 
+\hline \\ 
+ \end{tabular}
+\label{}
+\caption{2991}
+\end{table}
