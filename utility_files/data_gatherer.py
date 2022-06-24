@@ -68,8 +68,8 @@ def get_axie_transaction_list(amount, records, ax_id):
 
 def get_csv_axie_transactions(start: int, end: int):
 
-    f = open('../transaction_files/axie_transactions.csv', 'a')
-    g = open('../transaction_files/axie_eth_transactions.csv', 'a')
+    f = open('transaction_files/axie_transactions.csv', 'a')
+    g = open('transaction_files/axie_eth_transactions.csv', 'a')
 
     writer = csv.writer(f)
     eth_writer = csv.writer(g)
@@ -100,7 +100,7 @@ def get_csv_axie_transactions(start: int, end: int):
 
 def get_csv_axie(start: int, end: int):
 
-    f = open('../attribute_files/axie_attributes.csv', 'a')
+    f = open('attribute_files/axie_attributes.csv', 'a')
 
     writer = csv.writer(f)
 
@@ -122,7 +122,7 @@ def get_csv_axie(start: int, end: int):
 
 def get_api_key(key):
     contents = None
-    with open(f'../apikeys/{key}_key.txt') as f:
+    with open(f'apikeys/{key}_key.txt') as f:
         contents = f.read()
     
     return contents
@@ -174,7 +174,6 @@ def write_opensea_trade(token_id, data):
 
 def write_opensea_transfer(token_id, data):
     rows = []
-    #data = data[:-1]
     
     for i in data:
         seller = i["from_account"]
@@ -198,11 +197,11 @@ def write_opensea_transfer(token_id, data):
 
 def get_csv_opensea_transactions(start, end, api, address, series):
 
-    f = open(f'../transaction_files/{series}_transactions.csv', 'a')
+    f = open(f'transaction_files/{series}_transactions.csv', 'a')
     writer = csv.writer(f)
     sales_rows = []
 
-    g = open(f'../transaction_files/{series}_transfers.csv', 'a')
+    g = open(f'transaction_files/{series}_transfers.csv', 'a')
     trans_writer = csv.writer(g)
     trans_rows = []
 

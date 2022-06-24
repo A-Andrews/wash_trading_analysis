@@ -9,7 +9,7 @@ These are all run with their own script files from the base folder.
 
 ![cluster](graphs/kprototype_axie_k10.png)
 
-> python3 cluster_analysis.py series method d
+> source cluster.sh series method d
 
 Where:
 - series: the name to dertemine which series to graph
@@ -107,7 +107,7 @@ Leave with:
 ## Usage
 ### Data
 In order to get CSV files:
-> python3 data_gatherer.py id_start id_end series
+> source gatherer.sh id_start id_end series
 
 Where:
 - id_start: the id to start gethering from
